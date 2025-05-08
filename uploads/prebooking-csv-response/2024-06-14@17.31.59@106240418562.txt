@@ -1,0 +1,505 @@
+tag no: 106241317332 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362951, Book No:3630, Tag No:106241317332, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071793 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362952, Book No:3630, Tag No:106236071793, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317412 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362953, Book No:3630, Tag No:106241317412, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317720 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362954, Book No:3630, Tag No:106241317720, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317822 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362955, Book No:3630, Tag No:106241317822, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071942 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362956, Book No:3630, Tag No:106236071942, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236072012 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362957, Book No:3630, Tag No:106236072012, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317161 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362958, Book No:3630, Tag No:106241317161, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071816 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362959, Book No:3630, Tag No:106236071816, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071862 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362960, Book No:3630, Tag No:106236071862, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071840 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362961, Book No:3630, Tag No:106236071840, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071805 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362962, Book No:3630, Tag No:106236071805, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071918 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362963, Book No:3630, Tag No:106236071918, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071873 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362964, Book No:3630, Tag No:106236071873, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071920 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362965, Book No:3630, Tag No:106236071920, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071907 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362966, Book No:3630, Tag No:106236071907, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071851 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362967, Book No:3630, Tag No:106236071851, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317387 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362968, Book No:3630, Tag No:106241317387, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236071997 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362969, Book No:3630, Tag No:106236071997, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317321 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362970, Book No:3630, Tag No:106241317321, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317310 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362971, Book No:3630, Tag No:106241317310, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317296 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362972, Book No:3630, Tag No:106241317296, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317401 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362973, Book No:3630, Tag No:106241317401, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317398 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362974, Book No:3630, Tag No:106241317398, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106241317376 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123708, Certificate No:362975, Book No:3630, Tag No:106241317376, Inward Date, Agent:39, Sex:2, Transfer:0
+
+tag no: 106236070083 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367526, Book No:3676, Tag No:106236070083, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070221 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367527, Book No:3676, Tag No:106236070221, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070210 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367528, Book No:3676, Tag No:106236070210, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070196 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367529, Book No:3676, Tag No:106236070196, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070106 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367530, Book No:3676, Tag No:106236070106, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070174 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367531, Book No:3676, Tag No:106236070174, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070163 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367532, Book No:3676, Tag No:106236070163, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070152 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367533, Book No:3676, Tag No:106236070152, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070117 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367534, Book No:3676, Tag No:106236070117, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070232 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367535, Book No:3676, Tag No:106236070232, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070141 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367536, Book No:3676, Tag No:106236070141, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070356 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367537, Book No:3676, Tag No:106236070356, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070130 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367538, Book No:3676, Tag No:106236070130, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070128 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367539, Book No:3676, Tag No:106236070128, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070185 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367540, Book No:3676, Tag No:106236070185, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070380 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367541, Book No:3676, Tag No:106236070380, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070378 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367542, Book No:3676, Tag No:106236070378, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070208 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367543, Book No:3676, Tag No:106236070208, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070367 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367544, Book No:3676, Tag No:106236070367, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070460 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367545, Book No:3676, Tag No:106236070460, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070458 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367546, Book No:3676, Tag No:106236070458, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070447 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367547, Book No:3676, Tag No:106236070447, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070436 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367548, Book No:3676, Tag No:106236070436, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070414 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367549, Book No:3676, Tag No:106236070414, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236070425 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123719, Certificate No:367550, Book No:3676, Tag No:106236070425, Inward Date, Agent:38, Sex:2, Transfer:0
+
+tag no: 106240418562 - inserted successfully!
+tag no: 106240418573 - inserted successfully!
+tag no: 106240418584 - inserted successfully!
+tag no: 106240419510 - inserted successfully!
+tag no: 106240418653 - inserted successfully!
+tag no: 106240418607 - inserted successfully!
+tag no: 106240418733 - inserted successfully!
+tag no: 106240418595 - inserted successfully!
+tag no: 106240419508 - inserted successfully!
+tag no: 106240419406 - inserted successfully!
+tag no: 106240418642 - inserted successfully!
+tag no: 106240418620 - inserted successfully!
+tag no: 106240418722 - inserted successfully!
+tag no: 106240418915 - inserted successfully!
+tag no: 106240418788 - inserted successfully!
+tag no: 106240418857 - inserted successfully!
+tag no: 106240418972 - inserted successfully!
+tag no: 106240418904 - inserted successfully!
+tag no: 106240418961 - inserted successfully!
+tag no: 106240418846 - inserted successfully!
+tag no: 106240418755 - inserted successfully!
+tag no: 106240418711 - inserted successfully!
+tag no: 106240418700 - inserted successfully!
+tag no: 106240418686 - inserted successfully!
+tag no: 106240418618 - inserted successfully!
+tag no: 106236071953 - inserted successfully!
+tag no: 106241317558 - inserted successfully!
+tag no: 106241317753 - inserted successfully!
+tag no: 106241317742 - inserted successfully!
+tag no: 106241317547 - inserted successfully!
+tag no: 106241317731 - inserted successfully!
+tag no: 106241317536 - inserted successfully!
+tag no: 106241317640 - inserted successfully!
+tag no: 106241317811 - inserted successfully!
+tag no: 106241317800 - inserted successfully!
+tag no: 106241317718 - inserted successfully!
+tag no: 106241317571 - inserted successfully!
+tag no: 106241317593 - inserted successfully!
+tag no: 106241317560 - inserted successfully!
+tag no: 106241317285 - inserted successfully!
+tag no: 106236071964 - inserted successfully!
+tag no: 106236071838 - inserted successfully!
+tag no: 106241317503 - inserted successfully!
+tag no: 106241317638 - inserted successfully!
+tag no: 106241317627 - inserted successfully!
+tag no: 106241317491 - inserted successfully!
+tag no: 106241317478 - inserted successfully!
+tag no: 106241317616 - inserted successfully!
+tag no: 106241317514 - inserted successfully!
+tag no: 106241317308 - inserted successfully!
+tag no: 106242168960 - inserted successfully!
+tag no: 106242169198 - inserted successfully!
+tag no: 106242168947 - inserted successfully!
+tag no: 106242169121 - inserted successfully!
+tag no: 106242169110 - inserted successfully!
+tag no: 106242169212 - inserted successfully!
+tag no: 106236795260 - inserted successfully!
+tag no: 106242169267 - inserted successfully!
+tag no: 106236795258 - inserted successfully!
+tag no: 106236795395 - inserted successfully!
+tag no: 106242169256 - inserted successfully!
+tag no: 106236795316 - inserted successfully!
+tag no: 106236795293 - inserted successfully!
+tag no: 106236795384 - inserted successfully!
+tag no: 106236795407 - inserted successfully!
+tag no: 106236795373 - inserted successfully!
+tag no: 106242169063 - inserted successfully!
+tag no: 106242168845 - inserted successfully!
+tag no: 106242168834 - inserted successfully!
+tag no: 106242168856 - inserted successfully!
+tag no: 106242168867 - inserted successfully!
+tag no: 106242168878 - inserted successfully!
+tag no: 106242168880 - inserted successfully!
+tag no: 106242168891 - inserted successfully!
+tag no: 106242168903 - inserted successfully!
+tag no: 106240420206 - inserted successfully!
+tag no: 106240420194 - inserted successfully!
+tag no: 106240420308 - inserted successfully!
+tag no: 106240419920 - inserted successfully!
+tag no: 106240420230 - inserted successfully!
+tag no: 106240420252 - inserted successfully!
+tag no: 106240420536 - inserted successfully!
+tag no: 106240420525 - inserted successfully!
+tag no: 106240420228 - inserted successfully!
+tag no: 106240420343 - inserted successfully!
+tag no: 106240420354 - inserted successfully!
+tag no: 106236069660 - inserted successfully!
+tag no: 106240419725 - inserted successfully!
+tag no: 106240420547 - inserted successfully!
+tag no: 106240420558 - inserted successfully!
+tag no: 106240419736 - inserted successfully!
+tag no: 106240419747 - inserted successfully!
+tag no: 106240419758 - inserted successfully!
+tag no: 106240420024 - inserted successfully!
+tag no: 106240420013 - inserted successfully!
+tag no: 106240420161 - inserted successfully!
+tag no: 106240420150 - inserted successfully!
+tag no: 106240420148 - inserted successfully!
+tag no: 106240420126 - inserted successfully!
+tag no: 106240420263 - inserted successfully!
+tag no: 106239498376 - inserted successfully!
+tag no: 106236069306 - inserted successfully!
+tag no: 106236069432 - inserted successfully!
+tag no: 106236069272 - inserted successfully!
+tag no: 106236069294 - inserted successfully!
+tag no: 106236069443 - inserted successfully!
+tag no: 106236069283 - inserted successfully!
+tag no: 106236069421 - inserted successfully!
+tag no: 106236069410 - inserted successfully!
+tag no: 106236069396 - inserted successfully!
+tag no: 106236069523 - inserted successfully!
+tag no: 106236069341 - inserted successfully!
+tag no: 106236069330 - inserted successfully!
+tag no: 106236069352 - inserted successfully!
+tag no: 106236069705 - inserted successfully!
+tag no: 106236069693 - inserted successfully!
+tag no: 106236069363 - inserted successfully!
+tag no: 106236069374 - inserted successfully!
+tag no: 106236069385 - inserted successfully!
+tag no: 106236069317 - inserted successfully!
+tag no: 106236069328 - inserted successfully!
+tag no: 106236069226 - inserted successfully!
+tag no: 106236069215 - inserted successfully!
+tag no: 106236068861 - inserted successfully!
+tag no: 106239498434 - inserted successfully!
+tag no: 106236796673 - inserted successfully!
+tag no: 106236795794 - inserted successfully!
+tag no: 106236796137 - inserted successfully!
+tag no: 106236796503 - inserted successfully!
+tag no: 106236796718 - inserted successfully!
+tag no: 106236796684 - inserted successfully!
+tag no: 106236796285 - inserted successfully!
+tag no: 106236796296 - inserted successfully!
+tag no: 106236795987 - inserted successfully!
+tag no: 106236796560 - inserted successfully!
+tag no: 106236796786 - inserted successfully!
+tag no: 106236796627 - inserted successfully!
+tag no: 106236796274 - inserted successfully!
+tag no: 106236796720 - inserted successfully!
+tag no: 106236796478 - inserted successfully!
+tag no: 106236796206 - inserted successfully!
+tag no: 106236796456 - inserted successfully!
+tag no: 106236796445 - inserted successfully!
+tag no: 106236796194 - inserted successfully!
+tag no: 106236796547 - inserted successfully!
+tag no: 106236796536 - inserted successfully!
+tag no: 106236796514 - inserted successfully!
+tag no: 106236796308 - inserted successfully!
+tag no: 106236796252 - inserted successfully!
+tag no: 106236796002 - inserted successfully!
+tag no: 106236175143 - inserted successfully!
+tag no: 106236174903 - inserted successfully!
+tag no: 106236174583 - inserted successfully!
+tag no: 106236174606 - inserted successfully!
+tag no: 106236174617 - inserted successfully!
+tag no: 106236174776 - inserted successfully!
+tag no: 106236174732 - inserted successfully!
+tag no: 106236174630 - inserted successfully!
+tag no: 106236174641 - inserted successfully!
+tag no: 106236174572 - inserted successfully!
+tag no: 106236174561 - inserted successfully!
+tag no: 106236174550 - inserted successfully!
+tag no: 106236174548 - inserted successfully!
+tag no: 106236174696 - inserted successfully!
+tag no: 106236174674 - inserted successfully!
+tag no: 106236174663 - inserted successfully!
+tag no: 106236174652 - inserted successfully!
+tag no: 106236174628 - inserted successfully!
+tag no: 106236174710 - inserted successfully!
+tag no: 106236174708 - inserted successfully!
+tag no: 106239498365 - inserted successfully!
+tag no: 106239498354 - inserted successfully!
+tag no: 106236068941 - inserted successfully!
+tag no: 106236068963 - inserted successfully!
+tag no: 106236068952 - inserted successfully!
+tag no: 106236068872 - inserted successfully!
+tag no: 106236068917 - inserted successfully!
+tag no: 106236068930 - inserted successfully!
+tag no: 106236069102 - inserted successfully!
+tag no: 106236068928 - inserted successfully!
+tag no: 106239498398 - inserted successfully!
+tag no: 106236069237 - inserted successfully!
+tag no: 106236069248 - inserted successfully!
+tag no: 106236069181 - inserted successfully!
+tag no: 106236069011 - inserted successfully!
+tag no: 106236069088 - inserted successfully!
+tag no: 106239498401 - inserted successfully!
+tag no: 106236068906 - inserted successfully!
+tag no: 106236068894 - inserted successfully!
+tag no: 106236068883 - inserted successfully!
+tag no: 106239498445 - inserted successfully!
+tag no: 106236068974 - inserted successfully!
+tag no: 106239498412 - inserted successfully!
+tag no: 106236068996 - inserted successfully!
+tag no: 106239498423 - inserted successfully!
+tag no: 106242167374 - inserted successfully!
+tag no: 106242167693 - inserted successfully!
+tag no: 106242167705 - inserted successfully!
+tag no: 106242167727 - inserted successfully!
+tag no: 106242167591 - inserted successfully!
+tag no: 106242167625 - inserted successfully!
+tag no: 106242167603 - inserted successfully!
+tag no: 106242167614 - inserted successfully!
+tag no: 106242167636 - inserted successfully!
+tag no: 106242167647 - inserted successfully!
+tag no: 106242167556 - inserted successfully!
+tag no: 106242167820 - inserted successfully!
+tag no: 106242167567 - inserted successfully!
+tag no: 106242167578 - inserted successfully!
+tag no: 106242167487 - inserted successfully!
+tag no: 106242167476 - inserted successfully!
+tag no: 106242167498 - inserted successfully!
+tag no: 106242167580 - inserted successfully!
+tag no: 106242167501 - inserted successfully!
+tag no: 106242167512 - inserted successfully!
+tag no: 106242167432 - inserted successfully!
+tag no: 106242167443 - inserted successfully!
+tag no: 106242167421 - inserted successfully!
+tag no: 106242167465 - inserted successfully!
+tag no: 106242167410 - inserted successfully!
+tag no: 106240419598 - inserted successfully!
+tag no: 106240420376 - inserted successfully!
+tag no: 106240420387 - inserted successfully!
+tag no: 106240420365 - inserted successfully!
+tag no: 106240419986 - inserted successfully!
+tag no: 106240420401 - inserted successfully!
+tag no: 106240419997 - inserted successfully!
+tag no: 106240420398 - inserted successfully!
+tag no: 106240419601 - inserted successfully!
+tag no: 106240419576 - inserted successfully!
+tag no: 106240420412 - inserted successfully!
+tag no: 106240419587 - inserted successfully!
+tag no: 106240420321 - inserted successfully!
+tag no: 106240420332 - inserted successfully!
+tag no: 106240419656 - inserted successfully!
+tag no: 106240419703 - inserted successfully!
+tag no: 106240419691 - inserted successfully!
+tag no: 106240419667 - inserted successfully!
+tag no: 106240419680 - inserted successfully!
+tag no: 106240419793 - inserted successfully!
+tag no: 106240419678 - inserted successfully!
+tag no: 106240419760 - inserted successfully!
+tag no: 106240419782 - inserted successfully!
+tag no: 106240419975 - inserted successfully!
+tag no: 106240420081 - inserted successfully!
+tag no: 106240419918 - inserted successfully!
+tag no: 106240419907 - inserted successfully!
+tag no: 106240419884 - inserted successfully!
+tag no: 106240419714 - inserted successfully!
+tag no: 106240419964 - inserted successfully!
+tag no: 106240419645 - inserted successfully!
+tag no: 106240420092 - inserted successfully!
+tag no: 106240419623 - inserted successfully!
+tag no: 106240419634 - inserted successfully!
+tag no: 106240419612 - inserted successfully!
+tag no: 106240419942 - inserted successfully!
+tag no: 106240419953 - inserted successfully!
+tag no: 106240420057 - inserted successfully!
+tag no: 106240420046 - inserted successfully!
+tag no: 106240420035 - inserted successfully!
+tag no: 106240419565 - inserted successfully!
+tag no: 106240419816 - inserted successfully!
+tag no: 106240420104 - inserted successfully!
+tag no: 106240419805 - inserted successfully!
+tag no: 106240419851 - inserted successfully!
+tag no: 106240419838 - inserted successfully!
+tag no: 106240419827 - inserted successfully!
+tag no: 106240420068 - inserted successfully!
+tag no: 106240419840 - inserted successfully!
+tag no: 106240420172 - inserted successfully!
+tag no: 106240420503 - inserted successfully!
+tag no: 106240420514 - inserted successfully!
+tag no: 106240420480 - inserted successfully!
+tag no: 106240420070 - inserted successfully!
+tag no: 106240420310 - inserted successfully!
+tag no: 106240420434 - inserted successfully!
+tag no: 106240419873 - inserted successfully!
+tag no: 106240419931 - inserted successfully!
+tag no: 106240419862 - inserted successfully!
+tag no: 106240419771 - inserted successfully!
+tag no: 106240419895 - inserted successfully!
+tag no: 106240420423 - inserted successfully!
+tag no: 106240420491 - inserted successfully!
+tag no: 106240420456 - inserted successfully!
+tag no: 106240420467 - inserted successfully!
+tag no: 106240420478 - inserted successfully!
+tag no: 106240420137 - inserted successfully!
+tag no: 106240420296 - inserted successfully!
+tag no: 106240420285 - inserted successfully!
+tag no: 106240420115 - inserted successfully!
+tag no: 106240420274 - inserted successfully!
+tag no: 106240420445 - inserted successfully!
+tag no: 106240420217 - inserted successfully!
+tag no: 106240420183 - inserted successfully!
+tag no: 106240420002 - inserted successfully!
+tag no: 106242166894 - inserted successfully!
+tag no: 106242167671 - inserted successfully!
+tag no: 106242167807 - inserted successfully!
+tag no: 106242167795 - inserted successfully!
+tag no: 106242167658 - inserted successfully!
+tag no: 106242166928 - inserted successfully!
+tag no: 106242167660 - inserted successfully!
+tag no: 106242166906 - inserted successfully!
+tag no: 106242167044 - inserted successfully!
+tag no: 106242167066 - inserted successfully!
+tag no: 106242167033 - inserted successfully!
+tag no: 106242167102 - inserted successfully!
+tag no: 106242166930 - inserted successfully!
+tag no: 106242167773 - inserted successfully!
+tag no: 106242167751 - inserted successfully!
+tag no: 106242167740 - inserted successfully!
+tag no: 106242167738 - inserted successfully!
+tag no: 106242167716 - inserted successfully!
+tag no: 106236795998 - inserted successfully!
+tag no: 106242167022 - inserted successfully!
+tag no: 106242166872 - inserted successfully!
+tag no: 106236174801 - inserted successfully!
+tag no: 106236174162 - inserted successfully!
+tag no: 106236174685 - inserted successfully!
+tag no: 106236174344 - inserted successfully!
+tag no: 106242167011 - inserted successfully!
+tag no: 106242166861 - inserted successfully!
+tag no: 106242166941 - inserted successfully!
+tag no: 106242167784 - inserted successfully!
+tag no: 106242166837 - inserted successfully!
+tag no: 106242166848 - inserted successfully!
+tag no: 106242166917 - inserted successfully!
+tag no: 106242166850 - inserted successfully!
+tag no: 106236175132 - inserted successfully!
+tag no: 106236174537 - inserted successfully!
+tag no: 106236174390 - inserted successfully!
+tag no: 106236174402 - inserted successfully!
+tag no: 106236174253 - inserted successfully!
+tag no: 106236174812 - inserted successfully!
+tag no: 106236175108 - inserted successfully!
+tag no: 106236174891 - inserted successfully!
+tag no: 106236174834 - inserted successfully!
+tag no: 106236174594 - inserted successfully!
+tag no: 106236174388 - inserted successfully!
+tag no: 106236174377 - inserted successfully!
+tag no: 106236174366 - inserted successfully!
+tag no: 106236174468 - inserted successfully!
+tag no: 106236174504 - inserted successfully!
+tag no: 106236174515 - inserted successfully!
+tag no: 106236174526 - inserted successfully!
+tag no: 106236835246 - inserted successfully!
+tag no: 106236835086 - inserted successfully!
+tag no: 106236835268 - inserted successfully!
+tag no: 106236835383 - inserted successfully!
+tag no: 106236835394 - inserted successfully!
+tag no: 106236835417 - inserted successfully!
+tag no: 106236835406 - inserted successfully!
+tag no: 106236835428 - inserted successfully!
+tag no: 106236835337 - inserted successfully!
+tag no: 106236835350 - inserted successfully!

@@ -1,0 +1,42 @@
+tag no: 106237704800 - already inserted!
+tag no: 106237704593 - already inserted!
+tag no: 106237705346 - already inserted!
+tag no: 106237705370 - already inserted!
+tag no: 106237704605 - already inserted!
+tag no: 106237704695 - already inserted!
+tag no: 106237705186 - already inserted!
+tag no: 106237705335 - already inserted!
+tag no: 106237704833 - already inserted!
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+

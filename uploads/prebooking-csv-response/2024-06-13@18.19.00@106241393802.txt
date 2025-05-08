@@ -1,0 +1,100 @@
+tag no: 106239497613 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362526, Book No:3626, Tag No:106239497613, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497431 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362527, Book No:3626, Tag No:106239497431, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497555 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362528, Book No:3626, Tag No:106239497555, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497635 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362529, Book No:3626, Tag No:106239497635, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497646 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362530, Book No:3626, Tag No:106239497646, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497544 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362531, Book No:3626, Tag No:106239497544, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497418 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362532, Book No:3626, Tag No:106239497418, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497497 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362533, Book No:3626, Tag No:106239497497, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497577 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362534, Book No:3626, Tag No:106239497577, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497511 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362535, Book No:3626, Tag No:106239497511, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497566 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362536, Book No:3626, Tag No:106239497566, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239498150 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362537, Book No:3626, Tag No:106239498150, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239498148 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362538, Book No:3626, Tag No:106239498148, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239498161 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362539, Book No:3626, Tag No:106239498161, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497384 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362540, Book No:3626, Tag No:106239497384, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497464 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362541, Book No:3626, Tag No:106239497464, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497420 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362542, Book No:3626, Tag No:106239497420, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497373 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362543, Book No:3626, Tag No:106239497373, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497475 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362544, Book No:3626, Tag No:106239497475, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497453 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362545, Book No:3626, Tag No:106239497453, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497442 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362546, Book No:3626, Tag No:106239497442, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497533 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362547, Book No:3626, Tag No:106239497533, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497522 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362548, Book No:3626, Tag No:106239497522, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497500 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362549, Book No:3626, Tag No:106239497500, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106239497486 - incorrect data filled in csv row!
+Doctor:131, Receipt No:5123671, Certificate No:362550, Book No:3626, Tag No:106239497486, Inward Date1970-01-01 18:19:00, Agent:, Sex:2, Transfer:0
+
+tag no: 106241393802 - inserted successfully!
+tag no: 106241393788 - inserted successfully!
+tag no: 106241393824 - inserted successfully!
+tag no: 106241393926 - inserted successfully!
+tag no: 106241393790 - inserted successfully!
+tag no: 106241393950 - inserted successfully!
+tag no: 106241393904 - inserted successfully!
+tag no: 106241393868 - inserted successfully!
+tag no: 106241393846 - inserted successfully!
+tag no: 106241394018 - inserted successfully!
+tag no: 106241393915 - inserted successfully!
+tag no: 106241394007 - inserted successfully!
+tag no: 106241393994 - inserted successfully!
+tag no: 106241393983 - inserted successfully!
+tag no: 106241393972 - inserted successfully!
+tag no: 106241393961 - inserted successfully!
+tag no: 106241394075 - inserted successfully!
+tag no: 106241394064 - inserted successfully!
+tag no: 106241394053 - inserted successfully!
+tag no: 106241394042 - inserted successfully!
+tag no: 106241394020 - inserted successfully!
+tag no: 106241394031 - inserted successfully!
+tag no: 106241393857 - inserted successfully!
+tag no: 106241394111 - inserted successfully!
+tag no: 106241394122 - inserted successfully!

@@ -1,0 +1,135 @@
+tag no: 106236099151 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366076, Book No:3661, Tag No:106236099151, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099173 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366077, Book No:3661, Tag No:106236099173, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099184 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366078, Book No:3661, Tag No:106236099184, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099207 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366079, Book No:3661, Tag No:106236099207, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099162 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366080, Book No:3661, Tag No:106236099162, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099218 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366081, Book No:3661, Tag No:106236099218, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099220 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366082, Book No:3661, Tag No:106236099220, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099958 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366083, Book No:3661, Tag No:106236099958, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099470 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366084, Book No:3661, Tag No:106236099470, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099481 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366085, Book No:3661, Tag No:106236099481, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099377 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366086, Book No:3661, Tag No:106236099377, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099492 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366087, Book No:3661, Tag No:106236099492, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099231 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366088, Book No:3661, Tag No:106236099231, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099641 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366089, Book No:3661, Tag No:106236099641, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099435 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366090, Book No:3661, Tag No:106236099435, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099413 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366091, Book No:3661, Tag No:106236099413, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099275 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366092, Book No:3661, Tag No:106236099275, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099708 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366093, Book No:3661, Tag No:106236099708, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099743 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366094, Book No:3661, Tag No:106236099743, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099878 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366095, Book No:3661, Tag No:106236099878, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099710 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366096, Book No:3661, Tag No:106236099710, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099754 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366097, Book No:3661, Tag No:106236099754, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099765 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366098, Book No:3661, Tag No:106236099765, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099880 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366099, Book No:3661, Tag No:106236099880, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106236099253 - incorrect data filled in csv row!
+Doctor:136, Receipt No:5123945, Certificate No:366100, Book No:3661, Tag No:106236099253, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241302912 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365497, Book No:3655, Tag No:106241302912, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241302923 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365498, Book No:3655, Tag No:106241302923, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241302934 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365499, Book No:3655, Tag No:106241302934, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241302956 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365500, Book No:3655, Tag No:106241302956, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303117 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365885, Book No:3659, Tag No:106241303117, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303072 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365886, Book No:3659, Tag No:106241303072, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303083 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365887, Book No:3659, Tag No:106241303083, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303106 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365888, Book No:3659, Tag No:106241303106, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303050 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365889, Book No:3659, Tag No:106241303050, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303141 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365890, Book No:3659, Tag No:106241303141, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303094 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365891, Book No:3659, Tag No:106241303094, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303152 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365892, Book No:3659, Tag No:106241303152, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241302980 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365893, Book No:3659, Tag No:106241302980, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303061 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365894, Book No:3659, Tag No:106241303061, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303128 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365895, Book No:3659, Tag No:106241303128, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303642 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365896, Book No:3659, Tag No:106241303642, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303356 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365897, Book No:3659, Tag No:106241303356, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303620 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365898, Book No:3659, Tag No:106241303620, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303824 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365899, Book No:3659, Tag No:106241303824, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+
+tag no: 106241303664 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123956, Certificate No:365900, Book No:3659, Tag No:106241303664, Inward Date1970-01-01 11:52:03, Agent:39, Sex:1, Transfer:
+

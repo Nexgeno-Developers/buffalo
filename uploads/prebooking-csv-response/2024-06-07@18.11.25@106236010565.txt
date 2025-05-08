@@ -1,0 +1,44 @@
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no: 106236010565 - inserted successfully!
+tag no: 106236010598 - inserted successfully!
+tag no: 106236010576 - inserted successfully!
+tag no: 106236010714 - inserted successfully!
+tag no: 106236010725 - inserted successfully!
+tag no: 106236010678 - inserted successfully!
+tag no: 106236010667 - inserted successfully!
+tag no: 106236010474 - inserted successfully!
+tag no: 106236010680 - inserted successfully!
+tag no: 106236010554 - inserted successfully!
+tag no: 106236010645 - inserted successfully!
+tag no: 106236010703 - inserted successfully!
+tag no: 106236010736 - inserted successfully!
+tag no: 106236010543 - inserted successfully!
+tag no: 106236010601 - inserted successfully!
+tag no: 106236010612 - inserted successfully!
+tag no: 106236010634 - inserted successfully!
+tag no: 106236010623 - inserted successfully!
+tag no: 106236010587 - inserted successfully!
+tag no: 106236010372 - inserted successfully!

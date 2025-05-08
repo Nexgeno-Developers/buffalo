@@ -1,0 +1,34 @@
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no: 106237013356 - inserted successfully!
+tag no: 106237013573 - inserted successfully!
+tag no: 106237013711 - inserted successfully!
+tag no: 106237013551 - inserted successfully!
+tag no: 106237013700 - inserted successfully!
+tag no: 106237013697 - inserted successfully!
+tag no: 106237013686 - inserted successfully!
+tag no: 106237013675 - inserted successfully!
+tag no: 106237013733 - inserted successfully!
+tag no: 106237013458 - inserted successfully!
+tag no: 106237013584 - inserted successfully!
+tag no: 106237013664 - inserted successfully!
+tag no: 106237013562 - inserted successfully!
+tag no: 106237622134 - inserted successfully!
+tag no: 106237013345 - inserted successfully!
+tag no: 106237013334 - inserted successfully!
+tag no: 106237013425 - inserted successfully!
+tag no: 106237013505 - inserted successfully!
+tag no: 106237621940 - inserted successfully!
+tag no: 106237618915 - inserted successfully!
+tag no: 106237618961 - inserted successfully!
+tag no: 106237013210 - inserted successfully!
+tag no: 106237013414 - inserted successfully!
+tag no: 106237013403 - inserted successfully!
+tag no: 106237013221 - inserted successfully!

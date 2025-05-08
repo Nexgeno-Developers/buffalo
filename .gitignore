@@ -1,0 +1,33 @@
+# Ignore .htaccess
+.htaccess
+.htaccess.*
+
+# Ignore upload directories
+/uploads/biometric_excel_files/
+/uploads/csv_file/
+/uploads/users/
+/uploads/vyapari_photo/
+
+
+# Ignore all files in uploads/users
+uploads/users/*
+
+# But do not ignore placeholder.jpg
+!uploads/users/placeholder.jpg
+
+# Ignore CI session files
+ci_sessions/
+/ci_sessions/
+
+# Ignore all .lock and .zip files
+*.lock
+*.zip
+*.xlsx
+*.xls
+*.sql
+
+error_log
+/application/logs
+/application/third_party
+/application/libraries/
+

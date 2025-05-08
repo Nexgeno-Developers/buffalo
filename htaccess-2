@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+
+#order deny,allow
+#deny from all
+#allow from 110.172.23.116
+#allow from 103.123.224.151
+#allow from 103.179.195.40
+#allow from 103.179.195.15
+#allow from 103.175.61.38
+#allow from 182.57.166.140
+#allow from 2401:4900:5092:c817:b9b1:c66c:333a:1f5e
+
+
+
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddType application/x-httpd-ea-php74 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,133 @@
+tag no: 106242247974 - insertion failed - duplicate certificate number: 362446!
+Doctor:136, Receipt No:5123633, Certificate No:362446, Book No:3625, Tag No:106242247974, Inward Date2024-12-06 18:26:54, Agent:38, Sex:2, Transfer:0
+
+tag no: 106242248374 - insertion failed - duplicate certificate number: 362447!
+Doctor:136, Receipt No:5123633, Certificate No:362447, Book No:3625, Tag No:106242248374, Inward Date2024-12-06 18:26:54, Agent:38, Sex:2, Transfer:0
+
+tag no: 106242247963 - insertion failed - duplicate certificate number: 362448!
+Doctor:136, Receipt No:5123633, Certificate No:362448, Book No:3625, Tag No:106242247963, Inward Date2024-12-06 18:26:54, Agent:38, Sex:2, Transfer:0
+
+tag no: 106242247985 - insertion failed - duplicate certificate number: 362449!
+Doctor:136, Receipt No:5123633, Certificate No:362449, Book No:3625, Tag No:106242247985, Inward Date2024-12-06 18:26:54, Agent:38, Sex:2, Transfer:0
+
+tag no: 106236172622 - inserted successfully!
+tag no: 106241393414 - inserted successfully!
+tag no: 106236172507 - inserted successfully!
+tag no: 106236172690 - inserted successfully!
+tag no: 106241393403 - inserted successfully!
+tag no: 106236172688 - inserted successfully!
+tag no: 106236172757 - inserted successfully!
+tag no: 106236172746 - inserted successfully!
+tag no: 106236172451 - inserted successfully!
+tag no: 106236172440 - inserted successfully!
+tag no: 106236172438 - inserted successfully!
+tag no: 106236172427 - inserted successfully!
+tag no: 106236172416 - inserted successfully!
+tag no: 106236172405 - inserted successfully!
+tag no: 106241393391 - inserted successfully!
+tag no: 106236172677 - inserted successfully!
+tag no: 106236172735 - inserted successfully!
+tag no: 106236172666 - inserted successfully!
+tag no: 106241393380 - inserted successfully!
+tag no: 106241393367 - inserted successfully!
+tag no: 106241393378 - inserted successfully!
+tag no: 106241393482 - inserted successfully!
+tag no: 106241393493 - inserted successfully!
+tag no: 106236172724 - inserted successfully!
+tag no: 106236172702 - inserted successfully!
+tag no: 106237774195 - inserted successfully!
+tag no: 106237774184 - inserted successfully!
+tag no: 106237774300 - inserted successfully!
+tag no: 106237774492 - inserted successfully!
+tag no: 106237774481 - inserted successfully!
+tag no: 106237774504 - inserted successfully!
+tag no: 106237774515 - inserted successfully!
+tag no: 106237774435 - inserted successfully!
+tag no: 106237774413 - inserted successfully!
+tag no: 106237774470 - inserted successfully!
+tag no: 106237774311 - inserted successfully!
+tag no: 106237774322 - inserted successfully!
+tag no: 106237774457 - inserted successfully!
+tag no: 106237774264 - inserted successfully!
+tag no: 106237774275 - inserted successfully!
+tag no: 106237774218 - inserted successfully!
+tag no: 106237774105 - inserted successfully!
+tag no: 106237774207 - inserted successfully!
+tag no: 106237774468 - inserted successfully!
+tag no: 106237774333 - inserted successfully!
+tag no: 106237773886 - inserted successfully!
+tag no: 106237774344 - inserted successfully!
+tag no: 106237774116 - inserted successfully!
+tag no: 106241394736 - inserted successfully!
+tag no: 106241394714 - inserted successfully!
+tag no: 106237776283 - inserted successfully!
+tag no: 106237776306 - inserted successfully!
+tag no: 106237776317 - inserted successfully!
+tag no: 106237776090 - inserted successfully!
+tag no: 106237776328 - inserted successfully!
+tag no: 106237776226 - inserted successfully!
+tag no: 106237776261 - inserted successfully!
+tag no: 106237776250 - inserted successfully!
+tag no: 106237776248 - inserted successfully!
+tag no: 106237776272 - inserted successfully!
+tag no: 106237776113 - inserted successfully!
+tag no: 106237776330 - inserted successfully!
+tag no: 106237776102 - inserted successfully!
+tag no: 106237775655 - inserted successfully!
+tag no: 106237776135 - inserted successfully!
+tag no: 106237776124 - inserted successfully!
+tag no: 106237775996 - inserted successfully!
+tag no: 106237776088 - inserted successfully!
+tag no: 106237776146 - inserted successfully!
+tag no: 106237776022 - inserted successfully!
+tag no: 106237776066 - inserted successfully!
+tag no: 106237776077 - inserted successfully!
+tag no: 106237776044 - inserted successfully!
+tag no: 106237776033 - inserted successfully!
+tag no: 106237775520 - inserted successfully!
+tag no: 106236209185 - inserted successfully!
+tag no: 106236208694 - inserted successfully!
+tag no: 106236208706 - inserted successfully!
+tag no: 106236208752 - inserted successfully!
+tag no: 106236208763 - inserted successfully!
+tag no: 106236209026 - inserted successfully!
+tag no: 106236209152 - inserted successfully!
+tag no: 106236209174 - inserted successfully!
+tag no: 106236209208 - inserted successfully!
+tag no: 106236209094 - inserted successfully!
+tag no: 106236209163 - inserted successfully!
+tag no: 106236209221 - inserted successfully!
+tag no: 106236209083 - inserted successfully!
+tag no: 106236209117 - inserted successfully!
+tag no: 106236208535 - inserted successfully!
+tag no: 106236208557 - inserted successfully!
+tag no: 106236208568 - inserted successfully!
+tag no: 106236208570 - inserted successfully!
+tag no: 106236208490 - inserted successfully!
+tag no: 106236208581 - inserted successfully!
+tag no: 106236208502 - inserted successfully!
+tag no: 106236208477 - inserted successfully!
+tag no: 106236208956 - inserted successfully!
+tag no: 106236208524 - inserted successfully!
+tag no: 106236208513 - inserted successfully!
+tag no: 106242248066 - inserted successfully!
+tag no: 106242248088 - inserted successfully!
+tag no: 106242247690 - inserted successfully!
+tag no: 106242247781 - inserted successfully!
+tag no: 106242247746 - inserted successfully!
+tag no: 106242247757 - inserted successfully!
+tag no: 106242247837 - inserted successfully!
+tag no: 106242247850 - inserted successfully!
+tag no: 106242247848 - inserted successfully!
+tag no: 106242248055 - inserted successfully!
+tag no: 106242247826 - inserted successfully!
+tag no: 106242247804 - inserted successfully!
+tag no: 106242247815 - inserted successfully!
+tag no: 106242247917 - inserted successfully!
+tag no: 106242247906 - inserted successfully!
+tag no: 106242247894 - inserted successfully!
+tag no: 106242247883 - inserted successfully!
+tag no: 106242247861 - inserted successfully!
+tag no: 106242247770 - inserted successfully!
+tag no: 106242247768 - inserted successfully!
+tag no: 106242247872 - inserted successfully!

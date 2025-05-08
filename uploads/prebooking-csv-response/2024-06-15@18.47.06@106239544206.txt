@@ -1,0 +1,85 @@
+tag no: 106236834584 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368061, Book No:3681, Tag No:106236834584, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834460 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368062, Book No:3681, Tag No:106236834460, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834458 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368063, Book No:3681, Tag No:106236834458, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834595 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368064, Book No:3681, Tag No:106236834595, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834675 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368065, Book No:3681, Tag No:106236834675, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834697 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368066, Book No:3681, Tag No:106236834697, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834664 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368067, Book No:3681, Tag No:106236834664, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834686 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368068, Book No:3681, Tag No:106236834686, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834766 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368069, Book No:3681, Tag No:106236834766, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834744 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:368070, Book No:3681, Tag No:106236834744, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834755 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367776, Book No:3678, Tag No:106236834755, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834824 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367777, Book No:3678, Tag No:106236834824, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236835144 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367778, Book No:3678, Tag No:106236835144, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834961 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367779, Book No:3678, Tag No:106236834961, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834857 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367780, Book No:3678, Tag No:106236834857, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834607 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367781, Book No:3678, Tag No:106236834607, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834471 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367782, Book No:3678, Tag No:106236834471, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834493 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367783, Book No:3678, Tag No:106236834493, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834527 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367784, Book No:3678, Tag No:106236834527, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106236834482 - incorrect data filled in csv row!
+Doctor:126, Receipt No:5123777, Certificate No:367785, Book No:3678, Tag No:106236834482, Inward Date1970-01-01 18:47:06, Agent:, Sex:2, Transfer:0
+
+tag no: 106239544206 - inserted successfully!
+tag no: 106239544148 - inserted successfully!
+tag no: 106239544194 - inserted successfully!
+tag no: 106239544183 - inserted successfully!
+tag no: 106239544172 - inserted successfully!
+tag no: 106239544013 - inserted successfully!
+tag no: 106239544081 - inserted successfully!
+tag no: 106239543943 - inserted successfully!
+tag no: 106239543932 - inserted successfully!
+tag no: 106239543965 - inserted successfully!
+tag no: 106239543954 - inserted successfully!
+tag no: 106239544035 - inserted successfully!
+tag no: 106239544480 - inserted successfully!
+tag no: 106239543772 - inserted successfully!
+tag no: 106239543783 - inserted successfully!
+tag no: 106239543794 - inserted successfully!
+tag no: 106239543761 - inserted successfully!
+tag no: 106239543830 - inserted successfully!
+tag no: 106239543806 - inserted successfully!
+tag no: 106239543828 - inserted successfully!
+tag no: 106239543657 - inserted successfully!
+tag no: 106239543681 - inserted successfully!
+tag no: 106239543670 - inserted successfully!
+tag no: 106239543841 - inserted successfully!
+tag no: 106239543668 - inserted successfully!

@@ -1,0 +1,58 @@
+tag no: 105785206706 - insertion failed - duplicate certificate number: 354901!
+Doctor:134, Receipt No:5123365, Certificate No:354901, Book No:3550, Tag No:105785206706, Inward Date2024-01-07 18:58:35, Agent:39, Sex:1, Transfer:1
+
+tag no: 106237621995 - insertion failed - duplicate certificate number: 354902!
+Doctor:134, Receipt No:5123365, Certificate No:354902, Book No:3550, Tag No:106237621995, Inward Date2024-01-07 18:58:35, Agent:39, Sex:1, Transfer:0
+
+tag no: 106237622282 - insertion failed - duplicate certificate number: 354903!
+Doctor:134, Receipt No:5123365, Certificate No:354903, Book No:3550, Tag No:106237622282, Inward Date2024-01-07 18:58:35, Agent:41, Sex:1, Transfer:0
+
+tag no: 106237622260 - insertion failed - duplicate certificate number: 354904!
+Doctor:134, Receipt No:5123365, Certificate No:354904, Book No:3550, Tag No:106237622260, Inward Date2024-01-07 18:58:35, Agent:41, Sex:1, Transfer:0
+
+tag no: 106237622054 - insertion failed - duplicate certificate number: 354905!
+Doctor:134, Receipt No:5123365, Certificate No:354905, Book No:3550, Tag No:106237622054, Inward Date2024-01-07 18:58:35, Agent:41, Sex:1, Transfer:0
+
+tag no: 106237622271 - insertion failed - duplicate certificate number: 354906!
+Doctor:134, Receipt No:5123365, Certificate No:354906, Book No:3550, Tag No:106237622271, Inward Date2024-01-07 18:58:35, Agent:41, Sex:1, Transfer:0
+
+tag no: 106237621858 - insertion failed - duplicate certificate number: 354907!
+Doctor:134, Receipt No:5123365, Certificate No:354907, Book No:3550, Tag No:106237621858, Inward Date2024-01-07 18:58:35, Agent:41, Sex:1, Transfer:0
+
+tag no: 106237621905 - insertion failed - duplicate certificate number: 354908!
+Doctor:134, Receipt No:5123365, Certificate No:354908, Book No:3550, Tag No:106237621905, Inward Date2024-01-07 18:58:35, Agent:41, Sex:1, Transfer:0
+
+tag no: 106237622236 - insertion failed - duplicate certificate number: 354909!
+Doctor:134, Receipt No:5123365, Certificate No:354909, Book No:3550, Tag No:106237622236, Inward Date2024-01-07 18:58:35, Agent:41, Sex:1, Transfer:0
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no: 106237622191 - inserted successfully!
+tag no: 105785201378 - inserted successfully!
+tag no: 106266965578 - inserted successfully!
+tag no: 106237621962 - inserted successfully!
+tag no: 106237621951 - inserted successfully!
+tag no: 106237621893 - inserted successfully!
+tag no: 106237622180 - inserted successfully!
+tag no: 106237622247 - inserted successfully!
+tag no: 106237622203 - inserted successfully!
+tag no: 106237622338 - inserted successfully!
+tag no: 106237622420 - inserted successfully!
+tag no: 106237622418 - inserted successfully!
+tag no: 106237622293 - inserted successfully!
+tag no: 106266965580 - inserted successfully!
+tag no: 106237622305 - inserted successfully!
+tag no: 106266965658 - inserted successfully!

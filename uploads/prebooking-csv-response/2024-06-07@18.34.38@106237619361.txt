@@ -1,0 +1,84 @@
+tag no: 106237619361 - insertion failed - duplicate certificate number: 355207!
+Doctor:131, Receipt No:5123359, Certificate No:355207, Book No:3553, Tag No:106237619361, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237618675 - insertion failed - duplicate certificate number: 355208!
+Doctor:131, Receipt No:5123359, Certificate No:355208, Book No:3553, Tag No:106237618675, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237619565 - insertion failed - duplicate certificate number: 355209!
+Doctor:131, Receipt No:5123359, Certificate No:355209, Book No:3553, Tag No:106237619565, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237619406 - insertion failed - duplicate certificate number: 355210!
+Doctor:131, Receipt No:5123359, Certificate No:355210, Book No:3553, Tag No:106237619406, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237619177 - insertion failed - duplicate certificate number: 355211!
+Doctor:131, Receipt No:5123359, Certificate No:355211, Book No:3553, Tag No:106237619177, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237622123 - insertion failed - duplicate certificate number: 355212!
+Doctor:131, Receipt No:5123359, Certificate No:355212, Book No:3553, Tag No:106237622123, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237619576 - insertion failed - duplicate certificate number: 355213!
+Doctor:131, Receipt No:5123359, Certificate No:355213, Book No:3553, Tag No:106237619576, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237618620 - insertion failed - duplicate certificate number: 355214!
+Doctor:131, Receipt No:5123359, Certificate No:355214, Book No:3553, Tag No:106237618620, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237618642 - insertion failed - duplicate certificate number: 355215!
+Doctor:131, Receipt No:5123359, Certificate No:355215, Book No:3553, Tag No:106237618642, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no: 106237621825 - insertion failed - duplicate certificate number: 355216!
+Doctor:131, Receipt No:5123359, Certificate No:355216, Book No:3553, Tag No:106237621825, Inward Date2024-01-07 18:34:38, Agent:42, Sex:1, Transfer:0
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
+tag no:  - incorrect data filled in csv row!
+Doctor:, Receipt No:, Certificate No:, Book No:, Tag No:, Inward Date, Agent:, Sex:, Transfer:
+
