@@ -32,4 +32,7 @@ error_log
 /application/logs
 /application/third_party
 /application/libraries/
+/application/config/database.php
+
+/index.php
 
