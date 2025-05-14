@@ -1,4 +1,9 @@
-
+<style>
+a.btn-sm {
+    font-size: 12px;
+    padding: 2px 6px;
+}
+</style>
 <!-- start page title -->
 <div class="row ">
     <div class="col-xl-12">

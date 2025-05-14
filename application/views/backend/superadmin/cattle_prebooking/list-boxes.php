@@ -1,4 +1,10 @@
-        <div class="dashboard_box">
+<style>
+    .dashboard_box .card-stats .card-header.card-header-icon img {
+    padding: 6px;
+}
+</style>       
+       
+       <div class="dashboard_box">
             
             <div class="row">
             
@@ -13,11 +19,11 @@
                 ?>
                 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div class="card card-stats two gradian_bg1">
+                    <div class="card card-stats two">
                          <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">
                             <div class="card-icon">
-                                <img src="../assets/backend/images/cattle_icon1.png" alt="">
+                                <img src="../assets/backend/images/arrow_icon1.svg" alt="">
                             </div>
                             <p class="card-category"><?php echo get_phrase('Buffalo Reg.'); ?></p>
                             <h3 class="card-title"> 
@@ -39,12 +45,12 @@
                 
                 
                 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div class="card card-stats two gradian_bg2">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1">
+                    <div class="card card-stats four">
                         <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">
                             <div class="card-icon">
-                                <img src="../assets/backend/images/cattle_icon3.png" alt="">
+                                <img src="../assets/backend/images/arrow_icon11.svg" alt="">
                                 
                             </div>
                             <p class="card-category"><?php echo get_phrase('Male Buffalo'); ?></p>
@@ -64,13 +70,13 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div class="card card-stats one gradian_bg3">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1">
+                    <div class="card card-stats five">
                         <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">
                             <div class="card-icon">
                                 
-                                <img src="../assets/backend/images/female_icon.png" alt="">
+                                <img src="../assets/backend/images/arrow_icon12.svg">
                             </div>
                             <p class="card-category"><?php echo get_phrase('Female Buffalo'); ?></p>
                             <h3 class="card-title"> 
@@ -90,12 +96,12 @@
                 </div>
                 
                 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div class="card card-stats one gradian_bg6">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1">
+                    <div class="card card-stats one">
                         <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">
                             <div class="card-icon">
-                               <img src="../assets/backend/images/transfer_icon.png" alt="">
+                               <img src="../assets/backend/images/arrow_icon13.svg" alt="" >
                             </div>
                             <p class="card-category"><?php echo get_phrase('Transferred'); ?></p>
                             <h3 class="card-title"> 
@@ -114,7 +120,7 @@
                     </div>
                 </div>                
                 
-                <?/*<div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <?php /*<div class="col-lg-4 col-md-4 col-sm-4 col-6">
                     <div class="card card-stats one gradian_bg4">
                         <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">

@@ -33,6 +33,7 @@ error_log
 /application/third_party
 /application/libraries/
 /application/config/database.php
+/application/config/config.php
 
 /index.php
 

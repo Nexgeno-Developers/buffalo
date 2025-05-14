@@ -12,12 +12,8 @@
     top: 65px;
 }
 
-.dashboard_box .card-header {
-    padding: 20px 10px 10px 10px;
-}
-.dashboard_box .card-footer {
-    padding-left: 62px;
-} 
+
+
 .dashboard_box .col-lg-3.col-md-6.col-sm-6.col-6:nth-child(odd) {
     padding-right: 7px;
 }
@@ -50,12 +46,13 @@
 }
 }
 
-.view_report
-{
-        height: 141px;
+.view_report {
     text-align: center;
-    padding-top: 40px;
-}
+    display: flex;
+    height: 92%;
+    align-items: center;
+    justify-content: center;
+
 
 
 .view_report p
@@ -70,7 +67,7 @@
   <div class="col-xl-12 breadcrumes">
     <div class="card">
       <div class="card-body">
-        <h4 class="page-title"> <i class="mdi mdi-view-dashboard title_icon"></i> <?php echo get_phrase('Buffalo Dashboard'); ?> </h4>
+        <h4 class="page-title"> <i class="mdi mdi-home title_icon"></i> <?php echo get_phrase('Buffalo Dashboard'); ?> </h4>
       </div> <!-- end card body-->
     </div> <!-- end card -->
   </div><!-- end col-->
@@ -82,12 +79,12 @@
 <div class="dashboard_box">
 <div class="row ">
     
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                 <div class="card card-stats two">
                      <a class="dashbox" href="reports/inward">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/square-down_icon.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon1.svg" alt="">
                         </div>
                         <p class="card-category"><?php echo get_phrase('Total Buffalo Inward'); ?></p>
                         <h3 class="card-title"> 
@@ -106,12 +103,12 @@
             </div>
             
                 
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1">
                 <div class="card card-stats four">
                     <a class="dashbox" href="reports/outward">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/square-up-icon.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon3.svg" alt="">
                         </div>
                         <p class="card-category"><?php echo get_phrase('Total Buffalo Outward'); ?></p>
                         <h3 class="card-title"> 
@@ -130,13 +127,56 @@
                 </div>
             </div>
            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1">
+                <div class="card card-stats five">
+                    <a class="dashbox" href="reports/blocked">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon padd5">
+                            <img src="../assets/backend/images/arrow_icon7.svg" alt="">
+                        </div>
+                        <p class="card-category"><?php echo get_phrase('Total Balanced Goat'); ?>  </p>
+                        <h3 class="card-title"> 
+                        1234
+                        </h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="fa fa-clock-o"></i> Just Updated
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                <div class="card card-stats three">
+                    <a class="dashbox" href="reports/blocked">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <img src="../assets/backend/images/arrow_icon8.svg" alt="">
+                        </div>
+                        <p class="card-category"><?php echo get_phrase('Pass Blocked'); ?>  </p>
+                        <h3 class="card-title"> 
+                        <?php
+                          echo $block;
+                          ?>
+                        </h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="fa fa-clock-o"></i> Just Updated
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
            
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1">
                 <div class="card card-stats one">
                      <a class="dashbox" href="manage_vyapari"> 
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/wyapari_icon.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon9.svg" alt="">
                         </div>
                         <p class="card-category"><?php echo get_phrase('Total Vyapari Registered'); ?> </p>
                         <h3 class="card-title"> 
@@ -155,18 +195,20 @@
             </div>
             
             
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="card card-stats three">
+          
+
+            
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1">
+                <div class="card card-stats six">
                     <a class="dashbox" href="reports/blocked">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/block_icons.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon10.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Pass Blocked'); ?>  </p>
+                        <p class="card-category"><?php echo get_phrase('Total Space Remaining'); ?>  </p>
                         <h3 class="card-title"> 
-                        <?php
-                          echo $block;
-                          ?>
+                        1234
                         </h3>
                     </div>
                     <div class="card-footer">
@@ -181,13 +223,13 @@
             <!--<h5 class="text-danger padding-left: 10px;">Under maintainance - Below data may be wrong</h5>-->
            
         
-     <div class="col-md-6">
+     <div class="col-md-12">
         <div class="chart_box">
         <canvas id="myChart"></canvas> 
     </div>
     </div>
     
-    <div class="col-md-6 mb-3 mt30">
+    <div class="col-md-12 mb-3 mt30">
         <div class="chart_box">
             <p>Buffalo Inward and Outward Daily Report</p>
             <table class="table table-striped dt-responsive nowrap">
@@ -213,11 +255,11 @@
     
     <div class="col-md-4">
         
-        <div class="card card-stats five">
+        <div class="card card-stats two">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/sell_icons.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon14.svg" alt="">
                         </div>
                         <p class="card-category"><?php echo get_phrase('Total Selling - Qurbani'); ?>  </p>
                         <h3 class="card-title"> 
@@ -275,11 +317,11 @@
     
     <div class="col-md-4">
         
-         <div class="card card-stats five">
+         <div class="card card-stats four">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/kttu_icons.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon16.svg" alt="">
                         </div>
                         <p class="card-category"><?php echo get_phrase('Total Slaughter - Kattu'); ?>  </p>
                         <h3 class="card-title"> 
@@ -337,7 +379,7 @@
 
    <div class="col-md-4">
         
-         <div class="card card-stats five view_report">
+         <div class="card card-stats one view_report">
                     <a class="dashbox" href="<?php echo site_url($controller.'/reports/daily-report'); ?>">
                     <div class="card-header card-header-warning card-header-icon">
                         

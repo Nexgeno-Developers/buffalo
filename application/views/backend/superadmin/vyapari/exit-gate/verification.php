@@ -6,7 +6,7 @@
 {
     position: absolute;
     right: 0;
-    top: 6px; 
+    top: -4px; 
 }
    
 @media(max-width:767px)
@@ -36,7 +36,7 @@
         </h4>
         
         <div class="card-body exit_button backbutton_css">
-<a class="btn btn-sm btn-success" href="<?php echo base_url('superadmin/dashboard'); ?>"><i class="mdi mdi-arrow-left"></i> Back to Dashboard</a>
+<a class="btn btn-sm btn-secondary" href="<?php echo base_url('superadmin/dashboard'); ?>"><i class="mdi mdi-arrow-left"></i> Back to Dashboard</a>
 </div>
 
 

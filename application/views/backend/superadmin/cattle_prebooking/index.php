@@ -27,7 +27,7 @@
             <button type="button" class="btn btn-outline-primary btn-rounded alignToTitle mx-2" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/create2'); ?>', '<?php echo get_phrase('Registration'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Register'); ?></button>
             <?php //if($this->session->userdata('role_type') == 'superadmin'){ ?>
             <button type="button" class="btn btn-outline-primary btn-rounded alignToTitle mx-2" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/import-prebooking'); ?>', '<?php echo get_phrase('Import'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Import Prebooking data'); ?></button>
-            <?/* <!--<button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/create'); ?>', '<?php echo get_phrase('Registration'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Register'); ?></button>--> */ ?>
+            <?php /* <!--<button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/create'); ?>', '<?php echo get_phrase('Registration'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Register'); ?></button>--> */ ?>
             <?php //} ?>
             <?php } ?>
         </h4>
