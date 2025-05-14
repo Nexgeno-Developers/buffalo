@@ -696,8 +696,25 @@ span.text-nowrap {
 
 .block-rep1 .dt-buttons.btn-group {
   position: absolute;
-  top: 100px;
-  right: 21px;
+  top: 121px;
+  right: 15px;
+}
+
+.btn-danger {
+  box-shadow: none !important;
+  border-radius: 50px;
+  background: #EB6464 !important;
+}
+
+.btn-success {
+  box-shadow: none !important;
+  border-radius: 50px;
+  background: #009688 !important;
+}
+
+.btn-success {
+  box-shadow: none;
+  border-radius: 50px;
 }
 
 .repot-btn1 {
@@ -1037,6 +1054,11 @@ body .left-side-menu-detached {
 .left-side-menu-detached .side-nav-light .side-nav-second-level li.active>a,
 .left-side-menu-detached .side-nav-light .side-nav-third-level li.active>a {
   color: #71357c;
+  font-weight: 700;
+}
+
+.repot-btn1 {
+  padding-left: 0;
 }
 
 .left-side-menu-detached .side-nav-light .side-nav-second-level li a:focus,
@@ -1310,7 +1332,7 @@ button.btn.btn-outline-success.btn-rounded.alignToTitle.pass {
 .buttons-csv {
   border-radius: 50px;
   font-weight: 700;
-  padding: 6px 30px;
+  padding: 8px 20px;
 }
 
 .left-side-menu-detached .side-nav-light .side-nav-link {
