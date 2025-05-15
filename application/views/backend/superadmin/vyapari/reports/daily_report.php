@@ -44,7 +44,7 @@
             </div>
             
             
-            <div class="col-md-6">
+            <div class="col-md-6 pl-md-1">
                 
                 <div class="chart_box"> 
                 

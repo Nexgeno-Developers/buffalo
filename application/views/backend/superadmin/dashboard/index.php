@@ -2,14 +2,14 @@
 <style>
     .sell_position1 {
     position: absolute;
-    right: 30px;
-    top: 44px;
+    right: 25px;
+    top: 63px;
 }
 
 .sell_position2 {
     position: absolute;
-    right: 30px;
-    top: 65px;
+    right: 25px;
+    top: 85px;
 }
 
 
@@ -194,67 +194,9 @@
                 </div>
             </div>
             
-            
-          
 
-            
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1">
-                <div class="card card-stats six">
-                    <a class="dashbox" href="reports/blocked">
-                    <div class="card-header card-header-warning card-header-icon">
-                        <div class="card-icon">
-                            <img src="../assets/backend/images/arrow_icon10.svg" alt="">
-                        </div>
-                        <p class="card-category"><?php echo get_phrase('Total Space Remaining'); ?>  </p>
-                        <h3 class="card-title"> 
-                        1234
-                        </h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="fa fa-clock-o"></i> Just Updated
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-            
-            <!--<h5 class="text-danger padding-left: 10px;">Under maintainance - Below data may be wrong</h5>-->
-           
-        
-     <div class="col-md-12">
-        <div class="chart_box">
-        <canvas id="myChart"></canvas> 
-    </div>
-    </div>
-    
-    <div class="col-md-12 mb-3 mt30">
-        <div class="chart_box">
-            <p>Buffalo Inward and Outward Daily Report</p>
-            <table class="table table-striped dt-responsive nowrap">
-            	<thead class="chart-table-header">
-            		<tr>
-            		    <th>Sr. No.</th>
-            			<th>Date</th>
-            			<th>Inward</th>
-            			<th>Outward</th>
-            		</tr>
-            	</thead>
-            	<tbody class="chart-table-body" id="chart-table-body">
-            	</tbody>
-            </table>  
-            <?php 
-                // $startDate = new DateTime('2024-06-05');
-                // $endDate   = new DateTime('2024-06-20');
-                // $endDate   = $endDate->modify('+1 day'); // Include end date in the loop
-                // $period    = new DatePeriod($startDate, new DateInterval('P1D'), $endDate);
-            ?>
-        </div>
-    </div>
-    
-    <div class="col-md-4">
-        
+            <div class="col-md-4 pl-md-1">
         <div class="card card-stats two">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
@@ -377,9 +319,9 @@
     </div>
 
 
-   <div class="col-md-4">
+   <div class="col-md-4 pl-md-1">
         
-         <div class="card card-stats one view_report">
+         <div class="card card-stats three view_report">
                     <a class="dashbox" href="<?php echo site_url($controller.'/reports/daily-report'); ?>">
                     <div class="card-header card-header-warning card-header-icon">
                         
@@ -395,6 +337,41 @@
                 </div>
             
     </div>
+            
+            <!--<h5 class="text-danger padding-left: 10px;">Under maintainance - Below data may be wrong</h5>-->
+           
+        
+     <div class="col-md-12">
+        <div class="chart_box">
+        <canvas id="myChart"></canvas> 
+    </div>
+    </div>
+    
+    <div class="col-md-12 mb-3 mt30">
+        <div class="chart_box">
+            <p>Buffalo Inward and Outward Daily Report</p>
+            <table class="table table-striped dt-responsive nowrap">
+            	<thead class="chart-table-header">
+            		<tr>
+            		    <th>Sr. No.</th>
+            			<th>Date</th>
+            			<th>Inward</th>
+            			<th>Outward</th>
+            		</tr>
+            	</thead>
+            	<tbody class="chart-table-body" id="chart-table-body">
+            	</tbody>
+            </table>  
+            <?php 
+                // $startDate = new DateTime('2024-06-05');
+                // $endDate   = new DateTime('2024-06-20');
+                // $endDate   = $endDate->modify('+1 day'); // Include end date in the loop
+                // $period    = new DatePeriod($startDate, new DateInterval('P1D'), $endDate);
+            ?>
+        </div>
+    </div>
+    
+    
     
            
           <div class="col-xl-4 hidden">
