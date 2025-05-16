@@ -26,7 +26,7 @@
     <div class="card">
       <div class="card-body">
           <div class="row">
-        <div class="col-md-10 col-12">
+        <div class="col-md-9 col-12">
         <h4 class="page-title vyapdet mt-0">
             <i class="mdi mdi-book-open-page-variant title_icon"></i> <?php echo get_phrase($page_title); ?>
             <!--Allocate QR-->
@@ -35,7 +35,7 @@
         </div>
 
         <?php if(access('allocate_pass_button')){ ?>
-        <div class="col-md-2 col-6">
+        <div class="col-md-3 col-6">
             <button type="button" class="btn btn-outline-success btn-rounded alignToTitle pass" onclick="rightModal('<?php echo site_url('modal/popup/vyapari/allocate-qrcode/'.$vyapari['vyapari_id']); ?>', '<?php echo get_phrase('pass_allocate'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('add_pass'); ?></button>
         </div>
         <?php } ?>

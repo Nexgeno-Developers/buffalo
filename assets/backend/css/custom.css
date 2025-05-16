@@ -781,10 +781,6 @@ div#my_camera {}
   color: #000;
 }
 
-.btn-link {
-  font-weight: 400;
-  color: #6c757d !important;
-}
 
 .btn-link:hover {
   color: #71357C !important;
@@ -1320,10 +1316,10 @@ button.btn.btn-outline-success.btn-rounded.alignToTitle.pass {
 }
 
 .printbtn {
-  padding: 6px 30px;
+  padding: 6px 20px;
   border-radius: 50px;
   font-weight: 700 !important;
-  background: linear-gradient(124deg, #0096885e 0, #009688db 73%) !important;
+  background: #009688;
   border: 0;
   box-shadow: none;
   float: right;

@@ -137,8 +137,8 @@
                     </div>
                     
                     <div class="form-group col-md-2">
-                        <? /* <!--<label for="tag_no"><?php echo get_phrase('Old Tag No'); ?></label>-->
-                        <!--<input type="text" class="form-control" id="old_tag_no"  name = "old_tag_no[]" autocomplete="off">--> */?>
+                        <?php /* <!--<label for="tag_no"><?php echo get_phrase('Old Tag No'); ?></label>-->
+                        <!--<input type="text" class="form-control" id="old_tag_no"  name = "old_tag_no[]" autocomplete="off">--> */ ?>
                         <label for="old_tag_no"><?php echo get_phrase('transferred'); ?><span class="text-danger req"> *</span></label>
                         <select class="form-control form-select" id="old_tag_no" name="old_tag_no[]" required>
                             <option value="0" selected>No</option>
@@ -158,7 +158,7 @@
 
  
         <div class="form-group  col-md-2 mt10">
-            <button class="btn btn-block btn-primary" type="submit"><?php echo get_phrase('register'); ?></button>
+            <button class="btn btn-block btn-success" type="submit"><?php echo get_phrase('register'); ?></button>
         </div>
         
         <div class="form-group  col-md-2 mt10">

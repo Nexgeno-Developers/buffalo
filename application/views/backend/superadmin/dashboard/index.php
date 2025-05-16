@@ -194,9 +194,9 @@
                 </div>
             </div>
             
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 "></div>
 
-
-            <div class="col-md-4 pl-md-1">
+            <div class="col-md-4">
         <div class="card card-stats two">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
@@ -257,7 +257,7 @@
     </div>
     
     
-    <div class="col-md-4">
+    <div class="col-md-4 pl-md-1">
         
          <div class="card card-stats four">
                     <a class="dashbox" href="javascript:void(0)">

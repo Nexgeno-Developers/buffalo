@@ -2,7 +2,7 @@
 <audio id="danger_sound2" src="<?php echo base_url('uploads/sound/danger.wav') ?>"></audio>
 
 <!-- Footer Start -->
-<footer class="footer mt-4 text-center">
+<footer class="footer mt-4 text-center" style="display: contents;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
