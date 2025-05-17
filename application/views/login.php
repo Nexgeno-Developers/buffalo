@@ -149,6 +149,9 @@ img.lohimg {
        width: 100px;
     height: 100px;
 }
+.login-section .card-body {
+        padding-top: 0px;
+    }
 .login_main_box {
     min-height: auto;
 }
