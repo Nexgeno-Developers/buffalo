@@ -18,7 +18,7 @@
                     $sell = $this->db->select('qrcode_id')->from('app_qrcode')->where('slaughtering_type','2')->get()->num_rows();
                 ?>
                 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pddleft_0">
                     <div class="card card-stats two">
                          <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">
@@ -45,7 +45,7 @@
                 
                 
                 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1 pddright_0">
                     <div class="card card-stats four">
                         <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1 pddleft_0">
                     <div class="card card-stats five">
                         <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">
@@ -96,7 +96,7 @@
                 </div>
                 
                 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 pl-md-1 pddright_0">
                     <div class="card card-stats one">
                         <a class="dashbox" href="#">
                         <div class="card-header card-header-warning card-header-icon">

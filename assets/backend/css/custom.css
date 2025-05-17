@@ -807,12 +807,87 @@ div#my_camera {}
     padding-top: 0px !important;
   }
 
+  .dashboard_box .card.card-stats {
+    padding: 15px 10px 15px 10px !important;
+    height: 100%;
+  }
+
+  .pddleft_0 {
+    padding-right: 4px;
+    margin-bottom: 10px;
+  }
+
+  .block-rep1 .dt-buttons.btn-group {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
+
+  body .backbutton_css {
+    position: relative !important;
+    right: 0;
+    top: 0;
+    padding: 0 !important;
+  }
+
+  .exit_button .btn {
+    margin-bottom: 8px;
+  }
+
+  .block-rep .dt-buttons.btn-group {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
+
+  .btn {
+    border: 0;
+    box-shadow: none;
+    border-radius: 20px;
+    padding: 3px 5px !important;
+    font-weight: 700;
+  }
+
+  .pddright_0 {
+    padding-left: 4px;
+    margin-bottom: 10px;
+  }
+
+  .dashboard_box .card-stats .card-header .card-title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 30px !important;
+    padding-bottom: 7px !important;
+    padding-top: 5px !important;
+    margin-bottom: 0;
+  }
+
   .wrapper.in {
     padding-top: 0px !important;
   }
 
   .container-fluid {
     padding: 0px !important;
+  }
+
+  .dashboard_box .card [class*=card-header-] .card-icon {
+    float: left;
+    position: absolute;
+    right: 0px !important;
+    top: 3px !important;
+  }
+
+  body .view_report p {
+    font-size: 14px !important;
+  }
+
+  .dashboard_box .card-stats .card-header.card-header-icon img {
+    width: 20px !important;
+    height: auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 2px !important;
   }
 
   .card-body {
@@ -865,12 +940,16 @@ div#my_camera {}
     text-align: left !important;
   }
 
+  .dt-buttons.btn-group {
+    position: relative !important;
+    right: 0 !important;
+    top: 7px !important;
+  }
 
   .block-rep button.btn.btn-secondary.buttons-csv.buttons-html5.btn-sm.btn-data-export {
-    position: absolute;
-    top: 140px;
-    padding: 4px 10px !important;
-    right: -15px;
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
   }
 
   /* manage vyapari */
@@ -1189,7 +1268,7 @@ h4.page-title {
   }
 
   .dashboard_box .card.card-stats {
-    margin-bottom: 10px !important;
+    margin-bottom: 0px !important;
   }
 
   .dashboard_box .col-lg-6.col-md-6.col-sm-6.col-6:nth-child(even) {
@@ -1215,7 +1294,7 @@ h4.page-title {
     padding: 0;
     background-color: transparent !important;
     border-bottom: 0px solid #e3eaef;
-    text-align: center;
+    text-align: left;
   }
 
   .dashboard_box .card-stats .card-header .card-title {
@@ -1223,13 +1302,11 @@ h4.page-title {
   }
 
   .dashboard_box .card-footer {
-    padding: 0.45rem 1.5rem;
+    padding: 0 !important;
     background-color: #fff;
     border-top: 0px solid #e3eaef;
-    text-align: center;
+    text-align: left;
     font-size: 12px;
-    padding-bottom: 14px;
-    padding-top: 0;
   }
 
   .chart_box {

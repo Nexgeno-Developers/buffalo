@@ -28,17 +28,20 @@
             padding-right: 0;
 }
 .dashboard_box .card-header {
-    padding: 10px 10px 10px 10px;
+    padding: 0px;
 }
 .sell_position1 {
     position: relative;
     right: 0;
+    text-align: left !important;
     top: 6px;
 }
 .sell_position2 {
     position: relative;
     right: 0;
     top: 6px;
+    text-align: left !important;
+    padding-bottom:15px;
 }
 .mt30
 {
@@ -53,10 +56,11 @@
     align-items: center;
     justify-content: center;
 
-
+}
 
 .view_report p
-{font-size: 20px !important;
+{
+  font-size: 20px !important;
     font-weight: 900;
 }
 
@@ -79,7 +83,7 @@
 <div class="dashboard_box">
 <div class="row ">
     
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddleft_0">
                 <div class="card card-stats two">
                      <a class="dashbox" href="reports/inward">
                     <div class="card-header card-header-warning card-header-icon">
@@ -103,7 +107,7 @@
             </div>
             
                 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1 pddright_0">
                 <div class="card card-stats four">
                     <a class="dashbox" href="reports/outward">
                     <div class="card-header card-header-warning card-header-icon">
@@ -127,7 +131,7 @@
                 </div>
             </div>
            
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1 pddleft_0">
                 <div class="card card-stats five">
                     <a class="dashbox" href="reports/blocked">
                     <div class="card-header card-header-warning card-header-icon">
@@ -148,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddright_0">
                 <div class="card card-stats three">
                     <a class="dashbox" href="reports/blocked">
                     <div class="card-header card-header-warning card-header-icon">
@@ -171,7 +175,7 @@
                 </div>
             </div>
            
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1 pddleft_0">
                 <div class="card card-stats one">
                      <a class="dashbox" href="manage_vyapari"> 
                     <div class="card-header card-header-warning card-header-icon">
@@ -194,9 +198,9 @@
                 </div>
             </div>
             
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 "></div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 d-md-block d-none"></div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-6 pddright_0">
         <div class="card card-stats two">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
@@ -257,7 +261,7 @@
     </div>
     
     
-    <div class="col-md-4 pl-md-1">
+    <div class="col-md-4 col-6 pl-md-1 pddleft_0">
         
          <div class="card card-stats four">
                     <a class="dashbox" href="javascript:void(0)">
@@ -319,7 +323,7 @@
     </div>
 
 
-   <div class="col-md-4 pl-md-1">
+   <div class="col-md-4 pl-md-1 col-6 pddright_0">
         
          <div class="card card-stats three view_report">
                     <a class="dashbox" href="<?php echo site_url($controller.'/reports/daily-report'); ?>">
