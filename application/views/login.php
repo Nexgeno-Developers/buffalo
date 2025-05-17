@@ -207,7 +207,7 @@ img.lohimg {
              
 
                 <div class="">
-                    <a href="/"> <img class="download_img" src="<?php echo base_url('assets/backend/images/download_banner.webp'); ?>" alt="Login Image"></a>
+                    <a href="/buffalodeonar.apk" download> <img class="download_img" src="<?php echo base_url('assets/backend/images/download_banner.webp'); ?>" alt="Login Image"></a>
                 </div>
 
                 </div> 
