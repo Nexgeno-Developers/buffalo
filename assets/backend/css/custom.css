@@ -687,7 +687,7 @@ span.text-nowrap {
 /*manage vyapari */
 
 .manvyap button.btn.btn-outline-primary.btn-rounded.alignToTitle {
-  background: #100f10 !important;
+  background: #2F2F2F !important;
   border: 0;
   color: #fff !important;
   font-weight: 700 !important;
@@ -778,12 +778,12 @@ div#my_camera {}
 }
 
 .dashbox i.fa.fa-sign-in {
-  color: #100f10;
+  color: #2F2F2F;
 }
 
 
 .btn-link:hover {
-  color: #100f10 !important;
+  color: #2F2F2F !important;
   text-decoration: none;
 }
 
@@ -1018,7 +1018,7 @@ div#my_camera {}
 }
 
 .topnav-navbar-dark {
-  background: #100f10;
+  background: #2F2F2F;
   border-radius: 0px 0px 25px 25px;
   box-shadow: none;
 }
@@ -1062,7 +1062,7 @@ div#my_camera {}
 }
 
 .card.card-stats.two {
-  background: #100f10;
+  background: #2F2F2F;
 }
 
 .padd5 img {
@@ -1132,7 +1132,7 @@ body .left-side-menu-detached {
 
 .left-side-menu-detached .side-nav-light .side-nav-second-level li.active>a,
 .left-side-menu-detached .side-nav-light .side-nav-third-level li.active>a {
-  color: #100f10;
+  color: #2F2F2F;
   font-weight: 700;
 }
 
@@ -1144,7 +1144,7 @@ body .left-side-menu-detached {
 .left-side-menu-detached .side-nav-light .side-nav-second-level li a:hover,
 .left-side-menu-detached .side-nav-light .side-nav-third-level li a:focus,
 .left-side-menu-detached .side-nav-light .side-nav-third-level li a:hover {
-  color: #100f10;
+  color: #2F2F2F;
 }
 
 .dashboard_box .card-stats .card-header.card-header-icon img {
@@ -1223,7 +1223,7 @@ h4.page-title {
 }
 
 .exit_button a.btn.btn-sm.btn-success {
-  background: #100f10 !important;
+  background: #2F2F2F !important;
   border: 0;
   box-shadow: none;
   border-radius: 20px;
@@ -1232,7 +1232,7 @@ h4.page-title {
 }
 
 .exit_button a.btn.btn-sm.btn-light:hover {
-  background: #100f10 !important;
+  background: #2F2F2F !important;
   color: #fff;
 }
 
@@ -1345,12 +1345,12 @@ thead.thead-dark th {
 }
 
 table#basic-datatable-1 thead tr:nth-child(1) {
-  background: #100f10 !important;
+  background: #2F2F2F !important;
   color: #fff !important;
 }
 
 table#basic-datatable-0 thead tr:nth-child(1) {
-  background: #100f10 !important;
+  background: #2F2F2F !important;
   color: #fff !important;
 }
 
@@ -1383,14 +1383,14 @@ li.paginate_button.previous {
 }
 
 button.btn.btn-outline-primary.btn-rounded.alignToTitle {
-  background: #100f10 !important;
+  background: #2F2F2F !important;
   border: 0;
   color: #fff !important;
   font-weight: 700 !important;
 }
 
 button.btn.btn-outline-success.btn-rounded.alignToTitle.pass {
-  background: #100f10 !important;
+  background: #2F2F2F !important;
   border: 0;
   color: #fff !important;
   font-weight: 700 !important;
@@ -1427,11 +1427,11 @@ button.btn.btn-outline-success.btn-rounded.alignToTitle.pass {
 }
 
 .left-side-menu a.side-nav-link:hover {
-  color: #100f10 !important;
+  color: #2F2F2F !important;
 }
 
 .left-side-menu-detached .side-nav-light .side-nav-link.active {
-  color: #100f10;
+  color: #2F2F2F;
   background: #100f101f;
   font-weight: 700;
   border-radius: 10px;
@@ -1616,7 +1616,7 @@ body .card.card-stats.gradian_bg6 {
 .inward .circle {
   width: 15px;
   height: 15px;
-  background: #100f10;
+  background: #2F2F2F;
 }
 
 .outward .circle1 {

@@ -565,7 +565,7 @@ new Chart("myChart", {
     labels: xValues,
     datasets: [{ 
       data: yValuesIN,
-      borderColor: "#100f10", 
+      borderColor: "#2F2F2F", 
       fill: false
     }, { 
       data: yValuesOut,

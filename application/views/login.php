@@ -95,7 +95,7 @@ h4.lohhead, p.logdec {
     margin-bottom: 1.4rem;
 }
 .login-section button {
-    background: #100f10 !important;
+    background: #2F2F2F !important;
     border: 0 !important;
     height: 46px;
     border-radius: 10px !important;
