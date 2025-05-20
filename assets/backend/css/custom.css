@@ -687,7 +687,7 @@ span.text-nowrap {
 /*manage vyapari */
 
 .manvyap button.btn.btn-outline-primary.btn-rounded.alignToTitle {
-  background: #71357C !important;
+  background: #100f10 !important;
   border: 0;
   color: #fff !important;
   font-weight: 700 !important;
@@ -778,12 +778,12 @@ div#my_camera {}
 }
 
 .dashbox i.fa.fa-sign-in {
-  color: #000;
+  color: #100f10;
 }
 
 
 .btn-link:hover {
-  color: #71357C !important;
+  color: #100f10 !important;
   text-decoration: none;
 }
 
@@ -1018,7 +1018,7 @@ div#my_camera {}
 }
 
 .topnav-navbar-dark {
-  background: #F6F6F6;
+  background: #100f10;
   border-radius: 0px 0px 25px 25px;
   box-shadow: none;
 }
@@ -1050,7 +1050,7 @@ div#my_camera {}
 }
 
 .dashboard_box .card-stats.four {
-  background: #95D0D5;
+  background: #319ea7;
 }
 
 .dashboard_box .card-stats.five {
@@ -1062,11 +1062,15 @@ div#my_camera {}
 }
 
 .card.card-stats.two {
-  background: #71357C;
+  background: #100f10;
 }
 
 .padd5 img {
   padding: 8px !important;
+}
+
+.vyapari_content a.text-dark {
+  text-transform: capitalize;
 }
 
 .dashboard_box .card-footer {
@@ -1128,7 +1132,7 @@ body .left-side-menu-detached {
 
 .left-side-menu-detached .side-nav-light .side-nav-second-level li.active>a,
 .left-side-menu-detached .side-nav-light .side-nav-third-level li.active>a {
-  color: #71357c;
+  color: #100f10;
   font-weight: 700;
 }
 
@@ -1140,7 +1144,7 @@ body .left-side-menu-detached {
 .left-side-menu-detached .side-nav-light .side-nav-second-level li a:hover,
 .left-side-menu-detached .side-nav-light .side-nav-third-level li a:focus,
 .left-side-menu-detached .side-nav-light .side-nav-third-level li a:hover {
-  color: #71357c;
+  color: #100f10;
 }
 
 .dashboard_box .card-stats .card-header.card-header-icon img {
@@ -1203,7 +1207,7 @@ h4.page-title {
 }
 
 .navbar-custom .topbar-right-menu .nav-link {
-  color: #333;
+  color: #fff;
 }
 
 .topbar-right-menu {
@@ -1219,7 +1223,7 @@ h4.page-title {
 }
 
 .exit_button a.btn.btn-sm.btn-success {
-  background: #71357C !important;
+  background: #100f10 !important;
   border: 0;
   box-shadow: none;
   border-radius: 20px;
@@ -1228,7 +1232,7 @@ h4.page-title {
 }
 
 .exit_button a.btn.btn-sm.btn-light:hover {
-  background: #71357C !important;
+  background: #100f10 !important;
   color: #fff;
 }
 
@@ -1341,12 +1345,12 @@ thead.thead-dark th {
 }
 
 table#basic-datatable-1 thead tr:nth-child(1) {
-  background: #71357C !important;
+  background: #100f10 !important;
   color: #fff !important;
 }
 
 table#basic-datatable-0 thead tr:nth-child(1) {
-  background: #71357C !important;
+  background: #100f10 !important;
   color: #fff !important;
 }
 
@@ -1379,14 +1383,14 @@ li.paginate_button.previous {
 }
 
 button.btn.btn-outline-primary.btn-rounded.alignToTitle {
-  background: #71357C !important;
+  background: #100f10 !important;
   border: 0;
   color: #fff !important;
   font-weight: 700 !important;
 }
 
 button.btn.btn-outline-success.btn-rounded.alignToTitle.pass {
-  background: #71357C !important;
+  background: #100f10 !important;
   border: 0;
   color: #fff !important;
   font-weight: 700 !important;
@@ -1423,12 +1427,12 @@ button.btn.btn-outline-success.btn-rounded.alignToTitle.pass {
 }
 
 .left-side-menu a.side-nav-link:hover {
-  color: #71357C !important;
+  color: #100f10 !important;
 }
 
 .left-side-menu-detached .side-nav-light .side-nav-link.active {
-  color: #71357C;
-  background: #DFCFE2;
+  color: #100f10;
+  background: #100f101f;
   font-weight: 700;
   border-radius: 10px;
 }
@@ -1565,7 +1569,7 @@ body[data-layout=detached] .content-page {
 }
 
 .topnav-navbar-dark .topbar-right-menu li.show .nav-link {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 
@@ -1607,4 +1611,66 @@ body .card.card-stats.gradian_bg6 {
 .chart-table-body td,
 .chart-table-header th {
   padding: .35rem;
+}
+
+.inward .circle {
+  width: 15px;
+  height: 15px;
+  background: #100f10;
+}
+
+.outward .circle1 {
+  width: 15px;
+  height: 15px;
+  background: #319ea7;
+}
+
+.outward {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.logo_align {
+  display: flex;
+  gap: 15px;
+}
+
+.logo_align p {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.outward p {
+  margin-bottom: 0;
+}
+
+.inward {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.inward p {
+  margin-bottom: 0;
+}
+
+.color_represent {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 22px;
+  align-items: center;
+}
+
+.logo_align {
+  display: flex;
+  gap: 15px;
+}
+
+.logo_align p {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0;
 }

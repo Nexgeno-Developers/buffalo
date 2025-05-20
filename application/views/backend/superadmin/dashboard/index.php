@@ -90,7 +90,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon1.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Buffalo Inward'); ?></p>
+                        <p class="card-category"><?php echo get_phrase('Inward Total Buffalo'); ?></p>
                         <h3 class="card-title"> 
                         <?php
                           echo $unblock;
@@ -114,7 +114,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon3.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Buffalo Outward'); ?></p>
+                        <p class="card-category"><?php echo get_phrase('Outward Total Buffalo'); ?></p>
                         <h3 class="card-title"> 
                         <?php
                           echo $exit
@@ -138,7 +138,7 @@
                         <div class="card-icon padd5">
                             <img src="../assets/backend/images/arrow_icon7.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Balanced Goat'); ?>  </p>
+                        <p class="card-category"><?php echo get_phrase('Balanced Total Buffalo'); ?>  </p>
                         <h3 class="card-title"> 
                         1234
                         </h3>
@@ -152,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddright_0">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddright_0 d-none">
                 <div class="card card-stats three">
                     <a class="dashbox" href="reports/blocked">
                     <div class="card-header card-header-warning card-header-icon">
@@ -175,14 +175,14 @@
                 </div>
             </div>
            
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1 pddleft_0">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddleft_0">
                 <div class="card card-stats one">
                      <a class="dashbox" href="manage_vyapari"> 
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon9.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Vyapari Registered'); ?> </p>
+                        <p class="card-category"><?php echo get_phrase('Registered Total Vyapari'); ?> </p>
                         <h3 class="card-title"> 
                         <?php
                            echo $vyapari;
@@ -198,16 +198,15 @@
                 </div>
             </div>
             
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 d-md-block d-none"></div>
 
-            <div class="col-md-4 col-6 pddright_0">
-        <div class="card card-stats two">
+            <div class="col-md-4 col-6 pl-md-1  pddright_0">
+        <div class="card card-stats three">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon14.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Selling - Qurbani'); ?>  </p>
+                        <p class="card-category"><?php echo get_phrase('Qurbani - Total Selling'); ?>  </p>
                         <h3 class="card-title"> 
                            <div><?php echo $selling_total; ?></div>
                         </h3>
@@ -263,13 +262,13 @@
     
     <div class="col-md-4 col-6 pl-md-1 pddleft_0">
         
-         <div class="card card-stats four">
+         <div class="card card-stats" style="background:#7e5f54">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon16.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Slaughter - Kattu'); ?>  </p>
+                        <p class="card-category"><?php echo get_phrase('Regular - Total Slaughter'); ?>  </p>
                         <h3 class="card-title"> 
                            <div><?php echo $slaughter_total; ?></div>
                         </h3>
@@ -287,7 +286,7 @@
         <?php /*        
         <div class="chart_box"> 
         
-        <p>Buffalo Slaughter - Kattu Daily Report</p>
+        <p>Buffalo Slaughter - Regular Daily Report</p>
         <table class="table table-striped dt-responsive nowrap">
         	<thead class="chart-table-header">
         		<tr>
@@ -323,7 +322,7 @@
     </div>
 
 
-   <div class="col-md-4 pl-md-1 col-6 pddright_0">
+   <div class="col-md-4 pl-md-1 col-6 pddright_0 d-none">
         
          <div class="card card-stats three view_report">
                     <a class="dashbox" href="<?php echo site_url($controller.'/reports/daily-report'); ?>">
@@ -347,6 +346,18 @@
         
      <div class="col-md-12">
         <div class="chart_box">
+        <div class="color_represent">
+                    <div class="inward">
+                        <p class="">Inward </p>
+                        <div class="circle"></div>
+                    </div>
+
+                    <div class="outward ">
+                        <p class="">Outward  </p>
+                        <div class="circle1"></div>
+                    </div>
+                  </div>
+
         <canvas id="myChart"></canvas> 
     </div>
     </div>
@@ -554,11 +565,11 @@ new Chart("myChart", {
     labels: xValues,
     datasets: [{ 
       data: yValuesIN,
-      borderColor: "#722bfb", 
+      borderColor: "#100f10", 
       fill: false
     }, { 
       data: yValuesOut,
-      borderColor: "#3fdd4f",
+      borderColor: "#319ea7",
       fill: false
     }]
   },
