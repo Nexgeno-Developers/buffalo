@@ -147,6 +147,64 @@ class Raughwork extends CI_Controller {
 	    '
 	    ;
 	}
+
+	function query_test2() {
+		$CI = & get_instance();
+		$CI->benchmark->mark('query_start');
+		
+			$start = get_common_settings('start_datetime');
+			$end = get_common_settings('end_datetime');  
+			// Animal In Graph Data
+			$query1 = $this->db->select('DAY(inward_date) AS DATE, COUNT(inward_date) AS count')
+								->from('app_qrcode')
+								->where_in('status', ['unblock', 'exit'])
+								->where('inward_date >=', $start)
+								->where('inward_date <=', $end)
+								->group_by('DATE(inward_date)')
+								->get()
+								->result();
+			$page_data['aniamalin'] = json_encode($query1);
+
+			// Animal Out Graph Data
+			$query2 = $this->db->select('DAY(exit_date) AS DATE, COUNT(exit_date) AS count')
+								->from('app_qrcode')
+								->where('status', 'exit')
+								->where('exit_date >=', $start)
+								->where('exit_date <=', $end)
+								->group_by('DATE(exit_date)')
+								->get()
+								->result();
+			$page_data['aniamalout'] = json_encode($query2);
+
+		$CI->benchmark->mark('query_end');
+		$execution_time = $CI->benchmark->elapsed_time('query_start', 'query_end');
+		echo "<br><pre>query time: {$execution_time} seconds</pre>";
+	}
+
+function query_test1()
+{
+    $CI = & get_instance();
+    $CI->benchmark->mark('query_start');
+
+    // Combined all counts into a single query using sub-selects
+    $query = $CI->db->query("
+        SELECT 
+            (SELECT COUNT(vyapari_id) FROM app_vyapari) AS vyapari,
+            (SELECT COUNT(status) FROM app_qrcode WHERE status IN ('unblock', 'exit')) AS unblock,
+            (SELECT COUNT(status) FROM app_qrcode WHERE status = 'block') AS block,
+            (SELECT COUNT(status) FROM app_qrcode WHERE status = 'exit') AS exit_count
+    ");
+
+    $result = $query->row_array();
+
+    $CI->benchmark->mark('query_end');
+    $execution_time = $CI->benchmark->elapsed_time('query_start', 'query_end');
+
+    echo "<pre>";
+    print_r($result);
+    echo "query time: {$execution_time} seconds</pre>";
+}	
 	
+
 	
 }
