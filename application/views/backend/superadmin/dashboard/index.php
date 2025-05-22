@@ -71,7 +71,7 @@
   <div class="col-xl-12 breadcrumes">
     <div class="card">
       <div class="card-body">
-        <h4 class="page-title"> <i class="mdi mdi-home title_icon"></i> <?php echo get_phrase('Buffalo Dashboard'); ?> </h4>
+        <h4 class="page-title pb-1"> <i class="mdi mdi-home title_icon"></i> <?php echo get_phrase('Buffalo Dashboard'); ?> </h4>
       </div> <!-- end card body-->
     </div> <!-- end card -->
   </div><!-- end col-->
@@ -175,7 +175,7 @@
                 </div>
             </div>
            
-            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddleft_0">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddright_0">
                 <div class="card card-stats one">
                      <a class="dashbox" href="manage_vyapari"> 
                     <div class="card-header card-header-warning card-header-icon">
@@ -199,7 +199,7 @@
             </div>
             
 
-            <div class="col-md-4 col-6 pl-md-1  pddright_0">
+            <div class="col-md-4 col-6 pl-md-1  pddleft_0">
         <div class="card card-stats three">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
@@ -260,7 +260,7 @@
     </div>
     
     
-    <div class="col-md-4 col-6 pl-md-1 pddleft_0">
+    <div class="col-md-4 col-6 pl-md-1 pddright_0">
         
          <div class="card card-stats" style="background:#7e5f54">
                     <a class="dashbox" href="javascript:void(0)">

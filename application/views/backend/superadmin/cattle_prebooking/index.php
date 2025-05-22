@@ -117,7 +117,7 @@
                         <label>To Date</label>
                         <input type="date" name="to" class="form-control" placeholder="To Date" value="<?php echo date('Y-m-d'); ?>">
                     </div>                    
-                    <div class="col-md-2 col-3 repot-btn1">
+                    <div class="col-md-2 col-3 repot-btn1 pr-1">
                         <button class="btn btn-block btn-secondary" onclick="filter()" >Search <i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>                                                           
                     <div class="col-md-2 col-3 repot-btn1">

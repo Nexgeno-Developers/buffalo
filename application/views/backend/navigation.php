@@ -40,7 +40,7 @@ if($user_type == 'parent'){
     <?php if(access('cattle_prebooking')){ ?>
     <li class="side-nav-item">
       <a href="<?php echo site_url($controller.'/cattle_prebooking'); ?>" class="side-nav-link">
-        <i class="mdi mdi-book-open-page-variant"></i>
+        <i class="mdi mdi-database"></i>
         <span> <?php echo get_phrase('Cattle Prebooking'); ?> </span>
       </a>
     </li>  
@@ -68,7 +68,7 @@ if($user_type == 'parent'){
     <li class="side-nav-item">
       <a href="<?php echo site_url($controller.'/manage_admins'); ?>" class="side-nav-link">
         <i class="mdi mdi-account-group"></i>
-        <span> <?php echo get_phrase('manage_admins'); ?> </span>
+        <span> <?php echo get_phrase('manage_users'); ?> </span>
       </a>
     </li>  
     <?php } ?>
@@ -76,7 +76,7 @@ if($user_type == 'parent'){
     <?php if(access('master')){ ?>
     <li class="side-nav-item">
       <a href="<?php echo site_url('master'); ?>" class="side-nav-link">
-        <i class="mdi mdi-book-open-page-variant"></i>
+        <i class="mdi mdi-account-multiple-plus"></i>
         <span> <?php echo get_phrase('Agent (Dawanwala)'); ?> </span>
       </a>
     </li>  

@@ -240,7 +240,7 @@ img.lohimg {
             <div class="align-items-center h-100">
                 <div class="card-body">
                     <!-- Logo -->
-                    <div class="text-center mb-3">
+                    <div class="text-center mb-md-3 mb-2">
                         <div class="loginimgdiv"> <img src="<?php echo $this->settings_model->get_logo_dark(); ?>" alt="MCGM Deonar Abattoir Software" height="35" class="lohimg"> </div>
                           <span class="logtext">Digital Bakra Eid 2025 (Buffalo) </span>
                        

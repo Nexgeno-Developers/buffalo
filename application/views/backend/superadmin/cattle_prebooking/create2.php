@@ -148,7 +148,7 @@
                     </div>
                     
                     <div class="col-md-1 form-group change mt30">
-                       <div class="btn btn-block btn-secondary add_btn" onclick="addnewFields();"><i class="fa fa-plus" aria-hidden="true"></i> Add</div>
+                       <div class="btn btn-block btn-secondary add_btn" onclick="addnewFields();"><i class="fa fa-plus" aria-hidden="true"></i></div>
                     </div>
                 </div>    
                 
@@ -280,7 +280,7 @@ $("#cattle_pre_reg").submit(function(e) {
                     </div>
                         
                         <div class="col-md-1 form-group change mt30">
-                            <div class="btn btn-block btn-secondary remove_btn" onclick="removenewFields(this);"><i class="fa fa-minus" aria-hidden="true"></i> Remove</div>
+                            <div class="btn btn-block btn-secondary remove_btn" onclick="removenewFields(this);"><i class="fa fa-minus" aria-hidden="true"></i></div>
                         </div>
                     </div>
                 </div>

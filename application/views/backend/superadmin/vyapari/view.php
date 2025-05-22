@@ -19,6 +19,13 @@
 .apbtn button {
     width: 80%;
 }
+
+@media(max-width:767px)
+{
+h4.page-title.vyapdet.mt-0 {
+    padding-bottom: 7px;
+}
+}
 </style>
 <!--title-->
 <div class="row ">
@@ -26,7 +33,7 @@
     <div class="card">
       <div class="card-body">
           <div class="row">
-        <div class="col-md-9 col-12">
+        <div class="col-md-9 col-7">
         <h4 class="page-title vyapdet mt-0">
             <i class="mdi mdi-book-open-page-variant title_icon"></i> <?php echo get_phrase($page_title); ?>
             <!--Allocate QR-->
@@ -35,7 +42,7 @@
         </div>
 
         <?php if(access('allocate_pass_button')){ ?>
-        <div class="col-md-3 col-6">
+        <div class="col-md-3 col-5 pl-0 pt-md-0 pt-1">
             <button type="button" class="btn btn-outline-success btn-rounded alignToTitle pass" onclick="rightModal('<?php echo site_url('modal/popup/vyapari/allocate-qrcode/'.$vyapari['vyapari_id']); ?>', '<?php echo get_phrase('pass_allocate'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('add_pass'); ?></button>
         </div>
         <?php } ?>
@@ -140,7 +147,7 @@
                         ?>                    
                     
                         <?php if(access('printid_button')){ ?>
-                            <div class="col-md-12 col-2 mb-2 reciept_no_btn">
+                            <div class="col-md-12 col-12 mb-2 reciept_no_btn">
                                 <label> <b>Receipt No : <?php echo $row->receipt_no; ?></b></label>
                                 <!--<a target="_blank" class="btn btn-sm btn-success" href="<?php echo base_url('Qrcodegenerator/create_bulk_tag_qr/'.$vyapari['vyapari_id']); ?>">Print Tag No</a>-->
                                 <a target="_blank" class="btn btn-sm btn-success" href="<?php echo base_url('Qrcodegenerator/create_bulk_tag_qr/?vyapari_id=' . $vyapari['vyapari_id'] . '&receipt_no=' . $row->receipt_no); ?>">Print Tag No QR Code</a>
@@ -255,13 +262,13 @@
                                         <br> <label>Slaughtering type : <?php echo ($row['slaughtering_type'] == 2) ? 'Selling' : 'Slaughtering'; ?></label>
                                     </td>
                                     <td><?php echo $row['timestamp']; ?></td>
-                                    <td>
+                                    <td class="options_buttons">
                                         <?php if(access('manage_pass_button')){ ?>
                                         <?php if($row['status'] == 'unblock'){ ?>
-                                            <button type="button" class="btn btn-sm btn-danger" onclick="rightModal('<?php echo site_url('modal/popup/vyapari/complaint-qrcode/'.$row['qrcode_id'].'/block'); ?>', '<?php echo get_phrase('block_qrcode'); ?>')"><?php echo get_phrase('do_block'); ?></button>
+                                            <button type="button" class="btn btn-sm btn-danger" onclick="rightModal('<?php echo site_url('modal/popup/vyapari/complaint-qrcode/'.$row['qrcode_id'].'/block'); ?>', '<?php echo get_phrase('block_qrcode'); ?>')"><i class="mdi mdi-block-helper" style="font-size: 12px;"></i> <?php echo get_phrase('do_block'); ?></button>
                                         <?php }elseif($row['status'] == 'block'){ ?>
 
-                                            <button type="button" class="btn btn-sm btn-info" onclick="rightModal('<?php echo site_url('modal/popup/vyapari/complaint-qrcode/'.$row['qrcode_id'].'/unblock'); ?>', '<?php echo get_phrase('unblock_qrcode'); ?>')"><?php echo get_phrase('do_unblock'); ?></button>                                        <?php }elseif($row['status'] == 'exit'){ ?> 
+                                            <button type="button" class="btn btn-sm btn-info" onclick="rightModal('<?php echo site_url('modal/popup/vyapari/complaint-qrcode/'.$row['qrcode_id'].'/unblock'); ?>', '<?php echo get_phrase('unblock_qrcode'); ?>')"><i class="mdi mdi-check-circle" style="font-size: 15px;"></i> <?php echo get_phrase('do_unblock'); ?></button>                                        <?php }elseif($row['status'] == 'exit'){ ?> 
                                              
                                              <b><span class="text-success">Scanned at <?= $row['exit_date'] ?></span></b>
                                         <?php } ?>
@@ -314,7 +321,7 @@
     padding: 3px 12px;
     font-size: 12px;
     border-radius: 50px;
-    background: linear-gradient(124deg, #ca5c816e 0, #e91e63ad 73%) !important;
+    background: #607D8B !important;
     border: 0;
     box-shadow: none;
 }
