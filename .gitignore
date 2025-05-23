@@ -13,6 +13,10 @@ uploads/vyapari_photo/*
 uploads/certificates/*clear
 uploads/generated-qrcodes/*
 
+# But do not ignore the folders themselves
+!uploads/prebooking-csv-response/
+!uploads/master_pdf
+
 
 # Ignore all files in uploads/users
 uploads/users/*
