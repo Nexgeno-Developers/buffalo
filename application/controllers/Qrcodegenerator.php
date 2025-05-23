@@ -39,87 +39,12 @@ class Qrcodegenerator extends CI_Controller {
 	}
 
 	// INDEX FUNCTION
-	// default function
-	public function generate_qrcode($qr_digit, $book_no) 
-	{
-        $options = new QROptions(
-          [
-            'eccLevel' => QRCode::ECC_L,
-            'outputType' => QRCode::OUTPUT_MARKUP_SVG,//OUTPUT_IMAGE_JPG
-            'version' => 3,
-          ]
-        );
-        $qrcode = (new QRCode($options))->render($qr_digit);
-        
-        //$this->save_qrcode($qrcode, $qr_digit); //save
-        
-        echo '<img src="'.$qrcode.'" alt="QR Code" width="150px" height="150px"><p style="margin: 0;position: absolute;left: 23px;font-size: 16px;margin-top: -13px;"><b>BN'.$book_no.'-'.$qr_digit.'</b></p><br>';
-	}
-	
-	/*function save_qrcode($qrcode, $qr_digit)
-	{
-        $data = $qrcode;
-        list($type, $data) = explode(';', $data);
-        list(, $data)      = explode(',', $data);
-        $data = base64_decode($data);
-        $path = 'uploads/generated-qrcodes/'.$qr_digit.'.jpg';
-        file_put_contents($path, $data);
-        $this->add_text_to_qrcode($path); //add text
-	}*/
-	
-	/*function add_text_to_qrcode($path)
-	{
-        header('Content-type: image/jpeg');
-        
-        $image = imagecreatefromjpeg($path);
-        
-        $textcolor = imagecolorallocate($image, 255, 255, 255);
-        
-        $font_file = 'myfont.ttf';
-        
-        $custom_text = "Watermark Text";
-        
-        imagettftext($image, 225, 0, 3450, 3000, $textcolor, $font_file, $custom_text);
-        
-        imagejpeg($image);
-        
-        imagedestroy($image); // for clearing memory 
-	}*/ 
-	
-	function create_bulk_qrimage()
-	{
-	    
-	   // echo 'Not Allowed';
-	   // exit();
-	    
-	    $start   = trim(preg_replace('/\s+/', '', $this->input->get('start')));
-	    $end     = trim(preg_replace('/\s+/', '', $this->input->get('end')));
-	    $book_no = trim(preg_replace('/\s+/', '', $this->input->get('bookno')));
-	    $qr_digit= $this->input->get('qr_digit') ? trim(preg_replace('/\s+/', '', $this->input->get('qr_digit'))) : 0;
-	    
-        if (strpos(strval($start), '0') === 0 || strpos(strval($end), '0') === 0) {
-            echo "Number should not starts with zero";exit;
-        }	    
-
-	    if(!empty($start) && !empty($end) && !empty($book_no))
-	    {
-            for ($x = $start; $x <= $end; $x++)
-            {
-                $qrdigit = str_pad($x, $qr_digit, '0', STR_PAD_LEFT); 
-                $this->generate_qrcode($qrdigit, $book_no);
-            }	        
-	    }
-	    else
-	    {
-	        echo 'pllease fill all data';
-	    }
-	}
 	
 	
 	/* ----------- tag id print 2024 --------------------------- */
 	
 	
-	public function generate_tag_qrcode($qr_digit, $certificate) 
+	public function generate_qrcode($qr_digit, $certificate, $tag) 
 	{
         $options = new QROptions(
           [
@@ -131,11 +56,11 @@ class Qrcodegenerator extends CI_Controller {
         $qrcode = (new QRCode($options))->render($qr_digit);
         
         
-        echo '<img src="'.$qrcode.'" alt="QR Code" width="150px" height="150px"><p style="margin: 0;position: absolute;left: 23px;font-size: 12px;margin-top: -13px;"><b>Tag:'.$qr_digit.'</b></p><br><p style="margin-left: 16px;font-size: 12px; margin-top: 2px;"><b>Cert:'.$certificate.'</b></p></div>';
+        echo '<img src="'.$qrcode.'" alt="QR Code" width="150px" height="150px"><p style="margin: 0;position: absolute;left: 23px;font-size: 12px;margin-top: -13px;"><b>Tag:'.$tag.'</b></p><br><p style="margin-left: 16px;font-size: 12px; margin-top: 2px;"><b>Cert:'.$certificate.'</b></p></div>';
 	}
 	
 	
-	function create_bulk_tag_qr()
+	function create_bulk_qrcode()
 	{
 	    
 	   $vyapari_id = $this->input->get('vyapari_id');
@@ -143,7 +68,7 @@ class Qrcodegenerator extends CI_Controller {
  
 	    
 	   //$data = $this->db->select('qrcode')->from('app_qrcode')->where('vyapari_id', $vyapari_id)->where('receipt_no', $receipt_no)->order_by('qrcode', 'asc')->get()->result();
-	   $data = $this->db->select(['app_qrcode.qrcode', 'cattle_pre_booking.certificate_no'])
+	   $data = $this->db->select(['app_qrcode.qrcode', 'cattle_pre_booking.certificate_no ', 'cattle_pre_booking.tag_no'])
                  ->from('app_qrcode')
                  ->join('cattle_pre_booking', 'app_qrcode.qrcode = cattle_pre_booking.tag_no')
                  ->where('app_qrcode.vyapari_id', $vyapari_id)
@@ -165,8 +90,9 @@ class Qrcodegenerator extends CI_Controller {
 	                
 	                $qrdigit = $row->qrcode;
 	                $certificate = $row->certificate_no;
+	                $tag_no = $row->tag_no;
 	                
-	                $this->generate_tag_qrcode($qrdigit, $certificate);
+	                $this->generate_qrcode($qrdigit, $certificate, $tag_no);
 	                
 	            } else {
 
@@ -180,32 +106,12 @@ class Qrcodegenerator extends CI_Controller {
 	        
 	    } else {
 	        echo "DATA Not Present";
-	    }
-	    
-	    
+	    }  
 	}
 	
 	/* ----------- tag id print 2024 ---------------------------- */
 	
 	/* ----------- professional courier ------------------ */
-	
-	
-	
-	public function professional_courier_generate_qrcode($qr_digit, $book_no) 
-	{
-        $options = new QROptions(
-          [
-            'eccLevel' => QRCode::ECC_L,
-            'outputType' => QRCode::OUTPUT_MARKUP_SVG,//OUTPUT_IMAGE_JPG
-            'version' => 3,
-          ]
-        );
-        $qrcode = (new QRCode($options))->render($qr_digit);
-        
-        //$this->save_qrcode($qrcode, $qr_digit); //save
-        
-        echo '<p style="margin-left:60px; margin-top:200px; position: relative; font-size: 16px;"><b>'.$qr_digit.' - BN:'.$book_no.'</b></p><img style="margin-left:60px; " src="'.$qrcode.'" alt="QR Code" width="50px" height="50px"><br>';
-	}
 	
 	
 	
