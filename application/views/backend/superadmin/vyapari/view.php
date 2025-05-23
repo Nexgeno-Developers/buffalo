@@ -134,8 +134,6 @@ h4.page-title.vyapdet.mt-0 {
                     
                     <?php foreach($receipt_no as $row) { ?>
                         <?php 
-                           //$certificates = $this->db->select('qrcode as certificate_no, timestamp')->where('vyapari_id', $vyapari['vyapari_id'])->where('receipt_no', $row->receipt_no)->order_by('qrcode', 'asc')->get('app_qrcode')->result();
-                            
                              $certificates = $this->db->select(['app_qrcode.qrcode', 'cattle_pre_booking.certificate_no','app_qrcode.timestamp'])->from('app_qrcode')
                                          ->join('cattle_pre_booking', 'app_qrcode.qrcode = cattle_pre_booking.tag_no')
                                          ->where('app_qrcode.vyapari_id', $vyapari['vyapari_id'])
@@ -149,8 +147,7 @@ h4.page-title.vyapdet.mt-0 {
                         <?php if(access('printid_button')){ ?>
                             <div class="col-md-12 col-12 mb-2 reciept_no_btn">
                                 <label> <b>Receipt No : <?php echo $row->receipt_no; ?></b></label>
-                                <!--<a target="_blank" class="btn btn-sm btn-success" href="<?php echo base_url('Qrcodegenerator/create_bulk_tag_qr/'.$vyapari['vyapari_id']); ?>">Print Tag No</a>-->
-                                <a target="_blank" class="btn btn-sm btn-success" href="<?php echo base_url('Qrcodegenerator/create_bulk_tag_qr/?vyapari_id=' . $vyapari['vyapari_id'] . '&receipt_no=' . $row->receipt_no); ?>">Print Tag No QR Code</a>
+                                <a target="_blank" class="btn btn-sm btn-success" href="<?php echo base_url('Qrcodegenerator/create_bulk_qrcode/?vyapari_id=' . $vyapari['vyapari_id'] . '&receipt_no=' . $row->receipt_no); ?>">Print Certificate QR Code</a>
                                 <small>Receipt Date :<b><?php echo date('d-m-Y h:iA', strtotime(end($certificates)->timestamp)); ?></b> / TOTAL TAGS : <b><?php echo count($certificates); ?></b> / From <b><?php echo reset($certificates)->certificate_no; ?></b> to <b><?php echo end($certificates)->certificate_no; ?></b> certificate no.</small>
                             </div>
                         <?php } ?>

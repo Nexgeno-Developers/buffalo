@@ -2095,7 +2095,7 @@ class Deonar_model extends CI_Model {
                         $receipt = !empty($row[1]) ? trim($row[1]) : null;
                         $certificate = !empty($row[2]) ? trim($row[2]) : null;
                         $book = !empty($row[3]) ? trim($row[3]) : null;
-                        $tag = !empty($row[4]) ? trim($row[4]) : null;
+                        $tag = !empty($row[4]) ? trim($row[4]) : 'unavailable';
                         $inwardDate = !empty($row[5]) ? date('Y-m-d', strtotime(trim($row[5]))) . ' ' . date('H:i:s') : null;
                         
                         $agent = !empty($row[6]) ? trim($row[6]) : null;
@@ -2104,38 +2104,28 @@ class Deonar_model extends CI_Model {
                             $agent = $agentQuery ? $agentQuery->id : null;
                         }
                         
-                        $sex = !empty($row[7]) ? (strtolower(trim($row[7])) == 'mb' ? 1 : 2) : null;
-                        $transfer = !empty($row[8]) ? (strtolower(trim($row[8])) == 'yes' ? 1 : 0) : null;
+                        //$sex = !empty($row[7]) ? (strtolower(trim($row[7])) == 'mb' ? 1 : 2) : null; //old
+
+						//new
+						$sex_input = strtolower(trim($row[7]));
+						$sex = in_array($sex_input, ['mb', 'sb']) ? ($sex_input === 'mb' ? 1 : 2) : null;
+
+                        //$transfer = !empty($row[8]) ? (strtolower(trim($row[8])) == 'yes' ? 1 : 0) : null; //old
+
+						//new
+						$transfer_value = strtolower(trim($row[8]));
+						$transfer = $transfer_value == 'yes' ? 1 : ($transfer_value == 'no' ? 0 : null);						
                     
                     if ($doctor === null || $receipt === null || $certificate === null || $book === null || $tag === null || $inwardDate === null || $agent === null || $sex === null || $transfer === null) {
-                        $fieldTxt .= 'tag no: '. $tag. ' - incorrect data filled in csv row!' . "\n";
+                        //$fieldTxt .= 'tag no: '. $tag. ' - incorrect data filled in csv row!' . "\n"; //old
+                        $fieldTxt .= 'Certificate No: '. $certificate. ' - incorrect data filled in csv row!' . "\n"; //new
                         $fieldTxt .= 'Doctor:'.$doctor.', Receipt No:'.$receipt.', Certificate No:'.$certificate.', Book No:'.$book.', Tag No:'.$tag.', Inward Date'.$inwardDate.', Agent:'.$agent.', Sex:'.$sex.', Transfer:'.$transfer. "\n\n";
                     }else{
-                        $record = $this->db->where('tag_no', $tag)->get('cattle_pre_booking')->row();
+                        //$record = $this->db->where('tag_no', $tag)->get('cattle_pre_booking')->row(); //old
+                        $record = $this->db->where('certificate_no', $certificate)->get('cattle_pre_booking')->row(); //new
                         if(!empty($record)){
-                            $fieldTxt .= 'tag no: '.$tag. ' - already inserted!' . "\n"; 
-                            /*$isCertExist = $this->db->where('id !=', $record->id)->where('certificate_no', $certificate)->get('cattle_pre_booking')->num_rows(); 
-                            if($isCertExist == 0){
-                                //update here
-                                $update['inward_by']      = $this->session->userdata('user_id');
-                                $update['inward_date']    = $inwardDate;
-                                $update['doctor_name']    = $doctor;
-                                $update['cattle_sex']     = $sex;
-                                $update['certificate_no'] = $certificate;
-                                $update['book_no']        = $book;
-                                $update['tag_no']         = $tag;
-                                $update['gwala_id']       = $agent;
-                                $update['receipt_no']     = $receipt;
-                                $update['old_tag_no']     = $transfer;
-                                $update['timestamp']      = date('Y-m-d H:i:s');
-                                $update['updated_at']     = date('Y-m-d H:i:s');
-                                $this->db->where('id', $record->id);
-                                $this->db->update('cattle_pre_booking', $update);                            
-                                $fieldTxt .= 'tag no: '.$tag. ' - already inserted!' . "\n";                                
-                            }else{
-                                $fieldTxt .= 'tag no: '. $tag. ' - update failed - duplicate certificate number: '.$certificate.'.' . "\n";
-                                $fieldTxt .= 'Doctor:'.$doctor.', Receipt No:'.$receipt.', Certificate No:'.$certificate.', Book No:'.$book.', Tag No:'.$tag.', Inward Date'.$inwardDate.', Agent:'.$agent.', Sex:'.$sex.', Transfer:'.$transfer. "\n\n";
-                            }*/
+                            //$fieldTxt .= 'tag no: '.$tag. ' - already inserted!' . "\n"; //old
+                            $fieldTxt .= 'Certificate No: '.$certificate. ' - already inserted!' . "\n"; //new 
                         }else{
                             //insert here
                             $isCertExist = $this->db->where('certificate_no', $certificate)->get('cattle_pre_booking')->num_rows(); 
@@ -2152,9 +2142,11 @@ class Deonar_model extends CI_Model {
                                 $insert['old_tag_no']     = $transfer;
                                 $insert['timestamp']      = date('Y-m-d H:i:s');
                                 $this->db->insert('cattle_pre_booking', $insert);
-                                $insertTxt .= 'tag no: '.$tag. ' - inserted successfully!' . "\n";                                
+                                //$insertTxt .= 'tag no: '.$tag. ' - inserted successfully!' . "\n"; //old                                
+                                $insertTxt .= 'Certificate No: '.$certificate. ' - inserted successfully!' . "\n"; //new                                 
                             }else{
-                                $fieldTxt .= 'tag no: '. $tag. ' - insertion failed - duplicate certificate number: '.$certificate.'!' . "\n";
+                                //$fieldTxt .= 'tag no: '. $tag. ' - insertion failed - duplicate certificate number: '.$certificate.'!' . "\n";
+                                $fieldTxt .= 'Certificate No: '. $certificate. ' - insertion failed - duplicate certificate number: '.$certificate.'!' . "\n";
                                 $fieldTxt .= 'Doctor:'.$doctor.', Receipt No:'.$receipt.', Certificate No:'.$certificate.', Book No:'.$book.', Tag No:'.$tag.', Inward Date'.$inwardDate.', Agent:'.$agent.', Sex:'.$sex.', Transfer:'.$transfer. "\n\n";
                             }
                         }                        
