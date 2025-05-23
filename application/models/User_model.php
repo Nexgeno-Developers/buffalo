@@ -1115,7 +1115,20 @@ function create_user()
 				'name' => 'user_creation',
 				'description' => '<b>'.$data['name'].'</b> Added successfully.',
 			 );
-			 app_log($log);			
+			 app_log($log);
+			 
+			$subject = "Deonar Buffalo, Your Account Has Been Created!";
+			$body = '
+					<p>Dear User, <b>'.ucfirst($data['name']).'</b></p>
+					<p>Please find the relevant details below.</p>
+					<p><strong>Email:</strong> '.$data['email'].'</p>
+					<p><strong>Password:</strong> '.$this->input->post('password').'</p>
+					<p>You can log in here: <a href="' . base_url('login') . '" target="_blank">' . base_url('login') . '</a></p>
+					<br>
+					<p><b>Best regards</b>,<br><b>Nexgeno Developer Team</b></p>
+				';
+
+			sendEmail($data['email'], $subject, $body);
 
 			$response = array(
 				'status' => true,
@@ -1172,7 +1185,37 @@ function create_user()
 				'name' => 'user_update',
 				'description' => '<b>'.$data['name'].'</b> Updated successfully.',
 			 );
-			 app_log($log);	    
+			 app_log($log);	
+			 
+		if(!empty($this->input->post('password'))){
+			$subject = "Deonar Buffalo, Your Account Has Been Updated!";
+			$body = '
+					<p>Dear User, <b>'.ucfirst($data['name']).'</b></p>
+					<p>Please find the relevant details below.</p>
+					<p><strong>Email:</strong> '.$data['email'].'</p>
+					<p><strong>Password:</strong> '.$this->input->post('password').'</p>
+					<p>You can log in here: <a href="' . base_url('login') . '" target="_blank">' . base_url('login') . '</a></p>
+					<br>
+					<p><b>Best regards</b>,<br><b>Nexgeno Developer Team</b></p>
+				';
+
+			sendEmail($data['email'], $subject, $body);
+		}
+
+		if(!empty($this->input->post('change_email'))){
+			$subject = "Deonar Buffalo, Your Account Has Been Updated!";
+			$body = '
+				<p>Dear <b>' . ucfirst($data['name']) . '</b>,</p>
+				<p>We wanted to let you know that your account details have been successfully updated.</p>
+				<p><strong>Email:</strong> ' . $data['email'] . '</p>
+				<p>You can log in to your account here: <a href="' . base_url('login') . '" target="_blank">' . base_url('login') . '</a></p>
+				<br>
+				<p><b>Best regards</b>,<br><b>Nexgeno Developer Team</b></p>
+			';
+
+			sendEmail($data['email'], $subject, $body);
+		}
+			 
 	    
 		$response = array(
 			'status' => true,

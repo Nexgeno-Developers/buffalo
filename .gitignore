@@ -44,5 +44,6 @@ error_log
 /application/config/database.php
 /application/config/config.php
 
+application/config/api_keys.php
 
 

@@ -196,8 +196,19 @@ class Deonar_model extends CI_Model {
 		## Total number of record with filtering
 		$this->db->select('vyapari_id');
 		$this->db->from('app_vyapari');
+		// if(!empty($vyapari_id))
+		// {
+    	// 	$this->db->where('vyapari_id', $vyapari_id);
+		// }
 		if(!empty($vyapari_id))
 		{
+			// Extract the current year
+			$currentYear = date('Y');
+			// Convert to uppercase
+			$vyapari_id = strtoupper($vyapari_id);
+			// Use regex to remove "V2025-" and get the remaining part
+			$vyapari_id = preg_replace("/^V$currentYear-/", '', $vyapari_id);
+
     		$this->db->where('vyapari_id', $vyapari_id);
 		}
 		if(!empty($name))
@@ -223,8 +234,19 @@ class Deonar_model extends CI_Model {
 		## Fetch records
 		$this->db->select('*');
 		$this->db->from('app_vyapari');
+		// if(!empty($vyapari_id))
+		// {
+    	// 	$this->db->where('vyapari_id', $vyapari_id);
+		// }
 		if(!empty($vyapari_id))
 		{
+			// Extract the current year
+			$currentYear = date('Y');
+			// Convert to uppercase
+			$vyapari_id = strtoupper($vyapari_id);
+			// Use regex to remove "V2025-" and get the remaining part
+			$vyapari_id = preg_replace("/^V$currentYear-/", '', $vyapari_id);
+
     		$this->db->where('vyapari_id', $vyapari_id);
 		}
 		if(!empty($name))
@@ -1602,11 +1624,20 @@ class Deonar_model extends CI_Model {
 		{
     		$this->db->where('AQ.qrcode', $qrcode);
 		}
-        if(!empty($from) && !empty($to))
-        {
-            $this->db->where('AQC.timestamp >=', $from);
-            $this->db->where('AQC.timestamp <=', $to);
-        }
+        // if(!empty($from) && !empty($to))
+        // {
+        //     $this->db->where('AQC.timestamp >=', $from);
+        //     $this->db->where('AQC.timestamp <=', $to);
+        // }
+
+		if (!empty($from)) {
+			$this->db->where('AQC.timestamp >=', $from);
+		}
+
+		if (!empty($to)) {
+			$this->db->where('AQC.timestamp <=', $to);
+		}
+
         $this->db->where('AQC.status', 'block');
         $this->db->where('AQ.status', 'block');
 		$records = $this->db->get()->num_rows();
@@ -1622,11 +1653,20 @@ class Deonar_model extends CI_Model {
 		{
     		$this->db->where('AQ.qrcode', $qrcode);
 		}
-        if(!empty($from) && !empty($to))
-        {
-            $this->db->where('AQC.timestamp >=', $from);
-            $this->db->where('AQC.timestamp <=', $to);
-        }		
+        // if(!empty($from) && !empty($to))
+        // {
+        //     $this->db->where('AQC.timestamp >=', $from);
+        //     $this->db->where('AQC.timestamp <=', $to);
+        // }
+		
+		if (!empty($from)) {
+			$this->db->where('AQC.timestamp >=', $from);
+		}
+
+		if (!empty($to)) {
+			$this->db->where('AQC.timestamp <=', $to);
+		}
+		
         $this->db->where('AQC.status', 'block');
         $this->db->where('AQ.status', 'block');
 		$this->db->order_by('AQ.qrcode_id', $columnSortOrder);
@@ -1694,11 +1734,20 @@ class Deonar_model extends CI_Model {
 		{
     		$this->db->where('AQ.qrcode', $qrcode);
 		}
-        if(!empty($from) && !empty($to))
-        {
-            $this->db->where('AQ.inward_date >=', $from);
-            $this->db->where('AQ.inward_date <=', $to);
-        }		
+        // if(!empty($from) && !empty($to))
+        // {
+        //     $this->db->where('AQ.inward_date >=', $from);
+        //     $this->db->where('AQ.inward_date <=', $to);
+        // }	
+		
+		if (!empty($from)) {
+			$this->db->where('AQ.inward_date >=', $from);
+		}
+
+		if (!empty($to)) {
+			$this->db->where('AQ.inward_date <=', $to);
+		}
+		
         //$this->db->where('AQ.status', 'unblock');
 
 		$records = $this->db->get()->num_rows();
@@ -1713,11 +1762,20 @@ class Deonar_model extends CI_Model {
 		{
     		$this->db->where('AQ.qrcode', $qrcode);
 		}
-        if(!empty($from) && !empty($to))
-        {
-            $this->db->where('AQ.inward_date >=', $from);
-            $this->db->where('AQ.inward_date <=', $to);
-        }		
+        // if(!empty($from) && !empty($to))
+        // {
+        //     $this->db->where('AQ.inward_date >=', $from);
+        //     $this->db->where('AQ.inward_date <=', $to);
+        // }
+		
+		if (!empty($from)) {
+			$this->db->where('AQ.inward_date >=', $from);
+		}
+
+		if (!empty($to)) {
+			$this->db->where('AQ.inward_date <=', $to);
+		}
+		
         //$this->db->where('AQ.status', 'unblock');
 		$this->db->order_by('AQ.qrcode_id', $columnSortOrder);
 		$this->db->limit($rowperpage, $start);
@@ -1781,11 +1839,20 @@ class Deonar_model extends CI_Model {
 		{
     		$this->db->where('AQ.gwala_id', $agent);
 		}
-        if(!empty($from) && !empty($to))
-        {
-            $this->db->where('AQ.inward_date >=', $from);
-            $this->db->where('AQ.inward_date <=', $to);
-        }		
+        // if(!empty($from) && !empty($to))
+        // {
+        //     $this->db->where('AQ.inward_date >=', $from);
+        //     $this->db->where('AQ.inward_date <=', $to);
+        // }
+		
+		if (!empty($from)) {
+			$this->db->where('AQ.inward_date >=', $from);
+		}
+
+		if (!empty($to)) {
+			$this->db->where('AQ.inward_date <=', $to);
+		}
+		
         //$this->db->where('AQ.status', 'unblock');
 
 		$records = $this->db->get()->num_rows();
@@ -1800,11 +1867,20 @@ class Deonar_model extends CI_Model {
 		{
     		$this->db->where('AQ.gwala_id', $agent);
 		}
-        if(!empty($from) && !empty($to))
-        {
-            $this->db->where('AQ.inward_date >=', $from);
-            $this->db->where('AQ.inward_date <=', $to);
-        }		
+        // if(!empty($from) && !empty($to))
+        // {
+        //     $this->db->where('AQ.inward_date >=', $from);
+        //     $this->db->where('AQ.inward_date <=', $to);
+        // }
+		
+		if (!empty($from)) {
+			$this->db->where('AQ.inward_date >=', $from);
+		}
+
+		if (!empty($to)) {
+			$this->db->where('AQ.inward_date <=', $to);
+		}
+		
         //$this->db->where('AQ.status', 'unblock');
 		$this->db->order_by('AQ.qrcode_id', $columnSortOrder);
 		$this->db->limit($rowperpage, $start);
@@ -1876,11 +1952,20 @@ class Deonar_model extends CI_Model {
 		{
     		$this->db->where('AQ.qrcode', $qrcode);
 		}
-        if(!empty($from) && !empty($to))
-        {
-            $this->db->where('AQ.exit_date >=', $from);
-            $this->db->where('AQ.exit_date <=', $to);
-        }		
+        // if(!empty($from) && !empty($to))
+        // {
+        //     $this->db->where('AQ.exit_date >=', $from);
+        //     $this->db->where('AQ.exit_date <=', $to);
+        // }
+		
+		if (!empty($from)) {
+			$this->db->where('AQ.exit_date >=', $from);
+		}
+
+		if (!empty($to)) {
+			$this->db->where('AQ.exit_date <=', $to);
+		}
+		
         $this->db->where('AQ.status', 'exit');
 
 		$records = $this->db->get()->num_rows();
@@ -1895,11 +1980,20 @@ class Deonar_model extends CI_Model {
 		{
     		$this->db->where('AQ.qrcode', $qrcode);
 		}
-        if(!empty($from) && !empty($to))
-        {
-            $this->db->where('AQ.exit_date >=', $from);
-            $this->db->where('AQ.exit_date <=', $to);
-        }		
+        // if(!empty($from) && !empty($to))
+        // {
+        //     $this->db->where('AQ.exit_date >=', $from);
+        //     $this->db->where('AQ.exit_date <=', $to);
+        // }
+		
+		if (!empty($from)) {
+			$this->db->where('AQ.exit_date >=', $from);
+		}
+
+		if (!empty($to)) {
+			$this->db->where('AQ.exit_date <=', $to);
+		}
+		
         $this->db->where('AQ.status', 'exit');
 		$this->db->order_by('AQ.exit_date', 'desc');
 		$this->db->limit($rowperpage, $start);
@@ -2003,6 +2097,8 @@ class Deonar_model extends CI_Model {
 				'description' => '<b>'.vyapari_id($vyapari_id).'</b> updated successfully.',
 			 );
 			 app_log($log);
+
+			old_vyapari_check($this->input->post());
 	 
 			 $response = array(
 				 'status' => true,
