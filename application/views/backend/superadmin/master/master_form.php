@@ -23,8 +23,8 @@
         <!--    </select>-->
         <!--</div> -->
         */ ?>
-        <div class="form-group col-md-12 mt-2">
-            <button class="btn btn-block btn-primary btn-ajax" type="submit">
+        <div class="form-group col-md-2 mt-2">
+            <button class="btn btn-block btn-success btn-ajax" type="submit">
                 <span class="form-button"><?php echo get_phrase('add_user'); ?></span> 
                 <i class="fa fa-spinner fa-spin form-loader" style="display:none"></i>
             </button>

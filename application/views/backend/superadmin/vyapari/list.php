@@ -128,7 +128,14 @@
 
 </script>
 
+<style>
 
+.block-rep1 .dt-buttons.btn-group {
+    position: absolute;
+    top: 94px;
+    right: 15px;
+}
+</style>
 
 <div class="table-responsive">
 

@@ -44,11 +44,11 @@
             </div>
             
             
-            <div class="col-md-6">
+            <div class="col-md-6 pl-md-1">
                 
                 <div class="chart_box"> 
                 
-                    <p>Buffalo Slaughter - Kattu Daily Report</p>
+                    <p>Buffalo Slaughter - Regular Daily Report</p>
                     <table class="table table-striped dt-responsive nowrap">
                     	<thead class="chart-table-header">
                     		<tr>

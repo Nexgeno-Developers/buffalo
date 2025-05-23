@@ -26,8 +26,8 @@
             <?php if(access('cattle_prebooking')){ ?>
             <button type="button" class="btn btn-outline-primary btn-rounded alignToTitle mx-2" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/create2'); ?>', '<?php echo get_phrase('Registration'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Register'); ?></button>
             <?php //if($this->session->userdata('role_type') == 'superadmin'){ ?>
-            <button type="button" class="btn btn-outline-primary btn-rounded alignToTitle mx-2" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/import-prebooking'); ?>', '<?php echo get_phrase('Import'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Import Prebooking data'); ?></button>
-            <?/* <!--<button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/create'); ?>', '<?php echo get_phrase('Registration'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Register'); ?></button>--> */ ?>
+            <button type="button" class="btn btn-outline-primary btn-rounded alignToTitle mx-2  mt-md-0 mt-2" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/import-prebooking'); ?>', '<?php echo get_phrase('Import'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Import Prebooking data'); ?></button>
+            <?php /* <!--<button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/cattle_prebooking/create'); ?>', '<?php echo get_phrase('Registration'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Register'); ?></button>--> */ ?>
             <?php //} ?>
             <?php } ?>
         </h4>
@@ -117,7 +117,7 @@
                         <label>To Date</label>
                         <input type="date" name="to" class="form-control" placeholder="To Date" value="<?php echo date('Y-m-d'); ?>">
                     </div>                    
-                    <div class="col-md-2 col-3 repot-btn1">
+                    <div class="col-md-2 col-3 repot-btn1 pr-1">
                         <button class="btn btn-block btn-secondary" onclick="filter()" >Search <i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>                                                           
                     <div class="col-md-2 col-3 repot-btn1">

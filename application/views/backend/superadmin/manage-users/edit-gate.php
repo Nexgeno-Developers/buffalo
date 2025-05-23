@@ -12,7 +12,7 @@
         </div>      
         
         <div class="form-group col-md-3 mt-4">
-            <button class="btn btn-block btn-primary btn-ajax" type="submit"><span class="form-button"><?php echo get_phrase('update'); ?></span> <i class="fa fa-spinner fa-spin form-loader" style="display:none"></i></button>
+            <button class="btn btn-block btn-success btn-ajax" type="submit"><span class="form-button"><?php echo get_phrase('update'); ?></span> <i class="fa fa-spinner fa-spin form-loader" style="display:none"></i></button>
         </div>  
         
     </div>

@@ -5,8 +5,12 @@
 # Ignore upload directories
 uploads/biometric_excel_files/*
 uploads/csv_file/*
+
+uploads/prebooking-csv-response/*
+uploads/master_pdf/*
+
 uploads/vyapari_photo/*
-uploads/certificates/*
+uploads/certificates/*clear
 uploads/generated-qrcodes/*
 
 
@@ -34,6 +38,7 @@ error_log
 /application/third_party
 /application/libraries/
 /application/config/database.php
+/application/config/config.php
 
-/index.php
+
 

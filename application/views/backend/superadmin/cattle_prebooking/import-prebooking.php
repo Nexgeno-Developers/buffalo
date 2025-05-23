@@ -19,7 +19,7 @@
             <input class="form-control" type="file" name="csv_file" required>
         </div>
         <div class="col-md-2">
-            <button type="submit" class="btn btn-block btn-primary">
+            <button type="submit" class="btn btn-block btn-success">
                 Upload</button>
         </div>
     </div>

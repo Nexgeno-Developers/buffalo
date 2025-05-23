@@ -9,6 +9,9 @@
 <link href="<?php echo base_url(); ?>assets/backend/css/vendor/summernote-bs4.css" rel="stylesheet" type="text/css" />
 <!-- third party css end -->
 
+<link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+
 <!-- App css -->
 <link href="<?php echo base_url(); ?>assets/backend/css/icons.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url(); ?>assets/backend/css/app.min.css" rel="stylesheet" type="text/css" />
