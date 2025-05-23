@@ -9,21 +9,21 @@ if($user_type == 'parent'){
 <!-- ========== Left Sidebar Start ========== -->
 <div class="left-side-menu left-side-menu-detached content-main">
 
-  <div class="leftbar-user">
+  <!-- <div class="leftbar-user">
     <a href="javascript: void(0);">
-      <img src="<?php echo $this->user_model->get_user_image($this->session->userdata('user_id')); ?>?<?php echo time() ?>" alt="user-image" height="65" class="rounded-circle shadow-sm">
+      <img src="<?php //echo $this->user_model->get_user_image($this->session->userdata('user_id')); ?>?<?php //echo time() ?>" alt="user-image" height="65" class="rounded-circle shadow-sm">
       <?php
-      $user_details = $this->user_model->get_user_details($this->session->userdata('user_id'));
+      //$user_details = $this->user_model->get_user_details($this->session->userdata('user_id'));
       ?>
-      <span class="leftbar-user-name"><?php echo $user_details['name']; ?></span>
+      <span class="leftbar-user-name"><?php //echo $user_details['name']; ?></span>
     </a>
-  </div>
+  </div> -->
   <!--- Sidemenu -->
   <ul class="metismenu side-nav side-nav-light">
-    <li class="side-nav-title side-nav-item"><?php echo get_phrase('navigation'); ?></li>
+    <!-- <li class="side-nav-title side-nav-item"><?php //echo get_phrase('navigation'); ?></li> -->
     <li class="side-nav-item">
       <a href="<?php echo site_url($controller.'/dashboard'); ?>" class="side-nav-link">
-        <i class="dripicons-meter"></i>
+      <i class="mdi mdi-home"></i>
         <span> <?php echo get_phrase('dashboard'); ?> </span>
       </a>
     </li>
@@ -40,7 +40,7 @@ if($user_type == 'parent'){
     <?php if(access('cattle_prebooking')){ ?>
     <li class="side-nav-item">
       <a href="<?php echo site_url($controller.'/cattle_prebooking'); ?>" class="side-nav-link">
-        <i class="mdi mdi-book-open-page-variant"></i>
+        <i class="mdi mdi-database"></i>
         <span> <?php echo get_phrase('Cattle Prebooking'); ?> </span>
       </a>
     </li>  
@@ -68,7 +68,7 @@ if($user_type == 'parent'){
     <li class="side-nav-item">
       <a href="<?php echo site_url($controller.'/manage_admins'); ?>" class="side-nav-link">
         <i class="mdi mdi-account-group"></i>
-        <span> <?php echo get_phrase('manage_admins'); ?> </span>
+        <span> <?php echo get_phrase('manage_users'); ?> </span>
       </a>
     </li>  
     <?php } ?>
@@ -76,7 +76,7 @@ if($user_type == 'parent'){
     <?php if(access('master')){ ?>
     <li class="side-nav-item">
       <a href="<?php echo site_url('master'); ?>" class="side-nav-link">
-        <i class="mdi mdi-book-open-page-variant"></i>
+        <i class="mdi mdi-account-multiple-plus"></i>
         <span> <?php echo get_phrase('Agent (Dawanwala)'); ?> </span>
       </a>
     </li>  
@@ -89,9 +89,9 @@ if($user_type == 'parent'){
        <span><?php echo get_phrase('reports'); ?></span>
        </a>
        <ul class="side-nav-second-level collapse" aria-expanded="false">
-          <?/* collapse<li>
+          <?php /* collapse<li>
              <a href="<?php echo site_url($controller.'/manage_vyapari'); ?>">Vyapari registration</a>
-          </li>*/?>
+          </li>*/ ?>
           
           <?php if(access('pass_block_report')){ ?>
           <li>

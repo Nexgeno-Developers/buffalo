@@ -19,8 +19,8 @@
   <div class="col-xl-12">
     <div class="card">
       <div class="card-body">
-        <h4 class="page-title mt-0">
-            <i class="mdi mdi-book-open-page-variant title_icon"></i> <?php echo get_phrase($page_title); ?>
+        <h4 class="page-title mt-0 pb-1">
+        <i class="mdi mdi-book title_icon"></i> <?php echo get_phrase($page_title); ?>
         </h4>
       </div> <!-- end card body-->
     </div> <!-- end card -->

@@ -36,13 +36,13 @@
             </select>
         </div>        
         
-        <?/*<div class="form-group col-md-6">
+        <?php /*<div class="form-group col-md-6">
             <label for="status"><?php echo get_phrase('status'); ?></label>
             <select name="status" class="form-control select2" data-toggle="select2" required>
                 <option value="1" <?php echo ($user['user_status'] == 1) ? 'selected' : ''; ?>>Active</option>
                 <option value="0" <?php echo ($user['user_status'] == 0) ? 'selected' : ''; ?>>Inactive</option>
             </select>
-        </div>*/?>
+        </div>*/ ?>
         
         <div class="form-group col-md-6">
             <label for="gate_no"><?php echo get_phrase('gate_no'); ?></label>
@@ -57,8 +57,8 @@
         <div class="form-group col-md-12 password" style="display:none;">
             <input type="text" class="form-control" name="password">
         </div>         
-        <div class="form-group col-md-12 mt-2">
-            <button class="btn btn-block btn-primary btn-ajax" type="submit"><span class="form-button"><?php echo get_phrase('update_user'); ?></span> <i class="fa fa-spinner fa-spin form-loader" style="display:none"></i></button>
+        <div class="form-group col-md-3 mt-2">
+            <button class="btn btn-block btn-success btn-ajax" type="submit"><span class="form-button"><?php echo get_phrase('update_user'); ?></span> <i class="fa fa-spinner fa-spin form-loader" style="display:none"></i></button>
         </div>        
     </div>
 </form>

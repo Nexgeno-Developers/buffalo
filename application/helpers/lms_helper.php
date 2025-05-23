@@ -297,23 +297,26 @@ function old_vyapari_check($param){
 	}
 	
 	function get_cattle_count($slaughterType, $sex, $date = ""){
-	    $CI = & get_instance();
-        $CI->db->select('AQ.qrcode')->from('app_qrcode as AQ');
-        $CI->db->join('cattle_pre_booking as CPB', 'CPB.tag_no = AQ.qrcode', 'left');
-        
-        if($slaughterType) {
-            $CI->db->where('AQ.slaughtering_type', $slaughterType);
-        }
-        
-        if($sex) {
-            $CI->db->where('CPB.cattle_sex', $sex);
-        }
-        
-        if($date) {
-            $CI->db->where('AQ.timestamp >=', date('Y-m-d 00:00:00', strtotime($date)));
-            $CI->db->where('AQ.timestamp <=', date('Y-m-d 23:59:59', strtotime($date)));
-        }        
-        
-        //$CI->db->where('CPB.timestamp >', '2024-06-04 00:00:00');
-        return $CI->db->get()->num_rows(); 
+		$CI = & get_instance();
+		$CI->benchmark->mark('query_start');
+
+		$CI->db->select('COUNT(AQ.qrcode) AS total', false);
+		$CI->db->from('app_qrcode AS AQ');
+		$CI->db->join('cattle_pre_booking AS CPB', 'CPB.tag_no = AQ.qrcode', 'inner');
+
+		if ($slaughterType) {
+			$CI->db->where('AQ.slaughtering_type', $slaughterType);
+		}
+
+		if ($sex) {
+			$CI->db->where('CPB.cattle_sex', $sex);
+		}
+
+		if ($date) {
+			$CI->db->where('AQ.timestamp >=', date('Y-m-d 00:00:00', strtotime($date)));
+			$CI->db->where('AQ.timestamp <=', date('Y-m-d 23:59:59', strtotime($date)));
+		}
+
+		$result = $CI->db->get()->row_array();
+		return $result['total'];        
 	}

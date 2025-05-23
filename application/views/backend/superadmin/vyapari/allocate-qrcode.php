@@ -84,10 +84,10 @@
                        </select>
                     </div>  
                     
-                    <?/*<div class="form-group col-md-6">
+                    <?php /*<div class="form-group col-md-6">
                         <label style="margin: 0;" for="receipt_no">Receipt No.</label>
                         <input type="text" name="receipt_no" class="form-control" placeholder="Receipt No." required>
-                    </div>*/?> <!--2024 comment-->
+                    </div>*/ ?> <!--2024 comment-->
                     
                     <div class="form-group col-md-6">
                         <label style="margin: 0;" for="pandaal_no">Pandol No.</label>
@@ -129,7 +129,7 @@
                         </div>
                     </div>    
                     
-                    <?/*<div class="form-group col-md-6">
+                    <?php /*<div class="form-group col-md-6">
                         <label style="margin: 0;" for="pandaal_no">Dawanwala</label>
                        <select name="gwala_id" class="form-control select2" required>
                            <?php $app_gwala = $this->db->select('id,license_no,applicant_name')->order_by('id', 'ASC')->get('app_gwala')->result_array(); ?>
@@ -138,7 +138,7 @@
                            <option value="<?= $row['id']; ?>"><?= $row['applicant_name']; ?></option>
                            <?php endforeach; ?>
                        </select>
-                    </div>*/?>  
+                    </div>*/ ?>  
                     
                     <div class="form-group mb-1 col-md-12">
                        <label style="margin: 0;" for="qrcode"><strong>Certificate Qrcode</strong> Sequence</label>
@@ -159,7 +159,7 @@
                                 </div>                                
                                 <div class="col-md-2 form-group change">
                                     
-                                   <div class="btn btn-block btn-secondary" onclick="addRow();"><i class="fa fa-plus" aria-hidden="true"></i> Add</div>
+                                   <div class="btn btn-block btn-secondary" onclick="addRow();"><i class="fa fa-plus" aria-hidden="true"></i></div>
                                 </div>
                              </div>
                           </div>
@@ -168,9 +168,9 @@
                     <div class="col-md-12">
                         <p class="text-center mt-0 h3">Total Passes : <span class="pcount_total text-danger">0</span></p>
                     </div>
-                    <div class="form-group  col-md-12">
-                       <?/*<input type="hidden" name="pandaal_no" value="<?php echo $pandol_no; ?>" required>*/?>
-                       <button class="btn btn-block btn-primary" type="submit"><?php echo get_phrase('submit'); ?></button>
+                    <div class="form-group  col-md-3">
+                       <?php /*<input type="hidden" name="pandaal_no" value="<?php echo $pandol_no; ?>" required>*/ ?>
+                       <button class="btn btn-block btn-success" type="submit"><?php echo get_phrase('submit'); ?></button>
                     </div>
                  </div>
               </form>
@@ -204,7 +204,7 @@
                 
                 function addRow()
                 {
-                    var html = '<div class="qrcode-fields"> <div class="row"> <div class="col-md-4 form-group"> <input onkeyup="calculateSequencePass();" type="text" class="form-control" placeholder="Sequence From" name="sequence_from[]" required> </div><div class="col-md-4 form-group"> <input onkeyup="calculateSequencePass();" type="text" class="form-control" name="sequence_to[]" placeholder="Sequence To" required> </div> <div class="col-md-2 form-group">Pass: <span class="pcount text-danger">0</span></div> <div class="col-md-2 form-group"><div class="btn btn-block btn-danger" onclick="removeRow(this);"><i class="fa fa-minus" aria-hidden="true"></i> Remove</div></div></div></div>';    
+                    var html = '<div class="qrcode-fields"> <div class="row"> <div class="col-md-4 form-group"> <input onkeyup="calculateSequencePass();" type="text" class="form-control" placeholder="Sequence From" name="sequence_from[]" required> </div><div class="col-md-4 form-group"> <input onkeyup="calculateSequencePass();" type="text" class="form-control" name="sequence_to[]" placeholder="Sequence To" required> </div> <div class="col-md-2 form-group">Pass: <span class="pcount text-danger">0</span></div> <div class="col-md-2 form-group"><div class="btn btn-block btn-danger" onclick="removeRow(this);"><i class="fa fa-minus" aria-hidden="true"></i></div></div></div></div>';    
                     $(".qrcode-block").append(html);
                 }
                 

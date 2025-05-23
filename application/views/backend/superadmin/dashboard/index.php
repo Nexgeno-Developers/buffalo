@@ -2,22 +2,18 @@
 <style>
     .sell_position1 {
     position: absolute;
-    right: 30px;
-    top: 44px;
+    right: 25px;
+    top: 63px;
 }
 
 .sell_position2 {
     position: absolute;
-    right: 30px;
-    top: 65px;
+    right: 25px;
+    top: 85px;
 }
 
-.dashboard_box .card-header {
-    padding: 20px 10px 10px 10px;
-}
-.dashboard_box .card-footer {
-    padding-left: 62px;
-} 
+
+
 .dashboard_box .col-lg-3.col-md-6.col-sm-6.col-6:nth-child(odd) {
     padding-right: 7px;
 }
@@ -32,17 +28,20 @@
             padding-right: 0;
 }
 .dashboard_box .card-header {
-    padding: 10px 10px 10px 10px;
+    padding: 0px;
 }
 .sell_position1 {
     position: relative;
     right: 0;
+    text-align: left !important;
     top: 6px;
 }
 .sell_position2 {
     position: relative;
     right: 0;
     top: 6px;
+    text-align: left !important;
+    padding-bottom:15px;
 }
 .mt30
 {
@@ -50,16 +49,18 @@
 }
 }
 
-.view_report
-{
-        height: 141px;
+.view_report {
     text-align: center;
-    padding-top: 40px;
+    display: flex;
+    height: 92%;
+    align-items: center;
+    justify-content: center;
+
 }
 
-
 .view_report p
-{font-size: 20px !important;
+{
+  font-size: 20px !important;
     font-weight: 900;
 }
 
@@ -70,7 +71,7 @@
   <div class="col-xl-12 breadcrumes">
     <div class="card">
       <div class="card-body">
-        <h4 class="page-title"> <i class="mdi mdi-view-dashboard title_icon"></i> <?php echo get_phrase('Buffalo Dashboard'); ?> </h4>
+        <h4 class="page-title pb-1"> <i class="mdi mdi-home title_icon"></i> <?php echo get_phrase('Buffalo Dashboard'); ?> </h4>
       </div> <!-- end card body-->
     </div> <!-- end card -->
   </div><!-- end col-->
@@ -82,14 +83,14 @@
 <div class="dashboard_box">
 <div class="row ">
     
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddleft_0">
                 <div class="card card-stats two">
                      <a class="dashbox" href="reports/inward">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/square-down_icon.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon1.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Buffalo Inward'); ?></p>
+                        <p class="card-category"><?php echo get_phrase('Inward Total Buffalo'); ?></p>
                         <h3 class="card-title"> 
                         <?php
                           echo $unblock;
@@ -106,14 +107,14 @@
             </div>
             
                 
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1 pddright_0">
                 <div class="card card-stats four">
                     <a class="dashbox" href="reports/outward">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/square-up-icon.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon3.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Buffalo Outward'); ?></p>
+                        <p class="card-category"><?php echo get_phrase('Outward Total Buffalo'); ?></p>
                         <h3 class="card-title"> 
                         <?php
                           echo $exit
@@ -130,20 +131,17 @@
                 </div>
             </div>
            
-           
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="card card-stats one">
-                     <a class="dashbox" href="manage_vyapari"> 
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1 pddleft_0">
+                <div class="card card-stats five">
+                    <a class="dashbox" href="reports/blocked">
                     <div class="card-header card-header-warning card-header-icon">
-                        <div class="card-icon">
-                            <img src="../assets/backend/images/wyapari_icon.png" alt="">
+                        <div class="card-icon padd5">
+                            <img src="../assets/backend/images/arrow_icon7.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Vyapari Registered'); ?> </p>
+                        <p class="card-category"><?php echo get_phrase('Balanced Total Buffalo'); ?>  </p>
                         <h3 class="card-title"> 
-                        <?php
-                           echo $vyapari;
-                        ?>
-                       </h3>
+                        1234
+                        </h3>
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -153,14 +151,13 @@
                     </a>
                 </div>
             </div>
-            
-            
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddright_0 d-none">
                 <div class="card card-stats three">
                     <a class="dashbox" href="reports/blocked">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/block_icons.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon8.svg" alt="">
                         </div>
                         <p class="card-category"><?php echo get_phrase('Pass Blocked'); ?>  </p>
                         <h3 class="card-title"> 
@@ -177,49 +174,39 @@
                     </a>
                 </div>
             </div>
-            
-            <!--<h5 class="text-danger padding-left: 10px;">Under maintainance - Below data may be wrong</h5>-->
            
-        
-     <div class="col-md-6">
-        <div class="chart_box">
-        <canvas id="myChart"></canvas> 
-    </div>
-    </div>
-    
-    <div class="col-md-6 mb-3 mt30">
-        <div class="chart_box">
-            <p>Buffalo Inward and Outward Daily Report</p>
-            <table class="table table-striped dt-responsive nowrap">
-            	<thead class="chart-table-header">
-            		<tr>
-            		    <th>Sr. No.</th>
-            			<th>Date</th>
-            			<th>Inward</th>
-            			<th>Outward</th>
-            		</tr>
-            	</thead>
-            	<tbody class="chart-table-body" id="chart-table-body">
-            	</tbody>
-            </table>  
-            <?php 
-                // $startDate = new DateTime('2024-06-05');
-                // $endDate   = new DateTime('2024-06-20');
-                // $endDate   = $endDate->modify('+1 day'); // Include end date in the loop
-                // $period    = new DatePeriod($startDate, new DateInterval('P1D'), $endDate);
-            ?>
-        </div>
-    </div>
-    
-    <div class="col-md-4">
-        
-        <div class="card card-stats five">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddright_0">
+                <div class="card card-stats one">
+                     <a class="dashbox" href="manage_vyapari"> 
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <img src="../assets/backend/images/arrow_icon9.svg" alt="">
+                        </div>
+                        <p class="card-category"><?php echo get_phrase('Registered Total Vyapari'); ?> </p>
+                        <h3 class="card-title"> 
+                        <?php
+                           echo $vyapari;
+                        ?>
+                       </h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="fa fa-clock-o"></i> Just Updated
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="col-md-4 col-6 pl-md-1  pddleft_0">
+        <div class="card card-stats three">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/sell_icons.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon14.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Selling - Qurbani'); ?>  </p>
+                        <p class="card-category"><?php echo get_phrase('Qurbani - Total Selling'); ?>  </p>
                         <h3 class="card-title"> 
                            <div><?php echo $selling_total; ?></div>
                         </h3>
@@ -273,15 +260,15 @@
     </div>
     
     
-    <div class="col-md-4">
+    <div class="col-md-4 col-6 pl-md-1 pddright_0">
         
-         <div class="card card-stats five">
+         <div class="card card-stats" style="background:#7e5f54">
                     <a class="dashbox" href="javascript:void(0)">
                     <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <img src="../assets/backend/images/kttu_icons.png" alt="">
+                            <img src="../assets/backend/images/arrow_icon16.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Total Slaughter - Kattu'); ?>  </p>
+                        <p class="card-category"><?php echo get_phrase('Regular - Total Slaughter'); ?>  </p>
                         <h3 class="card-title"> 
                            <div><?php echo $slaughter_total; ?></div>
                         </h3>
@@ -299,7 +286,7 @@
         <?php /*        
         <div class="chart_box"> 
         
-        <p>Buffalo Slaughter - Kattu Daily Report</p>
+        <p>Buffalo Slaughter - Regular Daily Report</p>
         <table class="table table-striped dt-responsive nowrap">
         	<thead class="chart-table-header">
         		<tr>
@@ -335,9 +322,9 @@
     </div>
 
 
-   <div class="col-md-4">
+   <div class="col-md-4 pl-md-1 col-6 pddright_0 d-none">
         
-         <div class="card card-stats five view_report">
+         <div class="card card-stats three view_report">
                     <a class="dashbox" href="<?php echo site_url($controller.'/reports/daily-report'); ?>">
                     <div class="card-header card-header-warning card-header-icon">
                         
@@ -353,6 +340,53 @@
                 </div>
             
     </div>
+            
+            <!--<h5 class="text-danger padding-left: 10px;">Under maintainance - Below data may be wrong</h5>-->
+           
+        
+     <div class="col-md-12">
+        <div class="chart_box">
+        <div class="color_represent">
+                    <div class="inward">
+                        <p class="">Inward </p>
+                        <div class="circle"></div>
+                    </div>
+
+                    <div class="outward ">
+                        <p class="">Outward  </p>
+                        <div class="circle1"></div>
+                    </div>
+                  </div>
+
+        <canvas id="myChart"></canvas> 
+    </div>
+    </div>
+    
+    <div class="col-md-12 mb-3 mt30">
+        <div class="chart_box">
+            <p>Buffalo Inward and Outward Daily Report</p>
+            <table class="table table-striped dt-responsive nowrap">
+            	<thead class="chart-table-header">
+            		<tr>
+            		    <th>Sr. No.</th>
+            			<th>Date</th>
+            			<th>Inward</th>
+            			<th>Outward</th>
+            		</tr>
+            	</thead>
+            	<tbody class="chart-table-body" id="chart-table-body">
+            	</tbody>
+            </table>  
+            <?php 
+                // $startDate = new DateTime('2024-06-05');
+                // $endDate   = new DateTime('2024-06-20');
+                // $endDate   = $endDate->modify('+1 day'); // Include end date in the loop
+                // $period    = new DatePeriod($startDate, new DateInterval('P1D'), $endDate);
+            ?>
+        </div>
+    </div>
+    
+    
     
            
           <div class="col-xl-4 hidden">
@@ -531,11 +565,11 @@ new Chart("myChart", {
     labels: xValues,
     datasets: [{ 
       data: yValuesIN,
-      borderColor: "#722bfb", 
+      borderColor: "#2F2F2F", 
       fill: false
     }, { 
       data: yValuesOut,
-      borderColor: "#3fdd4f",
+      borderColor: "#319ea7",
       fill: false
     }]
   },

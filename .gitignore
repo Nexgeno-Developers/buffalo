@@ -8,6 +8,11 @@ uploads/csv_file/*
 uploads/vyapari_photo/*
 uploads/certificates/*
 uploads/generated-qrcodes/*
+uploads/biometric_excel_files/*
+uploads/csv_file/*
+uploads/vyapari_photo/*
+uploads/certificates/*clear
+uploads/generated-qrcodes/*
 
 
 # Ignore all files in uploads/users
@@ -34,6 +39,7 @@ error_log
 /application/third_party
 /application/libraries/
 /application/config/database.php
+/application/config/config.php
 
 /index.php
 

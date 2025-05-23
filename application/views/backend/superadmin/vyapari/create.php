@@ -73,11 +73,11 @@
         
         <input type="hidden" name="temp_code" class="temp_code" value="<?php echo $temp_code; ?>">
 
-        <div class="form-group  col-md-6">
-            <button class="btn btn-block btn-primary" type="submit"><?php echo get_phrase('register'); ?></button>
+        <div class="form-group  col-md-2">
+            <button class="btn btn-block btn-success" type="submit"><?php echo get_phrase('register'); ?></button>
         </div>
         
-         <div class="form-group  col-md-6">
+         <div class="form-group  col-md-2">
             <input class="btn btn-block btn-danger" onclick="reset_data();" type="button" value="Reset">
         </div>
     </div>
