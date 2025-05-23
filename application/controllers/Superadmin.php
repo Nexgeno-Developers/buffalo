@@ -440,79 +440,145 @@ class Superadmin extends CI_Controller {
         }    
     }    
 
-  public function dashboard(){
+  // public function dashboard(){
       
-    //ini_set('display_errors', 1);
-    //ini_set('display_startup_errors', 1);
-    //error_reporting(E_ALL);
+  //   //ini_set('display_errors', 1);
+  //   //ini_set('display_startup_errors', 1);
+  //   //error_reporting(E_ALL);
 
-    //$this->msg91_model->clickatell();
-    $page_data['page_title'] = 'Dashboard';
-    $page_data['folder_name'] = 'dashboard';
-    $page_data['vyapari'] = $this->db->select('vyapari_id')->from('app_vyapari')->get()->num_rows();
-    $page_data['unblock'] = $this->db->select('status')->from('app_qrcode')->where_in('status', array('unblock', 'exit'))->get()->num_rows();
-    $page_data['selling_m'] = get_cattle_count(2, '1');
-    $page_data['selling_f'] = get_cattle_count(2, '2');
-    $page_data['slaughter_m'] = get_cattle_count(1, '1');
-    $page_data['slaughter_f'] = get_cattle_count(1, '2');   
-    $page_data['selling_total'] = get_cattle_count(2, null);
-    $page_data['slaughter_total'] = get_cattle_count(1, null);
+  //   //$this->msg91_model->clickatell();
+  //   $page_data['page_title'] = 'Dashboard';
+  //   $page_data['folder_name'] = 'dashboard';
+  //   $page_data['vyapari'] = $this->db->select('vyapari_id')->from('app_vyapari')->get()->num_rows();
+  //   $page_data['unblock'] = $this->db->select('status')->from('app_qrcode')->where_in('status', array('unblock', 'exit'))->get()->num_rows();
+  //   $page_data['selling_m'] = get_cattle_count(2, '1');
+  //   $page_data['selling_f'] = get_cattle_count(2, '2');
+  //   $page_data['slaughter_m'] = get_cattle_count(1, '1');
+  //   $page_data['slaughter_f'] = get_cattle_count(1, '2');   
+  //   $page_data['selling_total'] = get_cattle_count(2, null);
+  //   $page_data['slaughter_total'] = get_cattle_count(1, null);
 
-    $current_date = date('Y-m-d 00:00:00');
+  //   $current_date = date('Y-m-d 00:00:00');
     
-    $date = "2024-06-05 00:00:00";
-    $date1 = "2024-06-05 00:00:00";
-    $date2 = "2024-06-05 00:00:00";
-    $date3 = "2024-06-20 00:00:00";
+  //   $date = "2024-06-05 00:00:00";
+  //   $date1 = "2024-06-05 00:00:00";
+  //   $date2 = "2024-06-05 00:00:00";
+  //   $date3 = "2024-06-20 00:00:00";
     
-    $page_data['startdate'] =  date('d', strtotime($date));
-    $page_data['month'] = date('m', strtotime($date));
-    $page_data['days'] = date('t', strtotime($date));
+  //   $page_data['startdate'] =  date('d', strtotime($date));
+  //   $page_data['month'] = date('m', strtotime($date));
+  //   $page_data['days'] = date('t', strtotime($date));
     
-    /* ---------------------------- imp --------------------------- */
+  //   /* ---------------------------- imp --------------------------- */
     
-    // $this->db->query("SET @@sql_mode=''");
-    // $query = $this->db->select('DAY(inward_date) AS DATE , COUNT("inward_date") AS count')->from('app_qrcode')->where_in('status', array('unblock', 'exit'))->where('inward_date BETWEEN "'. $date2 .'" AND "'. $date3 .'"')->group_by('DATE(inward_date)')->get()->result();
-    // $page_data['aniamalin'] = json_encode($query);
+  //   // $this->db->query("SET @@sql_mode=''");
+  //   // $query = $this->db->select('DAY(inward_date) AS DATE , COUNT("inward_date") AS count')->from('app_qrcode')->where_in('status', array('unblock', 'exit'))->where('inward_date BETWEEN "'. $date2 .'" AND "'. $date3 .'"')->group_by('DATE(inward_date)')->get()->result();
+  //   // $page_data['aniamalin'] = json_encode($query);
     
-    // $this->db->query("SET @@sql_mode=''");
-    // $query1 = $this->db->select('DAY(exit_date) AS DATE , COUNT("exit_date") AS count')->from('app_qrcode')->where('status', 'exit')->where('exit_date BETWEEN "'. $date1 .'" AND "'. $date3 .'"')->group_by('DATE(exit_date)')->get()->result();
-    // $page_data['aniamalout'] = json_encode($query1);
+  //   // $this->db->query("SET @@sql_mode=''");
+  //   // $query1 = $this->db->select('DAY(exit_date) AS DATE , COUNT("exit_date") AS count')->from('app_qrcode')->where('status', 'exit')->where('exit_date BETWEEN "'. $date1 .'" AND "'. $date3 .'"')->group_by('DATE(exit_date)')->get()->result();
+  //   // $page_data['aniamalout'] = json_encode($query1);
     
-    /* ---------------------------- imp -------------------------- */
+  //   /* ---------------------------- imp -------------------------- */
     
-    /* ---------------------------- graph imp -------------------------- */
-    // Set SQL mode to empty string
-    $this->db->query("SET @@sql_mode=''");
+  //   /* ---------------------------- graph imp -------------------------- */
+  //   // Set SQL mode to empty string
+  //   $this->db->query("SET @@sql_mode=''");
     
-    // Query for inward_date
-    $query = $this->db->select('DAY(inward_date) AS DATE, COUNT(inward_date) AS count')
-                      ->from('app_qrcode')
-                      ->where_in('status', ['unblock', 'exit'])
-                      ->where('inward_date >=', $date2)
-                      ->where('inward_date <=', $date3)
-                      ->group_by('DATE(inward_date)')
-                      ->get()
-                      ->result();
-    $page_data['aniamalin'] = json_encode($query);
+  //   // Query for inward_date
+  //   $query = $this->db->select('DAY(inward_date) AS DATE, COUNT(inward_date) AS count')
+  //                     ->from('app_qrcode')
+  //                     ->where_in('status', ['unblock', 'exit'])
+  //                     ->where('inward_date >=', $date2)
+  //                     ->where('inward_date <=', $date3)
+  //                     ->group_by('DATE(inward_date)')
+  //                     ->get()
+  //                     ->result();
+  //   $page_data['aniamalin'] = json_encode($query);
     
-    // Query for exit_date
-    $query1 = $this->db->select('DAY(exit_date) AS DATE, COUNT(exit_date) AS count')
-                       ->from('app_qrcode')
-                       ->where('status', 'exit')
-                       ->where('exit_date >=', $date1)
-                       ->where('exit_date <=', $date3)
-                       ->group_by('DATE(exit_date)')
-                       ->get()
-                       ->result();
-    $page_data['aniamalout'] = json_encode($query1);
+  //   // Query for exit_date
+  //   $query1 = $this->db->select('DAY(exit_date) AS DATE, COUNT(exit_date) AS count')
+  //                      ->from('app_qrcode')
+  //                      ->where('status', 'exit')
+  //                      ->where('exit_date >=', $date1)
+  //                      ->where('exit_date <=', $date3)
+  //                      ->group_by('DATE(exit_date)')
+  //                      ->get()
+  //                      ->result();
+  //   $page_data['aniamalout'] = json_encode($query1);
     
-    /* ---------------------------- graph imp -------------------------- */
+  //   /* ---------------------------- graph imp -------------------------- */
     
-    $page_data['block'] = $this->db->select('status')->from('app_qrcode')->where('status', 'block')->get()->num_rows();
-    $page_data['exit'] = $this->db->select('status')->from('app_qrcode')->where('status', 'exit')->get()->num_rows();    
-    $this->load->view('backend/index', $page_data);
-  }
+  //   $page_data['block'] = $this->db->select('status')->from('app_qrcode')->where('status', 'block')->get()->num_rows();
+  //   $page_data['exit'] = $this->db->select('status')->from('app_qrcode')->where('status', 'exit')->get()->num_rows();    
+  //   $this->load->view('backend/index', $page_data);
+  // }
+
+  public function dashboard()
+  {
+      // Page meta
+      $page_data['page_title'] = 'Dashboard';
+      $page_data['folder_name'] = 'dashboard';
+
+      // Basic statistics
+      $query = $this->db->query("
+          SELECT 
+              (SELECT COUNT(vyapari_id) FROM app_vyapari) AS vyapari,
+              (SELECT COUNT(status) FROM app_qrcode WHERE status IN ('unblock', 'exit')) AS unblock,
+              (SELECT COUNT(status) FROM app_qrcode WHERE status = 'block') AS block,
+              (SELECT COUNT(status) FROM app_qrcode WHERE status = 'exit') AS exit_count
+      ");
+
+      $result = $query->row_array();
+      $page_data['vyapari']         = $result['vyapari'];
+      $page_data['unblock']         = $result['unblock'];
+      $page_data['block']           = $result['block'];
+      $page_data['exit']            = $result['exit_count'];      
+
+      // Cattle count
+      $page_data['selling_m']       = get_cattle_count(2, '1');
+      $page_data['selling_f']       = get_cattle_count(2, '2');
+      $page_data['slaughter_m']     = get_cattle_count(1, '1');
+      $page_data['slaughter_f']     = get_cattle_count(1, '2');
+      $page_data['selling_total']   = get_cattle_count(2, null);
+      $page_data['slaughter_total'] = get_cattle_count(1, null);
+
+      // Date variables for filtering and graphs
+      $start = get_common_settings('start_datetime');
+      $end = get_common_settings('end_datetime');  
+
+      $page_data['startdate'] = date('d', strtotime($start));
+      $page_data['month']     = date('m', strtotime($start));
+      $page_data['days']      = date('t', strtotime($start));
+
+      // Disable strict SQL mode to prevent group by issues
+      //$this->db->query("SET @@sql_mode=''");
+
+      // Animal In Graph Data
+      $query1 = $this->db->select('DAY(inward_date) AS DATE, COUNT(inward_date) AS count')
+                        ->from('app_qrcode')
+                        ->where_in('status', ['unblock', 'exit'])
+                        ->where('inward_date >=', $start)
+                        ->where('inward_date <=', $end)
+                        ->group_by('DATE(inward_date)')
+                        ->get()
+                        ->result();
+      $page_data['aniamalin'] = json_encode($query1);
+
+      // Animal Out Graph Data
+      $query2 = $this->db->select('DAY(exit_date) AS DATE, COUNT(exit_date) AS count')
+                        ->from('app_qrcode')
+                        ->where('status', 'exit')
+                        ->where('exit_date >=', $start)
+                        ->where('exit_date <=', $end)
+                        ->group_by('DATE(exit_date)')
+                        ->get()
+                        ->result();
+      $page_data['aniamalout'] = json_encode($query2);
+
+      // Load the dashboard view
+      $this->load->view('backend/index', $page_data);
+  }  
 
   //START CLASS secion
   public function manage_class($param1 = '', $param2 = '', $param3 = ''){
