@@ -254,7 +254,7 @@ h4.page-title.vyapdet.mt-0 {
                                         <?php }} ?>
                                     </td>
                                     <td>
-                                        <label>Certificate No : <?php echo $this->db->where('tag_no', $row['qrcode'])->get('cattle_pre_booking')->row()->certificate_no; ?></label>
+                                        <label>Certificate No : <?php echo $this->db->where('certificate_no', $row['qrcode'])->get('cattle_pre_booking')->row()->certificate_no; ?></label>
                                         <label>Receipt No : <?php echo $row['receipt_no']; ?></label>
                                         <?php $bk_n = $this->db->get_where('app_broker', array('id' => $row['broker_id']))->row()->applicant_name ?>
                                         <?php $gw_n = $this->db->get_where('app_gwala', array('id' => $row['gwala_id']))->row()->applicant_name ?>
