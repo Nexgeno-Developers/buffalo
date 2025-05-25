@@ -16,7 +16,7 @@ uploads/generated-qrcodes/*
 # But do not ignore the folders themselves
 !uploads/prebooking-csv-response/
 !uploads/master_pdf
-!uploads/prebooking-csv-response/sample-prebooking-format.csv
+# !uploads/prebooking-csv-response/sample-prebooking-format.csv
 
 
 # Ignore all files in uploads/users
