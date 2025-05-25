@@ -1417,7 +1417,7 @@ class Deonar_model extends CI_Model {
             $insert['pandaal_no'] = $pandaal_no;
             $insert['broker_id']  = $broker_id;
             $insert['gwala_id']   = $prebookingData['gwala_id'];
-            $insert['qrcode']     = $prebookingData['tag_no'];
+            $insert['qrcode']     = $qr; //$prebookingData['tag_no'];
             $insert['status']     = 'unblock';
             $insert['inward_by']  = $this->session->userdata('user_id');
             $insert['inward_date']= date('Y-m-d H:i:s');
