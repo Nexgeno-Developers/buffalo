@@ -135,12 +135,16 @@ h4.page-title.vyapdet.mt-0 {
                     <?php foreach($receipt_no as $row) { ?>
                         <?php 
                              $certificates = $this->db->select(['app_qrcode.qrcode', 'cattle_pre_booking.certificate_no','app_qrcode.timestamp'])->from('app_qrcode')
-                                         ->join('cattle_pre_booking', 'app_qrcode.qrcode = cattle_pre_booking.tag_no')
+                                         ->join('cattle_pre_booking', 'app_qrcode.qrcode = cattle_pre_booking.certificate_no')
                                          ->where('app_qrcode.vyapari_id', $vyapari['vyapari_id'])
                                          ->where('app_qrcode.receipt_no', $row->receipt_no)
                                          ->order_by('cattle_pre_booking.certificate_no', 'asc')
                                          ->get()
                                          ->result();
+
+                                        //  var_dump($vyapari['vyapari_id']);
+                                        //  var_dump($row->receipt_no);
+                                        //  echo $this->db->last_query();
 
                         ?>                    
                     

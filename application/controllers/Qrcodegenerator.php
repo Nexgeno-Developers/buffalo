@@ -70,7 +70,7 @@ class Qrcodegenerator extends CI_Controller {
 	   //$data = $this->db->select('qrcode')->from('app_qrcode')->where('vyapari_id', $vyapari_id)->where('receipt_no', $receipt_no)->order_by('qrcode', 'asc')->get()->result();
 	   $data = $this->db->select(['app_qrcode.qrcode', 'cattle_pre_booking.certificate_no ', 'cattle_pre_booking.tag_no'])
                  ->from('app_qrcode')
-                 ->join('cattle_pre_booking', 'app_qrcode.qrcode = cattle_pre_booking.tag_no')
+                 ->join('cattle_pre_booking', 'app_qrcode.qrcode = cattle_pre_booking.certificate_no')
                  ->where('app_qrcode.vyapari_id', $vyapari_id)
                  ->where('app_qrcode.receipt_no', $receipt_no)
                  ->order_by('cattle_pre_booking.certificate_no', 'asc')
