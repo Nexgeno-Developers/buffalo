@@ -56,7 +56,7 @@ class Qrcodegenerator extends CI_Controller {
         $qrcode = (new QRCode($options))->render($qr_digit);
         
         
-        echo '<img src="'.$qrcode.'" alt="QR Code" width="150px" height="150px"><p style="margin-left: 16px;font-size: 12px; margin-top: 2px;"><b>Cert:'.$certificate.'</b></p></div>';
+        echo '<img src="'.$qrcode.'" alt="QR Code" width="150px" height="150px"><p style="top: -10px;margin-left: 16px;font-size: 12px; margin-top: 2px;"><b>Cert:'.$certificate.'</b></p></div>';
 	}
 	
 	
