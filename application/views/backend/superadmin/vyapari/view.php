@@ -148,7 +148,7 @@ h4.page-title.vyapdet.mt-0 {
                             <div class="col-md-12 col-12 mb-2 reciept_no_btn">
                                 <label> <b>Receipt No : <?php echo $row->receipt_no; ?></b></label>
                                 <a target="_blank" class="btn btn-sm btn-success" href="<?php echo base_url('Qrcodegenerator/create_bulk_qrcode/?vyapari_id=' . $vyapari['vyapari_id'] . '&receipt_no=' . $row->receipt_no); ?>">Print Certificate QR Code</a>
-                                <small>Receipt Date :<b><?php echo date('d-m-Y h:iA', strtotime(end($certificates)->timestamp)); ?></b> / TOTAL TAGS : <b><?php echo count($certificates); ?></b> / From <b><?php echo reset($certificates)->certificate_no; ?></b> to <b><?php echo end($certificates)->certificate_no; ?></b> certificate no.</small>
+                                <small>Receipt Date :<b><?php echo date('d-m-Y h:iA', strtotime(end($certificates)->timestamp)); ?></b> / TOTAL CERTIFICATES : <b><?php echo count($certificates); ?></b> / From <b><?php echo reset($certificates)->certificate_no; ?></b> to <b><?php echo end($certificates)->certificate_no; ?></b> certificate no.</small>
                             </div>
                         <?php } ?>
                     <?php } ?>
