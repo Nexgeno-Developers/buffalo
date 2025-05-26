@@ -278,9 +278,9 @@ img.lohimg {
                     </form>*/ ?>
              
 
-                <!-- <div class="">
-                    <a href="https://drive.google.com/file/d/1q_mm-5sOfC09VwkWNDYvyIpSMweNXQne/view?usp=sharing" download> <img class="download_img" src="<?php echo base_url('assets/backend/images/download_banner.webp'); ?>" alt="Login Image"></a>
-                </div> -->
+                <div class="">
+                    <a href="https://drive.google.com/file/d/1yzqQqC5keJoPNtJdg61DLE6e3puR_V6N/view?usp=sharing" download> <img class="download_img" src="<?php echo base_url('assets/backend/images/download_banner.webp'); ?>" alt="Login Image"></a>
+                </div>
 
                 </div> 
             </div> 
