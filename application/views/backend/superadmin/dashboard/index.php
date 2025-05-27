@@ -586,7 +586,7 @@ new Chart("myChart", {
             if (xValues[i] <= today) {
                 var row = '<tr>' +
                     '<td>' + (i + 1)  + '</td>' +
-                    '<td>' + xValues[i] + ' June 2024</td>' +
+                    '<td>' + xValues[i] + ' May 2025</td>' +
                     '<td>' + yValuesIN[i] + '</td>' +
                     '<td>' + yValuesOut[i] + '</td>' +
                     '</tr>';
