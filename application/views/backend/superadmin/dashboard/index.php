@@ -444,7 +444,8 @@
 <script>
 var currentDate = new Date();
 
-var day = 20;
+//var day = 20;
+var day = new Date().getDate();
 var current_month = currentDate.getMonth() + 1;
 
 var start_date =  <?php echo $startdate ?>;
@@ -454,13 +455,9 @@ var daysInMonth = <?php echo $days ?>;
 var animalin = <?php echo $aniamalin ?>;
 var animalout = <?php echo $aniamalout ?>;
 
-
 const yValuesIN = [];
 const yValuesOut = []; 
-
 const xValues = [];
-
-
 
 if(current_month == start_month){
     for (let i = start_date; i <= day; i++) {

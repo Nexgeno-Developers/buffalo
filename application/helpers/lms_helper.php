@@ -303,7 +303,7 @@ function old_vyapari_check($param){
 
 		$CI->db->select('COUNT(AQ.qrcode) AS total', false);
 		$CI->db->from('app_qrcode AS AQ');
-		$CI->db->join('cattle_pre_booking AS CPB', 'CPB.tag_no = AQ.qrcode', 'inner');
+		$CI->db->join('cattle_pre_booking AS CPB', 'CPB.certificate_no = AQ.qrcode', 'inner');
 
 		if ($slaughterType) {
 			$CI->db->where('AQ.slaughtering_type', $slaughterType);
