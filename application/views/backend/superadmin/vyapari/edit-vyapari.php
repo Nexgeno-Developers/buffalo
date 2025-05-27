@@ -7,6 +7,18 @@
 
 <form method="POST" class="d-block ajaxForm" action="<?php echo route('manage_vyapari/update_vyapari/'.$vyapari['vyapari_id']); ?>">
     <div class="form-row">
+
+        <div class="form-group col-md-4">
+            <label for="photo"><?php echo get_phrase('photo'); ?>
+        <?php 
+            echo $vyapari['photo'] 
+                ? '<a target="_blank" href="' . base_url('uploads/vyapari_photo/' . $vyapari['photo']) . '">View</a>' 
+                : '';  
+        ?>    
+        </label>
+            <input type="file" class="form-control" name="photo" accept="image/*">
+        </div>
+
         <div class="form-group col-md-4">
             <label for="name"><?php echo get_phrase('name'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" name = "name" value="<?php echo $vyapari['name']; ?>" autocomplete="off" required>
