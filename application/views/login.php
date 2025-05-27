@@ -279,7 +279,7 @@ img.lohimg {
              
 
                 <div class="">
-                    <a href="/buffalodeonar.apk" download> <img class="download_img" src="<?php echo base_url('assets/backend/images/download_banner.webp'); ?>" alt="Login Image"></a>
+                    <a href="https://drive.google.com/file/d/1yzqQqC5keJoPNtJdg61DLE6e3puR_V6N/view?usp=sharing" download> <img class="download_img" src="<?php echo base_url('assets/backend/images/download_banner.webp'); ?>" alt="Login Image"></a>
                 </div>
 
                 </div> 
