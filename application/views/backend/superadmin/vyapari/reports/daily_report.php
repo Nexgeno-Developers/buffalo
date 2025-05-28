@@ -88,8 +88,11 @@
 
 
 <?php
-$from = new DateTime('2024-06-05');
-$to = new DateTime('2024-06-20');
+// $from = new DateTime('2024-06-05');
+// $to = new DateTime('2024-06-20');
+
+$from = new DateTime(get_common_settings('start_datetime'));
+$to = new DateTime(get_common_settings('end_datetime'));
 
 // Add one day to include the end date
 $to->modify('+1 day');
@@ -108,7 +111,7 @@ function get_daily_cattle_summary($from, $to)
         COUNT(*) AS total
     ");
     $CI->db->from("app_qrcode AS AQ");
-    $CI->db->join("cattle_pre_booking AS CPB", "CPB.tag_no = AQ.qrcode", "inner");
+    $CI->db->join("cattle_pre_booking AS CPB", "CPB.certificate_no = AQ.qrcode", "inner");
     $CI->db->where("DATE(AQ.inward_date) >=", $from);
     $CI->db->where("DATE(AQ.inward_date) <=", $to);
     $CI->db->group_by(["report_date", "AQ.slaughtering_type", "CPB.cattle_sex"]);
@@ -117,7 +120,7 @@ function get_daily_cattle_summary($from, $to)
     return $query->result_array(); // will return multiple rows
 }
 
-$summary = get_daily_cattle_summary('2024-06-05', '2024-06-20');
+$summary = get_daily_cattle_summary(get_common_settings('start_datetime'), get_common_settings('end_datetime'));
 $dataMap = [];
 
 foreach ($summary as $row) {
