@@ -59,117 +59,170 @@ class Cronjob extends CI_Controller {
     }
 
 
-    // public function daily_dashbaord_report_eamil(){
-    //     $CI = &get_instance();  // Get CI instance once
-    //     $CI->load->database();
+    public function daily_dashbaord_report_eamil(){
+        $CI = &get_instance();  // Get CI instance once
+        $CI->load->database();
 
-    //     // Total Vyapari Count
-    //     $vyapari = $CI->db->count_all('app_vyapari');
+        // // Total Vyapari Count
+        // $vyapari = $CI->db->count_all('app_vyapari');
 
-    //     // Total Unblock + Exit QR Codes
-    //     $unblock = $CI->db
-    //         ->where_in('status', ['unblock', 'exit'])
-    //         ->count_all_results('app_qrcode');
+        // // Total Unblock + Exit QR Codes
+        // $unblock = $CI->db
+        //     ->where_in('status', ['unblock', 'exit'])
+        //     ->count_all_results('app_qrcode');
 
-    //     // Total Block QR Codes
-    //     $block = $CI->db
-    //         ->where('status', 'block')
-    //         ->count_all_results('app_qrcode');
+        // // Total Block QR Codes
+        // $block = $CI->db
+        //     ->where('status', 'block')
+        //     ->count_all_results('app_qrcode');
 
-    //     // Total Exit QR Codes
-    //     $exit = $CI->db
-    //         ->where('status', 'exit')
-    //         ->count_all_results('app_qrcode'); 
+        // // Total Exit QR Codes
+        // $exit = $CI->db
+        //     ->where('status', 'exit')
+        //     ->count_all_results('app_qrcode'); 
 
-    //     $emails = $CI->db
-    //             ->select('email')
-    //             ->from('users')
-    //             ->where('role_type', 'bmc')
-    //             ->where('user_status','active')
-    //             ->get()
-    //             ->result();
 
-    //     $email_bmc = array_column($emails, 'email');
 
-    //     $ccEmails = $CI->db
-    //         ->select('email')
-    //         ->from('users')
-    //         ->where('role_type', 'superadmin')
-    //         ->get()
-    //         ->result();
+        $query = $CI->db->query("
+            SELECT 
+                (SELECT COUNT(vyapari_id) FROM app_vyapari) AS vyapari,
+                (SELECT COUNT(status) FROM app_qrcode WHERE status IN ('unblock', 'exit')) AS unblock,
+                (SELECT COUNT(status) FROM app_qrcode WHERE status = 'block') AS block,
+                (SELECT COUNT(status) FROM app_qrcode WHERE status = 'exit') AS exit_count
+        ");
 
-    //     $ccList = array_column($ccEmails, 'email');
+        $result = $query->row_array();
+        $vyapari = $result['vyapari'];
+        $unblock = $result['unblock'];
+        $exit = $result['exit_count'];     
 
-    //     date_default_timezone_set('Asia/Kolkata');
-    //     $subject = "Goat Movement Report Till Now " . date('d-M-Y h:i:s A');
-    //     $logoUrl = $this->settings_model->get_logo_light();
-    //     $body = '
-    //             <html>
-    //             <head>
-    //                 <style>
-    //                     @media only screen and (max-width: 620px) {
-    //                         .email-container {
-    //                             width: 100% !important;
-    //                             padding: 10px !important;
-    //                         }
-    //                     }
-    //                 </style>
-    //             </head>
-    //             <body style="margin:0; padding:0; background-color:#f9f9f9; padding-bottom:20px;">
-    //                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" class="email-container" style="width:600px; margin:auto; background-color:#ffffff; font-family: Arial, sans-serif; border:0px solid #e0e0e0;">
-    //                     <tr>
-    //                         <td align="center" style="padding:20px 0;">
-    //                             <img src="' . $logoUrl . '" alt="Logo" width="110" style="display:block;">
-    //                         </td>
-    //                     </tr>
-    //                     <tr>
-    //                         <td style="padding:20px; padding-top:0px !important;">
-    //                             <h2 style="color:#333333; margin-bottom:20px; text-align:center; margin-top:0px;">Goat Movement Summary Report</h2>
-    //                             <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size:14px;">
-    //                                 <thead>
-    //                                     <tr>
-    //                                         <th style="background-color:#f2f2f2; border:1px solid #dddddd; text-align:left; padding:10px;">Item</th>
-    //                                         <th style="background-color:#f2f2f2; border:1px solid #dddddd; text-align:left; padding:10px;">Total</th>
-    //                                     </tr>
-    //                                 </thead>
-    //                                 <tbody>
-    //                                     <tr>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;">Inward Total Goat</td>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;"><b>' . $unblock . '</b></td>
-    //                                     </tr>
-    //                                     <tr>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;">Outward Total Goat</td>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;"><b>' . $exit . '</b></td>
-    //                                     </tr>
-    //                                     <tr>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;">Balance Total Goat</td>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;"><b>' . ($unblock - $exit) . '</b></td>
-    //                                     </tr>
-    //                                     <tr>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;">Pass Blocked</td>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;"><b>' . $block . '</b></td>
-    //                                     </tr>
-    //                                     <tr>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;">Registered Total Vyapari</td>
-    //                                         <td style="border:1px solid #dddddd; padding:10px;"><b>' . $vyapari . '</b></td>
-    //                                     </tr>
-    //                                 </tbody>
-    //                             </table>
-    //                             <p style="margin-top:30px; font-size:14px; color:#555555;">
-    //                                 <b>Regards,</b><br>
-    //                                 Nexgeno Developer Team
-    //                             </p>
-    //                         </td>
-    //                     </tr>
-    //                 </table>
-    //             </body>
-    //             </html>';
 
+        $selling_m       = get_cattle_count(2, '1');
+        $selling_f       = get_cattle_count(2, '2');
+        $slaughter_m     = get_cattle_count(1, '1');
+        $slaughter_f     = get_cattle_count(1, '2');
+        $selling_total   = get_cattle_count(2, null);
+        $slaughter_total = get_cattle_count(1, null);
+
+
+        $emails = $CI->db
+                ->select('email')
+                ->from('users')
+                ->where_in('role_type', ['bmc', 'doctor'])
+                ->where('user_status','active')
+                ->get()
+                ->result();
+
+        $email_bmc = array_column($emails, 'email');
+
+        $ccEmails = $CI->db
+            ->select('email')
+            ->from('users')
+            ->where('role_type', 'superadmin')
+            ->get()
+            ->result();
+
+        $ccList = array_column($ccEmails, 'email');
+
+        date_default_timezone_set('Asia/Kolkata');
+        $subject = "Buffalo Movement Report Till Now " . date('d-M-Y h:i:s A');
+        $logoUrl = 'https://i.ibb.co/nsP1fvGN/logo-dark-webp.webp';
+        $body = '
+                <html>
+                <head>
+                    <style>
+                        @media only screen and (max-width: 620px) {
+                            .email-container {
+                                width: 100% !important;
+                                padding: 10px !important;
+                            }
+                        }
+                    </style>
+                </head>
+                <body style="margin:0; padding:0; background-color:#f9f9f9; padding-bottom:20px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" class="email-container" style="width:600px; margin:auto; background-color:#ffffff; font-family: Arial, sans-serif; border:0px solid #e0e0e0;">
+                        <tr>
+                            <td align="center" style="padding:20px 0;">
+                                <img src="' . $logoUrl . '" alt="Logo" width="110" style="display:block;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:20px; padding-top:0px !important;">
+                                <h2 style="color:#333333; margin-bottom:20px; text-align:center; margin-top:0px;">Buffalo Movement Summary Report Till Now '. date('d-M-Y h:i:s A') .'</h2>
+                                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size:14px;">
+                                    <thead>
+                                        <tr>
+                                            <th style="background-color:#f2f2f2; border:1px solid #dddddd; text-align:left; padding:10px;">Item</th>
+                                            <th style="background-color:#f2f2f2; border:1px solid #dddddd; text-align:left; padding:10px;">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border:1px solid #dddddd; padding:10px;">Inward Total Buffalo</td>
+                                            <td style="border:1px solid #dddddd; padding:10px;"><b>' . $unblock . '</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border:1px solid #dddddd; padding:10px;">Outward Total Buffalo</td>
+                                            <td style="border:1px solid #dddddd; padding:10px;"><b>' . $exit . '</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border:1px solid #dddddd; padding:10px;">Balance Total Buffalo</td>
+                                            <td style="border:1px solid #dddddd; padding:10px;"><b>' . ($unblock - $exit) . '</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border:1px solid #dddddd; padding:10px;">Registered Total Vyapari</td>
+                                            <td style="border:1px solid #dddddd; padding:10px;"><b>' . $vyapari . '</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border:1px solid #dddddd; padding:10px;">Qurbani - Total Selling</td>
+                                            <td style="border:1px solid #dddddd; padding:10px;">
+                                                <table width="100%" style="border-collapse: collapse;">
+                                                    <tr>
+                                                        <td><b>' . $selling_total . '</b></td>
+                                                        <td style="text-align: right;">
+                                                            MB: ' . $selling_m . '<br>
+                                                            SB: ' . $selling_f . '
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border:1px solid #dddddd; padding:10px;">Regular - Total Slaughter</td>
+                                            <td style="border:1px solid #dddddd; padding:10px;">
+                                                <table width="100%" style="border-collapse: collapse;">
+                                                    <tr>
+                                                        <td><b>' . $slaughter_total . '</b></td>
+                                                        <td style="text-align: right;">
+                                                            MB: ' . $slaughter_m . '<br>
+                                                            SB: ' . $slaughter_f . '
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p style="margin-top:30px; font-size:14px; color:#555555;">
+                                    <b>Regards,</b><br>
+                                    Nexgeno Developer Team
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </body>
+                </html>';
+
+
+        if($this->input->get('test') == 'true'){
+            $email_bmc = ['rashid.makent@gmail.com'];
+            $ccList = ['webdeveloper@nexgeno.in'];
+        }
         
-    //     $test = sendEmail($email_bmc, $subject, $body, $ccList);
+        $test = sendEmail($email_bmc, $subject, $body, $ccList);
 
-    //     var_dump($test);
+        // var_dump($test);
 
-    // }
+    }
 
 }
