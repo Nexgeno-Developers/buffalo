@@ -221,7 +221,7 @@ class Cronjob extends CI_Controller {
         
         $test = sendEmail($email_bmc, $subject, $body, $ccList);
 
-        // var_dump($test);
+        var_dump($test);
 
     }
 

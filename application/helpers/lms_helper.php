@@ -104,6 +104,17 @@ function access($action)
                 return false;
             }        
         }
+        elseif($action == 'manage_butcher') //print id of vyapari
+        {
+            if($role == 'inward')
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }        
+        }
         elseif($action == 'allocate_pass_button') //print id of vyapari
         {
             if($role == 'inward')

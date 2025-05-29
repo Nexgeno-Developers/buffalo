@@ -79,17 +79,18 @@ if($user_type == 'parent'){
         <i class="mdi mdi-account-multiple-plus"></i>
         <span> <?php echo get_phrase('Agent (Dawanwala)'); ?> </span>
       </a>
-    </li>  
+    </li> 
 
-
+    <?php } ?>   
+    
+    <?php if(access('manage_butcher')){ ?>
     <li class="side-nav-item">
       <a href="<?php echo site_url($controller.'/manage_butcher'); ?>" class="side-nav-link">
         <i class="mdi mdi-account-multiple-plus"></i>
         <span> <?php echo get_phrase('Butcher'); ?> </span>
       </a>
     </li> 
-
-    <?php } ?>    
+    <?php } ?>
     
     <?php if(access('reports')){ ?>
     <li class="side-nav-item sub_menu">
