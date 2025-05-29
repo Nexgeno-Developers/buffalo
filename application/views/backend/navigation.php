@@ -80,6 +80,15 @@ if($user_type == 'parent'){
         <span> <?php echo get_phrase('Agent (Dawanwala)'); ?> </span>
       </a>
     </li>  
+
+
+    <li class="side-nav-item">
+      <a href="<?php echo site_url($controller.'/manage_butcher'); ?>" class="side-nav-link">
+        <i class="mdi mdi-account-multiple-plus"></i>
+        <span> <?php echo get_phrase('Butcher'); ?> </span>
+      </a>
+    </li> 
+
     <?php } ?>    
     
     <?php if(access('reports')){ ?>
