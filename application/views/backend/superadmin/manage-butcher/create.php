@@ -28,21 +28,21 @@
         </div> 
         
         <div class="form-group col-md-4">
-            <label for="aadhar_no"><?php echo get_phrase('aadhar_no'); ?><span class="text-danger req"> *</span></label>
+            <label for="aadhar_no"><?php echo get_phrase('Aadhaar_Number'); ?><span class="text-danger req"> *</span></label>
             <input type="number" class="form-control" id="aadhar_no" name = "aadhar_no" minlength="12" maxlength="12" autocomplete="off" required>
-            <small id="aadhar_no_help" class="form-text text-muted"><?php echo get_phrase('provide_vyapari_aadhar_no'); ?></small>
+            <small id="aadhar_no_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Aadhaar_no'); ?></small>
         </div>
         
         <div class="form-group col-md-4">
             <label for="name"><?php echo get_phrase('name'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" id="name" name = "name" autocomplete="off" required>
-            <small id="name_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_name'); ?></small>
+            <small id="name_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Name'); ?></small>
         </div>
 
        <div class="form-group col-md-4">
             <label for="phone"><?php echo get_phrase('phone'); ?><span class="text-danger req"> *</span></label>
             <input type="number" class="form-control" id="phone" name = "phone" minlength="10" maxlength="10" autocomplete="off" required>
-            <small id="phone_help" class="form-text text-muted"><?php echo get_phrase('provide_butcher_phone'); ?></small>
+            <small id="phone_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Phone'); ?></small>
         </div>  
         
         <div class="form-group col-md-4">
@@ -54,37 +54,37 @@
                     <option value="<?= $row['state'] ?>"><?= ucfirst($row['state']); ?></option>
                 <?php } ?>
             </select>
-            <small id="state_help" class="form-text text-muted"><?php echo get_phrase('provide_state'); ?></small>
+            <small id="state_help" class="form-text text-muted"><?php echo get_phrase('provide_State'); ?></small>
         </div> 
         
         <div class="form-group col-md-3">
             <label for="locality"><?php echo get_phrase('location'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" id="locality"  name = "locality" autocomplete="off" required>
-            <small id="locality_help" class="form-text text-muted"><?php echo get_phrase('provide_location'); ?></small>
+            <small id="locality_help" class="form-text text-muted"><?php echo get_phrase('provide_Location'); ?></small>
         </div>      
         
         
         <div class="form-group col-md-2">
             <label for="age"><?php echo get_phrase('age'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" id="age" name = "age" autocomplete="off" required>
-            <small id="age_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_age'); ?></small>
+            <small id="age_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Age'); ?></small>
         </div>
 
         <div class="form-group col-md-3">
-            <label for="experience_in_year"><?php echo get_phrase('experience_(in_year)'); ?><span class="text-danger req"> *</span></label>
+            <label for="experience_in_year"><?php echo get_phrase('experience_(Years)'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" id="experience" name = "experience" autocomplete="off" required>
-            <small id="experience_in_year_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_experience_in_year'); ?></small>
+            <small id="experience_in_year_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Experience'); ?></small>
         </div>
 
         <div class="form-group col-md-8">
-            <label for="address"><?php echo get_phrase('address'); ?></label>
+            <label for="address"><?php echo get_phrase('address_(optional)'); ?></label>
             <textarea class="form-control" id="address" name="address" rows="3" autocomplete="off"></textarea>
-            <small id="address_help" class="form-text text-muted"><?php echo get_phrase('provide_butcher_address'); ?></small>
+            <small id="address_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Address'); ?></small>
         </div>  
 
         <div class="form-group col-md-4">
             <label for="Health_Certificate">
-                <?php echo get_phrase('Health_Certificate'); ?>
+                <?php echo get_phrase('Health_Certificate_(optional)'); ?>
             </label>
             <input type="file" class="form-control" name="health_certificate" accept="image/*,.pdf,.webp">
         </div>

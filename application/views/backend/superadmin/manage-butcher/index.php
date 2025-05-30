@@ -8,7 +8,7 @@
         <h4 class="page-title mt-0">
             <i class="mdi mdi-book-open-page-variant title_icon"></i> <?php echo get_phrase($page_title); ?>
             <?php if(access('registration_button')){ ?>
-            <button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/manage-butcher/create'); ?>', '<?php echo get_phrase('Registration'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Add butcher'); ?></button>
+            <button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/manage-butcher/create'); ?>', '<?php echo get_phrase('Registration'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('Add Butcher'); ?></button>
             <?php } ?>
         </h4>
       </div> <!-- end card body-->
@@ -22,14 +22,14 @@
             <div class="card-body">
             <div class="row mb-1">
                     <div class="col-md-2 mb-1">
-                        <label>butcher ID</label>
+                        <label>Butcher ID</label>
                         <input type="text" name="id" class="form-control" placeholder="butcher ID">
                     </div>
                     <div class="col-md-2 mb-1 hidden">
                         <input type="text" name="name" class="form-control" placeholder="butcher Name">
                     </div> 
                     <div class="col-md-2 mb-1">
-                        <label>Aadhar Number</label>
+                        <label>Aadhaar Number</label>
                         <input type="text" name="aadhar_no" class="form-control" placeholder="butcher Aadhar">
                     </div>      
                     <div class="col-md-2 col-6 mb-1">

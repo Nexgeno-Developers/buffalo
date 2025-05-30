@@ -265,7 +265,7 @@ foreach ($summary as $row) {
     <!-- Buffalo Selling Report -->
     <div class="col-md-6">
         <div class="chart_box">
-            <p>Buffalo Selling - Qurbani Daily Report</p>
+            <p><b>Buffalo Qurbani Arrival -  Daily Report</b></p>
             <table class="table table-striped dt-responsive nowrap">
                 <thead class="chart-table-header">
                     <tr>
@@ -314,7 +314,7 @@ foreach ($summary as $row) {
     <!-- Buffalo Slaughter Report -->
     <div class="col-md-6 pl-md-1">
         <div class="chart_box"> 
-            <p>Buffalo Slaughter - Regular Daily Report</p>
+            <p><b>Buffalo Regular Slaughter -  Daily Report</b></p>
             <table class="table table-striped dt-responsive nowrap">
                 <thead class="chart-table-header">
                     <tr>

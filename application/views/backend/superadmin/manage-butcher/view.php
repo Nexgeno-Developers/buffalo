@@ -76,7 +76,7 @@ h4.page-title.vyapdet.mt-0 {
               </div>
 
               <div class="col-md-3 col-6 mb-2">
-                <strong>Aadhar No:</strong> <?= $vyapari['aadhar_no']; ?><br>
+                <strong>Aadhaar No:</strong> <?= $vyapari['aadhar_no']; ?><br>
                 <strong>Age:</strong> <?= $vyapari['age']; ?><br>
                 <strong>Experience:</strong> <?= $vyapari['experience']; ?> years
               </div>

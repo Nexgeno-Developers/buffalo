@@ -22,19 +22,19 @@
         <div class="form-group col-md-4">
             <label for="name"><?php echo get_phrase('name'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" name = "name" value="<?php echo $butcher['name']; ?>" autocomplete="off" required>
-            <small id="name_help" class="form-text text-muted"><?php echo get_phrase('provide_butcher_name'); ?></small>
+            <small id="name_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Name'); ?></small>
         </div>
 
         <div class="form-group col-md-4">
             <label for="phone"><?php echo get_phrase('phone'); ?><span class="text-danger req"> *</span></label>
             <input type="number" class="form-control" name = "phone" value="<?php echo $butcher['phone']; ?>" minlength="10" maxlength="10" autocomplete="off"  required>
-            <small id="phone_help" class="form-text text-muted"><?php echo get_phrase('provide_butcher_phone'); ?></small>
+            <small id="phone_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Phone'); ?></small>
         </div> 
 
         <div class="form-group col-md-4">
-            <label for="aadhar_no"><?php echo get_phrase('aadhar_no'); ?><span class="text-danger req"> *</span></label>
+            <label for="aadhar_no"><?php echo get_phrase('Aadhaar_Number'); ?><span class="text-danger req"> *</span></label>
             <input type="number" class="form-control" name = "aadhar_no" value="<?php echo $butcher['aadhar_no']; ?>" minlength="12" maxlength="12" autocomplete="off" readonly required>
-            <small id="aadhar_no_help" class="form-text text-muted"><?php echo get_phrase('provide_butcher_aadhar_no'); ?></small>
+            <small id="aadhar_no_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Aadhaar_Number'); ?></small>
         </div>
         
         <div class="form-group col-md-4">
@@ -46,37 +46,30 @@
                     <option value="<?= $row['state'] ?>" <?php echo ($butcher['state'] == $row['state']) ? 'selected' : ''; ?>><?= ucfirst($row['state']); ?></option>
                 <?php } ?>
             </select>
-            <small id="state_help" class="form-text text-muted"><?php echo get_phrase('provide_state'); ?></small>
+            <small id="state_help" class="form-text text-muted"><?php echo get_phrase('provide_State'); ?></small>
         </div> 
         
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label for="locality"><?php echo get_phrase('location'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" name = "locality" value="<?php echo $butcher['locality']; ?>" autocomplete="off" required>
-            <small id="locality_help" class="form-text text-muted"><?php echo get_phrase('provide_location'); ?></small>
+            <small id="locality_help" class="form-text text-muted"><?php echo get_phrase('provide_Location'); ?></small>
         </div>        
 
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-4">
             <label for="age"><?php echo get_phrase('age'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" id="age" name = "age" value="<?php echo $butcher['age']; ?>" autocomplete="off" required>
-            <small id="age_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_age'); ?></small>
+            <small id="age_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Age'); ?></small>
         </div>
 
-        <div class="form-group col-md-3">
-            <label for="experience_in_year"><?php echo get_phrase('experience_(in_year)'); ?><span class="text-danger req"> *</span></label>
+        <div class="form-group col-md-4">
+            <label for="experience_in_year"><?php echo get_phrase('experience_(Years)'); ?><span class="text-danger req"> *</span></label>
             <input type="text" class="form-control" id="experience" name = "experience" value="<?php echo $butcher['experience']; ?>" autocomplete="off" required>
-            <small id="experience_in_year_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_experience_in_year'); ?></small>
+            <small id="experience_in_year_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_experience'); ?></small>
         </div>
-
-        <div class="form-group col-md-8">
-            <label for="address"><?php echo get_phrase('address_(optional)'); ?>
-        </label>
-            <textarea class="form-control" name="address" rows="3" autocomplete="off"><?php echo $butcher['address']; ?></textarea>
-            <small id="address_help" class="form-text text-muted"><?php echo get_phrase('provide_butcher_address'); ?></small>
-        </div>  
 
         <div class="form-group col-md-4">
             <label for="Health_Certificate">
-                <?php echo get_phrase('Health_Certificate'); ?>
+                <?php echo get_phrase('Health_Certificate_(optional)'); ?>
                 <?php 
                     echo $butcher['health_certificate'] 
                         ? '<a target="_blank" href="' . base_url('uploads/health_certificate/' . $butcher['health_certificate']) . '">View</a>' 
@@ -85,6 +78,13 @@
             </label>
             <input type="file" class="form-control" name="health_certificate" accept="image/*,.pdf,.webp">
         </div>
+
+        <div class="form-group col-md-12">
+            <label for="address"><?php echo get_phrase('address_(optional)'); ?>
+        </label>
+            <textarea class="form-control" name="address" rows="3" autocomplete="off"><?php echo $butcher['address']; ?></textarea>
+            <small id="address_help" class="form-text text-muted"><?php echo get_phrase('provide_Butcher_Address'); ?></small>
+        </div>  
 
         <div class="form-group  col-md-2">
             <button class="btn btn-block btn-success" type="submit"><?php echo get_phrase('update'); ?></button>

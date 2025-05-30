@@ -149,7 +149,7 @@
 
 			<th width="20%"><?php echo get_phrase('name'); ?></th>
 
-			<th width="10%"><?php echo get_phrase('Aadhar_Number'); ?></th>
+			<th width="10%"><?php echo get_phrase('Aadhaar_Number'); ?></th>
 
 			<th width="10%"><?php echo get_phrase('phone'); ?></th>
 
