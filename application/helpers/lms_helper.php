@@ -40,6 +40,12 @@ function vyapari_id($id)
     return 'V' . date('Y') . '-' . $id;
 }
 
+function butcher_id($id)
+{
+    //    return 'V2024-'.$id;
+    return 'B' . date('Y') . '-' . $id;
+}
+
 function compressImage($source, $destination, $quality) 
 {
 	// Get image info
@@ -88,6 +94,17 @@ function access($action)
             }
         }
         elseif($action == 'printid_button') //print id of vyapari
+        {
+            if($role == 'inward')
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }        
+        }
+        elseif($action == 'manage_butcher') //print id of vyapari
         {
             if($role == 'inward')
             {
@@ -303,7 +320,7 @@ function old_vyapari_check($param){
 
 		$CI->db->select('COUNT(AQ.qrcode) AS total', false);
 		$CI->db->from('app_qrcode AS AQ');
-		$CI->db->join('cattle_pre_booking AS CPB', 'CPB.tag_no = AQ.qrcode', 'inner');
+		$CI->db->join('cattle_pre_booking AS CPB', 'CPB.certificate_no = AQ.qrcode', 'inner');
 
 		if ($slaughterType) {
 			$CI->db->where('AQ.slaughtering_type', $slaughterType);

@@ -444,7 +444,8 @@
 <script>
 var currentDate = new Date();
 
-var day = 20;
+//var day = 20;
+var day = new Date().getDate();
 var current_month = currentDate.getMonth() + 1;
 
 var start_date =  <?php echo $startdate ?>;
@@ -454,13 +455,9 @@ var daysInMonth = <?php echo $days ?>;
 var animalin = <?php echo $aniamalin ?>;
 var animalout = <?php echo $aniamalout ?>;
 
-
 const yValuesIN = [];
 const yValuesOut = []; 
-
 const xValues = [];
-
-
 
 if(current_month == start_month){
     for (let i = start_date; i <= day; i++) {
@@ -586,10 +583,14 @@ new Chart("myChart", {
     $(document).ready(function() {
         var today = new Date().getDate();
         for (var i = 0; i < xValues.length; i++) {
+
+            var dayx = xValues[i];
+            var labelMonthYear = (dayx >= 21) ? 'May 2025' : 'June 2025';
+
             if (xValues[i] <= today) {
                 var row = '<tr>' +
                     '<td>' + (i + 1)  + '</td>' +
-                    '<td>' + xValues[i] + ' June 2024</td>' +
+                    '<td>' + xValues[i] + ' ' + labelMonthYear + '</td>' +
                     '<td>' + yValuesIN[i] + '</td>' +
                     '<td>' + yValuesOut[i] + '</td>' +
                     '</tr>';

@@ -2059,6 +2059,74 @@ class Superadmin extends CI_Controller {
       // Redirect to previous page
       $referrer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : base_url();
       redirect($referrer);
-  } 
+  }
+  
+
+
+    public function manage_butcher($param1 = '', $param2 = '', $param3 = ''){
+
+    if($param1 == 'create')
+    {
+      error_reporting(E_ALL);
+      ini_set('display_errors', 1);
+      $response = $this->deonar_model->butcher_create();
+      echo $response;
+    }
+    
+    if($param1 == 'update_butcher')
+    {
+      $response = $this->deonar_model->butcher_update($param2);
+      echo $response;
+    }     
+    
+    if($param1 == 'UploadWebCamImage')
+    {
+      $response = $this->deonar_model->UploadWebCamImage_butcher();
+      echo $response;
+    }    
+    
+    if($param1 == 'print')
+    {
+        set_time_limit(300);
+        $this->load->library('pdf');
+        $page_info['id'] = $param2;
+        $this->pdf->loadHtml($this->load->view('backend/superadmin/manage-butcher/printid', $page_info, true));
+        //$this->pdf->set_paper(array(0,0,680,920)); //array(0,0,250,150) array(0,0,567.00,283.80)
+        $this->pdf->render();		
+        $filename = 'printid.pdf';
+        $this->pdf->stream($filename, array("Attachment"=>0));
+    }
+    
+    // show data from database
+    if ($param1 == 'list')
+    {
+            error_reporting(E_ALL);
+      ini_set('display_errors', 1);
+      $this->load->view('backend/superadmin/manage-butcher/list');
+    }
+
+    // show data from database
+    if($param1 == 'ajaxlist')
+    {
+        $post = $this->input->post();
+        $data = $this->deonar_model->get_all_butcher($post);
+        echo json_encode($data);
+    }  
+    
+    // view vyapari details
+    if ($param1 == 'view')
+    {
+      $page_data['page_name']  = 'manage-butcher/view';
+      $page_data['page_title'] = 'Butcher Details';
+      $page_data['vyapari_id'] = $param2;
+      $this->load->view('backend/index', $page_data);
+    }    
+
+    if(empty($param1)){
+      $page_data['folder_name'] = 'manage-butcher';
+      $page_data['page_title'] = 'Manage Butcher';
+      $this->load->view('backend/index', $page_data);
+    }
+  }
   
 }

@@ -2086,6 +2086,23 @@ class Deonar_model extends CI_Model {
 		$update['locality'] = trim($this->input->post('locality'));
 		$update['address'] = trim($this->input->post('address'));
 		$update['phone'] = trim($this->input->post('phone'));
+
+		if (!empty($_FILES['photo']['name'])) {
+			$photoname = time();
+			$update['photo'] = $photoname . '_photo.jpg';
+			$path = 'uploads/vyapari_photo/' . $update['photo'];
+
+			if (move_uploaded_file($_FILES['photo']['tmp_name'], $path)) {
+				$update['photo'] = $update['photo'];
+			} else {
+				$response = array(
+					'status' => false,
+					'notification' => get_phrase('Photo could not be saved. Something went wrong!')
+				);
+
+				return json_encode($response);
+			}
+		}		
 		
 		$this->db->where('vyapari_id', $vyapari_id);
 		$updated = $this->db->update('app_vyapari', $update);	
@@ -2285,6 +2302,436 @@ class Deonar_model extends CI_Model {
         }
     }	
 	
+
+
+	public function butcher_create()
+	{
+		$app_butcher['name'] = $this->input->post('name');
+		$app_butcher['phone'] = $this->input->post('phone');
+		$app_butcher['aadhar_no'] = $this->input->post('aadhar_no');
+		$app_butcher['address'] = $this->input->post('address');
+		$app_butcher['age'] = $this->input->post('age');
+		$app_butcher['experience'] = $this->input->post('experience');
+		$app_butcher['status'] = 'active';
+		$app_butcher['state'] = $this->input->post('state');
+		$app_butcher['locality'] = $this->input->post('locality');
+		$app_butcher['photo'] = $this->input->post('photo');
+		$app_butcher['health_certificate'] = $this->input->post('health_certificate');
+		$app_butcher['temp_code'] = $this->input->post('temp_code');
+		$app_butcher['timestamp'] = date('Y-m-d H:i:s');
+
+		$is_exist_phone = $this->db->select('id')->where('phone', $app_butcher['phone'])->get('app_butcher')->num_rows();
+		$is_exist_aadhar_no = $this->db->select('id')->where('aadhar_no', $app_butcher['aadhar_no'])->get('app_butcher')->num_rows();
+
+		if($is_exist_phone > 0)
+		{
+			$response = array(
+				'status' => false,
+				'notification' => get_phrase('phone_number_already_exist')
+			);
+			return json_encode($response);
+		}
+
+		if($is_exist_aadhar_no > 0)
+		{
+			$response = array(
+				'status' => false,
+				'notification' => get_phrase('aadhar_number_already_exist')
+			);
+			return json_encode($response);
+		}
+		
+		// $photoname = time();
+		// if ($_FILES['photo']['name'] != "") {
+		// 	$$app_butcher['photo'] = $photoname.'photo.jpg';
+		// 	$path = 'uploads/butcher_photo/'.$app_butcher['photo'];
+		// 	move_uploaded_file($_FILES['photo']['tmp_name'], $path);
+		// 	//compressImage($path, $path, 30); 
+		// }		
+
+		$photoname = time();
+		if (!empty($_FILES['photo']['name'])) {
+			$uploadDir = 'uploads/butcher_photo/';
+
+			// Create the folder if it doesn't exist
+			if (!file_exists($uploadDir)) {
+				mkdir($uploadDir, 0755, true); // Create directory with permissions
+			}
+
+			$filename = $photoname . 'photo.jpg';
+			$app_butcher['photo'] = $filename;
+			$path = $uploadDir . $filename;
+
+			move_uploaded_file($_FILES['photo']['tmp_name'], $path);
+			// compressImage($path, $path, 30);
+		}
+
+		if (!empty($_FILES['health_certificate']['name'])) {
+			$healthUploadDir = 'uploads/health_certificate/';
+
+			// Create directory if not exists
+			if (!file_exists($healthUploadDir)) {
+				mkdir($healthUploadDir, 0755, true);
+			}
+
+			// Get file details
+			$tmpName = $_FILES['health_certificate']['tmp_name'];
+			$originalName = $_FILES['health_certificate']['name'];
+			$extension = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
+
+			// Allowed MIME types and extensions
+			$allowedMimes = [
+				'image/jpeg', 'image/png', 'image/gif', 'image/webp',
+				'application/pdf'
+			];
+			$allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'pdf'];
+
+			// Get actual MIME type using finfo (more reliable than mime_content_type)
+			$finfo = finfo_open(FILEINFO_MIME_TYPE);
+			$mimeType = finfo_file($finfo, $tmpName);
+			finfo_close($finfo);
+
+			if (!in_array($mimeType, $allowedMimes) || !in_array($extension, $allowedExtensions)) {
+				$response = array(
+					'status' => false,
+					'notification' => get_phrase('Invalid file type. Only JPG, PNG, GIF, WEBP images and PDF are allowed.')
+				);
+				return json_encode($response);
+			}
+
+			// Generate filename and path
+			$healthFilename = time() . '_health_certificate.' . $extension;
+			$app_butcher['health_certificate'] = $healthFilename;
+			$healthPath = $healthUploadDir . $healthFilename;
+
+			// Move uploaded file
+			if (!move_uploaded_file($tmpName, $healthPath)) {
+				$errorCode = $_FILES['health_certificate']['error'];
+				$errorMessages = [
+					UPLOAD_ERR_INI_SIZE   => 'The file is too large (server limit).',
+					UPLOAD_ERR_FORM_SIZE  => 'The file is too large (form limit).',
+					UPLOAD_ERR_PARTIAL    => 'The file was only partially uploaded.',
+					UPLOAD_ERR_NO_FILE    => 'No file was uploaded.',
+					UPLOAD_ERR_NO_TMP_DIR => 'Missing temporary folder.',
+					UPLOAD_ERR_CANT_WRITE => 'Failed to write file to disk.',
+					UPLOAD_ERR_EXTENSION  => 'A PHP extension stopped the file upload.',
+				];
+
+				$errorMessage = isset($errorMessages[$errorCode]) ? $errorMessages[$errorCode] : 'Unknown upload error.';
+
+				$response = array(
+					'status' => false,
+					'notification' => get_phrase('Upload failed: ') . $errorMessage
+				);
+				return json_encode($response);
+			}
+		}
+
+
+		$this->db->insert('app_butcher', $app_butcher);
+		$id = $this->db->insert_id();
+		// old_vyapari_check($this->input->post());
+		
+		if($id)
+		{
+			$log = array(
+				'name' => 'butcher_registration',
+				'description' => '<b>'.butcher_id($id).'</b> registered successfully.',
+			 );
+			 app_log($log);
+	 
+			 $response = array(
+				 'status' => true,
+				 'notification' => get_phrase('butcher_added_successfully')
+			 );			
+		}
+		else
+		{
+			$response = array(
+				'status' => false,
+				'notification' => get_phrase('something_went_wrong!')
+			);
+		}
+
+		return json_encode($response);		
+	}
+
+	function UploadWebCamImage_butcher()
+	{
+        $img = $_POST['webcam_image'];
+        if(!empty($img))
+        {
+            $folderPath = "uploads/butcher_photo/";
+
+			if (!file_exists($folderPath)) {
+				mkdir($folderPath, 0755, true);
+			}
+          
+            $image_parts = explode(";base64,", $img);
+            $image_type_aux = explode("image/", $image_parts[0]);
+            $image_type = $image_type_aux[1];
+          
+            $image_base64 = base64_decode($image_parts[1]);
+            $fileName = time() . '.png';
+          
+            $file = $folderPath . $fileName;
+            file_put_contents($file, $image_base64);
+            
+            $app_vyapari['photo'] = $fileName;
+        	$this->db->where('temp_code', $this->input->post('temp_code'));
+        	$this->db->update('app_butcher', $app_vyapari);		
+        }	
+	}
+
+	function butcher_update($id)
+    {
+        $update['name'] = trim($this->input->post('name'));
+		$update['aadhar_no'] = trim($this->input->post('aadhar_no'));
+		$update['state'] = trim($this->input->post('state'));
+		$update['locality'] = trim($this->input->post('locality'));
+		$update['address'] = trim($this->input->post('address'));
+		$update['phone'] = trim($this->input->post('phone'));
+
+		$app_butcher['age'] = $this->input->post('age');
+		$app_butcher['experience'] = $this->input->post('experience');
+
+		if (!empty($_FILES['photo']['name'])) {
+			$photoname = time();
+			$photoUploadDir = 'uploads/butcher_photo/';
+
+			// Create directory if it doesn't exist
+			if (!file_exists($photoUploadDir)) {
+				mkdir($photoUploadDir, 0755, true);
+			}
+
+			$photoFilename = $photoname . '_photo.jpg';
+			$update['photo'] = $photoFilename;
+			$photoPath = $photoUploadDir . $photoFilename;
+
+			if (!move_uploaded_file($_FILES['photo']['tmp_name'], $photoPath)) {
+				$response = array(
+					'status' => false,
+					'notification' => get_phrase('Photo could not be saved. Something went wrong!')
+				);
+				return json_encode($response);
+			}
+		}
+
+		// HEALTH CERTIFICATE Upload
+		if (!empty($_FILES['health_certificate']['name'])) {
+			$healthUploadDir = 'uploads/health_certificate/';
+
+			// Create directory if it doesn't exist
+			if (!file_exists($healthUploadDir)) {
+				mkdir($healthUploadDir, 0755, true);
+			}
+
+			$originalHealthName = $_FILES['health_certificate']['name'];
+			$extension = pathinfo($originalHealthName, PATHINFO_EXTENSION);
+			$safeExtension = strtolower($extension);
+			$allowed = ['jpg', 'jpeg', 'png', 'pdf'];
+
+			if (in_array($safeExtension, $allowed)) {
+				$healthFilename = time() . '_health_certificate.' . $safeExtension;
+				$update['health_certificate'] = $healthFilename;
+				$healthPath = $healthUploadDir . $healthFilename;
+
+				if (!move_uploaded_file($_FILES['health_certificate']['tmp_name'], $healthPath)) {
+					$response = array(
+						'status' => false,
+						'notification' => get_phrase('Health certificate could not be saved. Something went wrong!')
+					);
+					return json_encode($response);
+				}
+			} else {
+				$response = array(
+					'status' => false,
+					'notification' => get_phrase('Invalid file type for health certificate.')
+				);
+				return json_encode($response);
+			}
+		}
+		
+		$this->db->where('id', $id);
+		$updated = $this->db->update('app_butcher', $update);	
+		
+		if($updated)
+		{
+			$log = array(
+				'name' => 'butcher_update',
+				'description' => '<b>'.butcher_id($butcher_id).'</b> updated successfully.',
+			 );
+			 app_log($log);
+
+			// old_vyapari_check($this->input->post());
+	 
+			 $response = array(
+				 'status' => true,
+				 'notification' => get_phrase('butcher_edited_successfully')
+			 );
+		}
+		else
+		{
+			$response = array(
+				'status' => false,
+				'notification' => get_phrase('something_went_wrong!')
+			);
+		}
+
+		 return json_encode($response);
+	}
+
+
+	function get_all_butcher($post=null){	
+	
+		$response = array();
+  
+		## Read value
+		$draw = $post['draw'];
+		$start = $post['start'];
+		$rowperpage = $post['length']; // Rows display per page
+		$columnIndex = $post['order'][0]['column']; // Column index
+		$columnName = $post['columns'][$columnIndex]['data']; // Column name
+		$columnSortOrder = $post['order'][0]['dir']; // asc or desc
+
+		$searchValue = trim($post['search']['value']);
+		$id = trim($post['id']);
+		$name = trim($post['name']);
+		$phone = trim($post['phone']);
+		$aadhar_no = trim($post['aadhar_no']);
+		$from  = $post['from'] ? trim(date('Y-m-d 00:00:00' ,strtotime($post['from']))) : null;
+		$to = $post['to'] ? trim(date('Y-m-d 23:59:59' ,strtotime($post['to']))) : null;
+		
+		## Total number of record with filtering
+		$this->db->select('id');
+		$this->db->from('app_butcher');
+		// if(!empty($$id))
+		// {
+    	// 	$this->db->where('$id', $$id);
+		// }
+		if(!empty($id))
+		{
+			// Extract the current year
+			$currentYear = date('Y');
+			// Convert to uppercase
+			$id = strtoupper($id);
+			// Use regex to remove "V2025-" and get the remaining part
+			$id = preg_replace("/^B$currentYear-/", '', $id);
+
+    		$this->db->where('id', $id);
+		}
+		if(!empty($name))
+		{
+    		$this->db->like('name', $name);
+		}
+		if(!empty($phone))
+		{
+    		$this->db->where('phone', $phone);
+		}
+		if(!empty($aadhar_no))
+		{
+    		$this->db->where('aadhar_no', $aadhar_no);
+		}
+        if(!empty($from) && !empty($to))
+        {
+            $this->db->where('timestamp >=', $from);
+            $this->db->where('timestamp <=', $to);
+        }		
+		$records = $this->db->get()->num_rows();
+		$totalRecordwithFilter = $records;
+  	
+		## Fetch records
+		$this->db->select('*');
+		$this->db->from('app_butcher');
+		// if(!empty($$id))
+		// {
+    	// 	$this->db->where('$id', $$id);
+		// }
+		if(!empty($id))
+		{
+			// Extract the current year
+			$currentYear = date('Y');
+			// Convert to uppercase
+			$id = strtoupper($id);
+			// Use regex to remove "V2025-" and get the remaining part
+			$id = preg_replace("/^B$currentYear-/", '', $id);
+
+    		$this->db->where('id', $id);
+		}
+		if(!empty($name))
+		{
+    		$this->db->like('name', $name);
+		}
+		if(!empty($phone))
+		{
+    		$this->db->where('phone', $phone);
+		}
+		if(!empty($aadhar_no))
+		{
+    		$this->db->where('aadhar_no', $aadhar_no);
+		}
+        if(!empty($from) && !empty($to))
+        {
+            $this->db->where('timestamp >=', $from);
+            $this->db->where('timestamp <=', $to);
+        }		
+		$this->db->order_by($columnName, $columnSortOrder);
+		$this->db->limit($rowperpage, $start);
+		$records = $this->db->get()->result_array();
+
+		$data = array();
+        $sr = $start + 1;
+		foreach($records as $record)
+		{
+
+		    
+			$btn_view = '<a target="_blank" href="'.site_url('superadmin/manage_butcher/view/'.$record['id']).'" class="btn-sm btn-link">'.get_phrase('Details').'</a>';
+			
+			
+			if(access('printid_button'))
+			{
+    			$btn_print = '<a target="_blank" href="'.site_url('superadmin/manage_butcher/print/'.$record['id']).'" class="btn-sm btn-link">Print ID</a>';
+			
+			if($this->session->userdata('user_id') == 1 || $this->session->userdata('role_type') == 'inward')
+			{
+			    $event = "rightModal('".site_url('modal/popup/manage-butcher/edit/'.$record['id'])."','Edit Butcher')";
+                $btn_edit = '<a href="javascript:void(0);" class="btn-sm btn-link" onclick="'.$event.'">'.get_phrase('edit').'</a>';			    
+			}
+			    
+			}
+			else
+			{
+			    $btn_print = null;
+			    $btn_edit  = null;
+			}
+                        
+			$data[] = array( 
+			    "sr_no"  => $sr,
+				"id"  => butcher_id($record['id']),
+				//"name" => '<a target="_blank" href="'.site_url('superadmin/manage_vyapari/view/'.$record['$id']).'" class="text-dark">'.$record['name'].'</a>',
+				"name" => $record['name'],
+				"aadhar_number" => $record['aadhar_no'],
+				"phone" => $record['phone'],
+				"age" => $record['age'],
+				"location" => $record['locality'],
+				"experience" => $record['experience'],
+				"timestamp" => date('d MY H:i:s', strtotime($record['timestamp'])),
+				"options" => $btn_view.''.$btn_print. ''.$btn_edit,
+			);
+			
+			$sr++;
+		}
+  
+		## Response
+		$response = array(
+			"draw" => intval($draw),
+			"iTotalRecords" => $totalRecordwithFilter,
+			"iTotalDisplayRecords" => $totalRecordwithFilter,
+			"aaData" => $data
+		);
+  
+		return $response; 
+	}
 	
 
 }
