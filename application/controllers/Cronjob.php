@@ -219,10 +219,19 @@ class Cronjob extends CI_Controller {
             $ccList = ['webdeveloper@nexgeno.in'];
         }
         
-        $test = sendEmail($email_bmc, $subject, $body, $ccList);
+        // $test = sendEmail($email_bmc, $subject, $body, $ccList);
 
-        var_dump($test);
+        foreach ($emails as $row) {
+            $email_bmc = $row->email;
+            $result = sendEmail($email_bmc, $subject, $body);
+            if ($result) {
+                log_message('info', "Email sent to: $email_bmc");
+            } else {
+                log_message('error', "Failed to send email to: $email_bmc");
+            }
+        }
 
+        sendEmail($ccList, $subject, $body);
     }
 
 }
