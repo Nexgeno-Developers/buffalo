@@ -1156,6 +1156,10 @@ body .left-side-menu-detached {
   font-weight: 400;
 }
 
+.fs18 {
+  font-size: 18px !important;
+}
+
 .dashboard_box .card-stats .card-header .card-title {
   font-weight: 700;
   color: #fff;

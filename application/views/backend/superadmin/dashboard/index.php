@@ -90,7 +90,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon1.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Inward Total Buffalo'); ?></p>
+                        <p class="card-category fs18"><?php echo get_phrase('Buffalo Total Qurbani Arrival'); ?></p>
                         <h3 class="card-title"> 
                         <?php
                           echo $unblock;
@@ -114,7 +114,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon3.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Outward Total Buffalo'); ?></p>
+                        <p class="card-category fs18"><?php echo get_phrase('Buffalo Qurbani Slaughter'); ?></p>
                         <h3 class="card-title"> 
                         <?php
                           echo $exit
@@ -138,7 +138,7 @@
                         <div class="card-icon padd5">
                             <img src="../assets/backend/images/arrow_icon7.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Balanced Total Buffalo'); ?>  </p>
+                        <p class="card-category fs18"><?php echo get_phrase('Buffalo Qurbani Balance'); ?>  </p>
                         <h3 class="card-title"> 
                         <?php echo $unblock - $exit; ?>
                         </h3>
@@ -159,7 +159,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon8.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Pass Blocked'); ?>  </p>
+                        <p class="card-category fs18"><?php echo get_phrase('Pass Blocked'); ?>  </p>
                         <h3 class="card-title"> 
                         <?php
                           echo $block;
@@ -182,7 +182,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon9.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Registered Total Vyapari'); ?> </p>
+                        <p class="card-category fs18"><?php echo get_phrase('Registered Total Vyapari'); ?> </p>
                         <h3 class="card-title"> 
                         <?php
                            echo $vyapari;
@@ -206,7 +206,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon14.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Qurbani - Total Selling'); ?>  </p>
+                        <p class="card-category fs18"><?php echo get_phrase('Qurbani - Total Selling'); ?>  </p>
                         <h3 class="card-title"> 
                            <div><?php echo $selling_total; ?></div>
                         </h3>
@@ -268,7 +268,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon16.svg" alt="">
                         </div>
-                        <p class="card-category"><?php echo get_phrase('Regular - Total Slaughter'); ?>  </p>
+                        <p class="card-category fs18"><?php echo get_phrase('Regular - Total Slaughter'); ?>  </p>
                         <h3 class="card-title"> 
                            <div><?php echo $slaughter_total; ?></div>
                         </h3>
