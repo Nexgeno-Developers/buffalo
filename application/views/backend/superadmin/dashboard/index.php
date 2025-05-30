@@ -90,7 +90,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon1.svg" alt="">
                         </div>
-                        <p class="card-category fs18"><?php echo get_phrase('Buffalo Total Qurbani Arrival'); ?></p>
+                        <p class="card-category fs18"><?php echo get_phrase('Buffalo Total Arrival'); ?></p>
                         <h3 class="card-title"> 
                         <?php
                           echo $unblock;
@@ -206,7 +206,7 @@
                         <div class="card-icon">
                             <img src="../assets/backend/images/arrow_icon14.svg" alt="">
                         </div>
-                        <p class="card-category fs18"><?php echo get_phrase('Qurbani - Total Selling'); ?>  </p>
+                        <p class="card-category fs18"><?php echo get_phrase('Buffalo Total Qurbani Arrival'); ?>  </p>
                         <h3 class="card-title"> 
                            <div><?php echo $selling_total; ?></div>
                         </h3>
