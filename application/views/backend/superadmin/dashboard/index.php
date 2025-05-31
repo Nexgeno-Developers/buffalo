@@ -216,7 +216,7 @@
               <img src="../assets/backend/images/arrow_icon8.svg" alt="">
             </div>
             <p class="card-category fs18">
-              <?php echo get_phrase('Blocked Pass'); ?>
+              <?php echo get_phrase('Pass Blocked'); ?>
             </p>
             <h3 class="card-title">
               <?php echo $block; ?>
@@ -238,7 +238,7 @@
               <img src="../assets/backend/images/arrow_icon9.svg" alt="">
             </div>
             <p class="card-category fs18">
-              <?php echo get_phrase('Total Registered Vyapari'); ?>
+              <?php echo get_phrase('Registered Total Vyapari'); ?>
             </p>
             <h3 class="card-title">
               <?php echo $vyapari; ?>
