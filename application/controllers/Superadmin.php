@@ -524,24 +524,24 @@ class Superadmin extends CI_Controller {
       $query = $this->db->query("
           SELECT 
               (SELECT COUNT(vyapari_id) FROM app_vyapari) AS vyapari,
-              (SELECT COUNT(status) FROM app_qrcode WHERE status IN ('unblock', 'exit')) AS unblock,
-              (SELECT COUNT(status) FROM app_qrcode WHERE status = 'block') AS block,
-              (SELECT COUNT(status) FROM app_qrcode WHERE status = 'exit') AS exit_count
+              (SELECT COUNT(status) FROM app_qrcode WHERE status IN ('unblock', 'exit') AND slaughtering_type = 2) AS unblock,
+              (SELECT COUNT(status) FROM app_qrcode WHERE status = 'block' AND slaughtering_type = 2) AS block,
+              (SELECT COUNT(status) FROM app_qrcode WHERE status = 'exit' AND slaughtering_type = 2) AS exit_count
       ");
 
       $result = $query->row_array();
       $page_data['vyapari']         = $result['vyapari'];
-      $page_data['unblock']         = $result['unblock'];
+      //$page_data['unblock']         = $result['unblock'];
       $page_data['block']           = $result['block'];
       $page_data['exit']            = $result['exit_count'];      
 
       // Cattle count
       $page_data['selling_m']       = get_cattle_count(2, '1');
       $page_data['selling_f']       = get_cattle_count(2, '2');
-      $page_data['slaughter_m']     = get_cattle_count(1, '1');
-      $page_data['slaughter_f']     = get_cattle_count(1, '2');
+      //$page_data['slaughter_m']     = get_cattle_count(1, '1');
+      //$page_data['slaughter_f']     = get_cattle_count(1, '2');
       $page_data['selling_total']   = get_cattle_count(2, null);
-      $page_data['slaughter_total'] = get_cattle_count(1, null);
+      //$page_data['slaughter_total'] = get_cattle_count(1, null);
 
       // Date variables for filtering and graphs
       $start = get_common_settings('start_datetime');
@@ -557,9 +557,10 @@ class Superadmin extends CI_Controller {
       // Animal In Graph Data
       $query1 = $this->db->select('DAY(inward_date) AS DATE, COUNT(inward_date) AS count')
                         ->from('app_qrcode')
-                        ->where_in('status', ['unblock', 'exit'])
+                        //->where_in('status', ['unblock', 'exit'])
                         ->where('inward_date >=', $start)
                         ->where('inward_date <=', $end)
+                        ->where('slaughtering_type', 2)
                         ->group_by('DATE(inward_date)')
                         ->get()
                         ->result();
@@ -571,6 +572,7 @@ class Superadmin extends CI_Controller {
                         ->where('status', 'exit')
                         ->where('exit_date >=', $start)
                         ->where('exit_date <=', $end)
+                        ->where('slaughtering_type', 2)
                         ->group_by('DATE(exit_date)')
                         ->get()
                         ->result();
