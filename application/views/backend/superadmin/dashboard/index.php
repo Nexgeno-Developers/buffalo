@@ -208,7 +208,7 @@
         </a>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddright_0">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1 pddright_0">
       <div class="card card-stats three">
         <a class="dashbox" href="reports/blocked">
           <div class="card-header card-header-warning card-header-icon">
@@ -230,7 +230,7 @@
         </a>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-6 col-6 pddright_0">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-6 pl-md-1 pddleft_0">
       <div class="card card-stats one">
         <a class="dashbox" href="manage_vyapari">
           <div class="card-header card-header-warning card-header-icon">
