@@ -2130,5 +2130,14 @@ class Superadmin extends CI_Controller {
       $this->load->view('backend/index', $page_data);
     }
   }
+
+  public function redirect_view_butcher()
+  {
+      if(!empty( $this->uri->segment(3)))
+      {
+          $butcher_id = $this->db->where('temp_code', $this->uri->segment(3))->get('app_butcher')->row()->id;
+          redirect(route('manage_butcher/print/'.$butcher_id));          
+      }
+  }
   
 }

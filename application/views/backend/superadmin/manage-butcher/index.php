@@ -84,6 +84,7 @@
                 $('.butcher_content').html(response);
                 initDataTable('basic-datatable');
                 submit_webcam_image();
+                
             }
         });
     }

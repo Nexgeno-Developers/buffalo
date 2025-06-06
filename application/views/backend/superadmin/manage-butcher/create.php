@@ -186,7 +186,9 @@ function getLocality(state_id)
             type: 'post',
             success: function(result)
             {
-                // window.location.href = '<?php echo route('redirect_view'); ?>/' + temp_code ;
+                // window.location.href = '<?php echo route('redirect_view_butcher'); ?>/' + temp_code ;
+                var url = '<?php echo route('redirect_view_butcher'); ?>/' + temp_code;
+                window.open(url, '_blank');
             }
         });        
     }
